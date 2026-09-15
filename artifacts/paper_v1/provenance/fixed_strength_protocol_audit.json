@@ -1,0 +1,18 @@
+{
+  "all_prediction_hashes_unique_keys": true,
+  "all_status_ok": true,
+  "bp_fingerprints_present": true,
+  "complete_53x3": true,
+  "config_hash": "b0f6e3756d9edf609574809d5c2d60b814d591459deb2808ff31a8dbad648c49",
+  "datasets": 53,
+  "expected_M": 20,
+  "implementation_hash": "00dfb40767cd4f9dd6879734ee8e4fd5b7cc1441d62c1d8556b0efa9ef908bb4",
+  "lambda": 0.665,
+  "original_ca_and_psf_rows": 318,
+  "original_psf_params_verified": true,
+  "passed": true,
+  "pools": 159,
+  "q": 1.0,
+  "schema": "psfce-min-ablation-audit-v1",
+  "three_pools_per_dataset": true
+}

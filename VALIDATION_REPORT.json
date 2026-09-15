@@ -1,0 +1,101 @@
+{
+  "schema": "psfce-release-validation-v2",
+  "release_version": "1.0.0",
+  "scope_statement": "Packaging and recorded-score reconstruction only; the 53x3 algorithms were not rerun.",
+  "packaging_checks": {
+    "status": "PASS",
+    "forbidden_paths": [],
+    "sensitive_file_count": 0,
+    "sensitive_files": [],
+    "historical_public_name_hits": [],
+    "portable_extraction": "PASS"
+  },
+  "python_tests": {
+    "status": "PASS",
+    "command": "python -m pytest -q -p no:cacheprovider",
+    "result": {
+      "returncode": 0,
+      "stdout_tail": ".............                                                            [100%]\n============================== warnings summary ===============================\ntests/test_core.py::test_energy_preservation\n  <PYTHON_ENV>\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:\n  [WinError 2] 系统找不到指定的文件。\n  Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n13 passed, 1 warning in 16.15s\n",
+      "stderr_tail": ""
+    },
+    "import_status": "PASS"
+  },
+  "table_rebuild": {
+    "status": "PASS",
+    "recorded_score_rows": {
+      "main_internal": 795,
+      "recent": 477,
+      "ablation": 477
+    },
+    "algorithm_executed": false,
+    "metrics_recomputed_from_labels": false,
+    "result": {
+      "returncode": 0,
+      "stdout_tail": "{\n  \"schema\": \"psfce-paper-v1-rebuild-v1\",\n  \"main_rows\": 1272,\n  \"methods\": [\n    \"CA\",\n    \"Poly2\",\n    \"LinearPair\",\n    \"AggregatePower\",\n    \"CEHM\",\n    \"YACHT\",\n    \"RANGE\",\n    \"PSF-CE\"\n  ],\n  \"datasets\": 53,\n  \"pools_per_method\": 159,\n  \"ablation_rows\": 477,\n  \"figure_grid_rows\": 20,\n  \"statistics_unit\": \"dataset after three-pool mean\",\n  \"statistical_note\": \"Recomputed statistics are explicitly named current_env; archived historical statistics are never overwritten.\",\n  \"scores_recomputed_from_labels\": false,\n  \"algorithm_executed\": false\n}\n",
+      "stderr_tail": "<RELEASE_ROOT>\\scripts\\rebuild_paper_artifacts.py:113: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.\n  fig.tight_layout(); fig.savefig(out/\"psf_acc_nmi_rebuilt.pdf\",format=\"pdf\",bbox_inches=\"tight\"); plt.close(fig)\n"
+    }
+  },
+  "figure_rebuild": {
+    "status": "PASS",
+    "source": "archived aggregated parameter-grid values",
+    "vector_pdf_created": true
+  },
+  "frozen_config_checks": {
+    "status": "PASS",
+    "psfce": {
+      "lambda": 0.665,
+      "q": 0.72
+    },
+    "paper_default_recent_baselines": [
+      "CEHM",
+      "RANGE",
+      "YACHT"
+    ],
+    "bootstrap_default_repositories": [
+      "CEHM",
+      "RANGE",
+      "YACHT"
+    ],
+    "main_score_coverage": "PASS",
+    "recent_score_coverage": "PASS",
+    "fixed_strength_ablation_coverage": "PASS",
+    "archived_hashes": {
+      "artifacts/paper_v1/scores/main_five_methods_pool_scores.csv": "d858fe4d28f36f750113dbdff35432159b81e539cd1541c442d3db3f459bad9b",
+      "artifacts/paper_v1/scores/recent_three_methods_pool_scores.csv": "206d81898d43cc65086b7e41ab1e95af174196409d20d60bf8fc54ff7cfdfc36",
+      "artifacts/paper_v1/scores/fixed_strength_ablation_pool_scores.csv": "f67da40439f9715f73ae8c07ec1f349f8baf847611df07e2ef6473c2f9fab1f0",
+      "configs/frozen/main_methods.json": "0ce099c475abba98b932bf9d4ad64489a8918557e780c79d4accb0fdaf14c2be",
+      "configs/frozen/recent_baselines.json": "ab21598e0d880523f64fefc4f29984dfeaaf94d462764fdb7703dda8dcdc4606",
+      "figures/data/plotted_grid_acc_nmi.csv": "433fd500fa5e34b49e3ebe188eba5cf093de9b8afe927c88781ac573f4764591"
+    },
+    "archived_hash_status": "PASS"
+  },
+  "data_provenance_checks": {
+    "status": "NOT_VERIFIED",
+    "detail": "Portable manifests and archived hashes were checked, but data/BP redistribution rights and historical input identity remain author-review items."
+  },
+  "third_party_license_checks": {
+    "status": "NOT_VERIFIED",
+    "detail": "Pinned repositories are documented as NOASSERTION and are not vendored; redistribution permission still requires confirmation."
+  },
+  "matlab_execution_verified": {
+    "status": "NOT_VERIFIED",
+    "detail": "No MATLAB baseline or 53x3 algorithm was rerun during release sanitation."
+  },
+  "skipped_checks": [
+    "fresh 53x3 PSF-CE rerun",
+    "fresh CEHM/YACHT/RANGE MATLAB rerun",
+    "metric recomputation from raw labels and predictions",
+    "dataset and BP redistribution license adjudication"
+  ],
+  "blockers": [
+    "project license and contributor authorization are not selected",
+    "public author/publication metadata are not finalized",
+    "data and BP redistribution rights are not confirmed",
+    "third-party repositories remain NOASSERTION"
+  ],
+  "release_status": {
+    "private_repository": "READY_FOR_PRIVATE_REPOSITORY",
+    "public_release": "NOT_READY_FOR_PUBLIC_RELEASE"
+  },
+  "validation_status": "PASS"
+}

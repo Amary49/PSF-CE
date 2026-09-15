@@ -1,0 +1,37 @@
+{
+  "FSEC": {
+    "url": "https://github.com/zrx11/Anchor-Based-Fast-Spectral-Ensemble-Clustering.git",
+    "commit": "b12107610b907eb3e5d441aa901e1a6959ed56a0",
+    "retrieval_date": "2026-09-14",
+    "license": "NOASSERTION",
+    "status": "protocol_incompatible"
+  },
+  "CEHM": {
+    "url": "https://github.com/FeijiangLi/Code-k-HyperEdge-Medoids-for-Clustering-Ensemble-AAAI.git",
+    "commit": "29c22fb18e05eed67728eebcb29cd7e9133723f7",
+    "retrieval_date": "2026-09-14",
+    "license": "NOASSERTION",
+    "status": "enabled"
+  },
+  "YACHT": {
+    "url": "https://github.com/scu-kdde/YACHT.git",
+    "commit": "44cb0fc35b80ec17befa199879ac947fee15f464",
+    "retrieval_date": "2026-09-14",
+    "license": "NOASSERTION",
+    "status": "enabled"
+  },
+  "RANGE": {
+    "url": "https://github.com/middle258/RANGE.git",
+    "commit": "85d93c54d72d500034d05b5ef131bd90630a3632",
+    "retrieval_date": "2026-09-14",
+    "license": "NOASSERTION",
+    "status": "enabled"
+  },
+  "AWEC": {
+    "url": "https://github.com/ltyong/awec.git",
+    "commit": "47b96c9d1b5eb7549f7618b07947248cfbf2fa86",
+    "retrieval_date": "2026-09-14",
+    "license": "NOASSERTION",
+    "status": "experimental_not_paper_default"
+  }
+}

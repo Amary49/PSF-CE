@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "code": "methods_exact",
+      "detail": "['CEHM', 'RANGE', 'YACHT']",
+      "passed": true
+    },
+    {
+      "code": "all_rows_ok",
+      "detail": "{'ok': 477}",
+      "passed": true
+    },
+    {
+      "code": "official_backend_only",
+      "detail": "['matlab']",
+      "passed": true
+    },
+    {
+      "code": "no_dream_or_fsec",
+      "detail": "formal CSV excludes incompatible/forbidden methods",
+      "passed": true
+    },
+    {
+      "code": "formal_shape",
+      "detail": "pairs=159, datasets=53",
+      "passed": true
+    },
+    {
+      "code": "complete_method_coverage",
+      "detail": "{3: 159}",
+      "passed": true
+    },
+    {
+      "code": "same_bp_hash",
+      "detail": "{1: 159}",
+      "passed": true
+    },
+    {
+      "code": "globally_frozen_params",
+      "detail": "{'CEHM': 1, 'RANGE': 1, 'YACHT': 1}",
+      "passed": true
+    },
+    {
+      "code": "one_commit_per_method",
+      "detail": "{'CEHM': 1, 'RANGE': 1, 'YACHT': 1}",
+      "passed": true
+    },
+    {
+      "code": "provenance_complete",
+      "detail": "required provenance columns nonempty",
+      "passed": true
+    },
+    {
+      "code": "no_duplicate_rows",
+      "detail": "duplicate_rows=0",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "schema": "psfce-v4-formal-protocol-audit-v1"
+}

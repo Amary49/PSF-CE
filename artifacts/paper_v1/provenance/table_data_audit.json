@@ -1,0 +1,43 @@
+{
+  "retained_internal_observations": 795,
+  "new_observations": 477,
+  "total_observations": 1272,
+  "formal_datasets": 53,
+  "pools_per_method": 159,
+  "methods": [
+    "CA",
+    "Poly2",
+    "LinearPair",
+    "AggregatePower",
+    "CEHM",
+    "YACHT",
+    "RANGE",
+    "PSF-CE"
+  ],
+  "measured_display_cells": 160,
+  "synthetic_cells": 0,
+  "display_datasets": [
+    "COIL20",
+    "10X PBMC",
+    "Leukemia2",
+    "Reuters",
+    "3Sources",
+    "Handwritten",
+    "PubMed",
+    "Coauthor Physics",
+    "ALOI",
+    "Cora"
+  ],
+  "holm_comparisons": 7,
+  "frozen_psf_params": {
+    "lambda": 0.665,
+    "q": 0.72
+  },
+  "all_matching_dataset_pool_metadata": true,
+  "recent_methods_share_bp_hash_per_pool": true,
+  "independent_BP_hash_match_to_V2_possible": false,
+  "raw_ground_truth_supplied": false,
+  "scores_recomputed_from_labels": false,
+  "summary_recomputed_from_recorded_scores": true,
+  "submission_ready_certified": false
+}

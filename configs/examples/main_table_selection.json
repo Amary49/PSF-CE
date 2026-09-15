@@ -1,0 +1,80 @@
+{
+  "purpose": "Compact, post-hoc presentation subset; not a replacement test benchmark or a statistically representative sample.",
+  "selection_basis": [
+    "cover all six recorded benchmark groups",
+    "cover small, medium and large recorded sample sizes",
+    "cover different target cluster counts and recorded base-partition cluster-count ranges"
+  ],
+  "not_selected_by": [
+    "ACC",
+    "NMI",
+    "ARI",
+    "F1",
+    "PSF-CE wins",
+    "oracle gain"
+  ],
+  "not_preregistered": true,
+  "inference_scope": "all 53 datasets, averaged within each dataset over the same three frozen pools",
+  "datasets": [
+    {
+      "id": "D1",
+      "name": "COIL20",
+      "group": "BKCC_V2",
+      "reason_cn": "中等规模、20 类的 BKCC 基准，提供与同组单细胞数据不同的结构实例。"
+    },
+    {
+      "id": "D2",
+      "name": "10X PBMC",
+      "group": "BKCC_V2",
+      "reason_cn": "同组较大样本的单细胞实例，已记录基划分簇数跨度较宽。"
+    },
+    {
+      "id": "D3",
+      "name": "Leukemia2",
+      "group": "NEW10",
+      "reason_cn": "72 个样本、3 类，覆盖小样本端；保留源文件 Leukemia2 名称。"
+    },
+    {
+      "id": "D4",
+      "name": "Reuters",
+      "group": "NEW10",
+      "reason_cn": "1500 个样本、6 类，补充 NEW10 组内不同样本规模。"
+    },
+    {
+      "id": "D5",
+      "name": "3Sources",
+      "group": "TEXT_MV",
+      "reason_cn": "169 个样本，覆盖 TEXT_MV 组的小规模端。"
+    },
+    {
+      "id": "D6",
+      "name": "Handwritten",
+      "group": "TEXT_MV",
+      "reason_cn": "2000 个样本、10 类，补充 TEXT_MV 组内更大规模和不同簇数。"
+    },
+    {
+      "id": "D7",
+      "name": "PubMed",
+      "group": "GRAPH_GEOMETRY_8",
+      "reason_cn": "19717 个样本、3 类，覆盖大图且类别数较少的实例。"
+    },
+    {
+      "id": "D8",
+      "name": "Coauthor Physics",
+      "group": "GRAPH_GEOMETRY_8",
+      "reason_cn": "34493 个样本，为当前正式清单的最大样本规模。"
+    },
+    {
+      "id": "D9",
+      "name": "ALOI",
+      "group": "MULTI_RELATION_7",
+      "reason_cn": "10800 个样本、100 类，覆盖高目标簇数端。"
+    },
+    {
+      "id": "D10",
+      "name": "Cora",
+      "group": "CONTENT_RELATION_8",
+      "reason_cn": "2708 个样本、7 类，保留 CONTENT_RELATION 组的独立代表。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "exclude_methods": [],
+  "expected_M": 20,
+  "native_methods": [],
+  "options": {
+    "blas_threads": 1,
+    "cache_dir": "runtime_cache/families_v2",
+    "calibration": "fro_centered",
+    "kmeans_n_init": 40,
+    "rounding_main": "strong",
+    "seed": 2027,
+    "svd_tol": 1e-11
+  }
+}

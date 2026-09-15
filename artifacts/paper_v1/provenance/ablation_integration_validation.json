@@ -1,0 +1,32 @@
+{
+  "main_pages": 4,
+  "main_table_page": 3,
+  "ablation_table_page": 4,
+  "ablation_subsection": "3.3",
+  "ablation_table_number": 2,
+  "ablation_records": 477,
+  "additional_setting_records": 159,
+  "reused_main_records": 318,
+  "datasets": 53,
+  "pools_per_dataset": 3,
+  "new_setting": {
+    "q": 1.0,
+    "lambda": 0.665
+  },
+  "full_setting": {
+    "q": 0.72,
+    "lambda": 0.665
+  },
+  "table_cell_checks": 18,
+  "mismatches": 0,
+  "table_and_notes_TeX_pt": 9,
+  "ablation_holm_family_size": 2,
+  "main_holm_family_size": 7,
+  "mean_acc_difference_pp": -0.09948920836323794,
+  "ablation_holm_p": [
+    1.0,
+    1.0
+  ],
+  "measured_scores_recomputed_from_raw_labels": false,
+  "scope": "Added measured table and scoped discussion; no algorithm execution, parameter selection or score alteration."
+}

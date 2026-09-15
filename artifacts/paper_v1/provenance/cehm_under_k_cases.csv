@@ -1,0 +1,107 @@
+dataset,pool,method,n,requested_c,returned_c,largest_cluster_share,length_ok,finite,bp_hash_match,param_hash_match,output_hash_match,commit_match,seed
+100Leaves,1,CEHM,1600,100,87,0.040625,True,True,True,True,True,True,2027
+100Leaves,0,CEHM,1600,100,91,0.043125,True,True,True,True,True,True,2027
+100Leaves,2,CEHM,1600,100,91,0.038125,True,True,True,True,True,True,2027
+10X PBMC,1,CEHM,4271,8,2,0.7363615078435963,True,True,True,True,True,True,2027
+10X PBMC,2,CEHM,4271,8,7,0.5715289159447436,True,True,True,True,True,True,2027
+10X PBMC,0,CEHM,4271,8,4,0.7279325684851323,True,True,True,True,True,True,2027
+3Sources,0,CEHM,169,6,1,1.0,True,True,True,True,True,True,2027
+3Sources,1,CEHM,169,6,1,1.0,True,True,True,True,True,True,2027
+3Sources,2,CEHM,169,6,1,1.0,True,True,True,True,True,True,2027
+ALOI,0,CEHM,10800,100,16,0.8939814814814815,True,True,True,True,True,True,2027
+ALOI,2,CEHM,10800,100,14,0.9032407407407408,True,True,True,True,True,True,2027
+ALOI,1,CEHM,10800,100,14,0.9048148148148148,True,True,True,True,True,True,2027
+Actor,0,CEHM,7600,5,2,0.9917105263157895,True,True,True,True,True,True,2027
+Actor,1,CEHM,7600,5,2,0.9917105263157895,True,True,True,True,True,True,2027
+Actor,2,CEHM,7600,5,2,0.9917105263157895,True,True,True,True,True,True,2027
+Amazon Computers,0,CEHM,13752,10,1,1.0,True,True,True,True,True,True,2027
+Amazon Computers,1,CEHM,13752,10,1,1.0,True,True,True,True,True,True,2027
+Amazon Computers,2,CEHM,13752,10,1,1.0,True,True,True,True,True,True,2027
+BBC-MV,0,CEHM,685,5,1,1.0,True,True,True,True,True,True,2027
+BBC-MV,2,CEHM,685,5,2,0.9985401459854014,True,True,True,True,True,True,2027
+BBC-MV,1,CEHM,685,5,2,0.9985401459854014,True,True,True,True,True,True,2027
+BBCSport-MV,0,CEHM,544,5,1,1.0,True,True,True,True,True,True,2027
+BBCSport-MV,1,CEHM,544,5,1,1.0,True,True,True,True,True,True,2027
+BBCSport-MV,2,CEHM,544,5,1,1.0,True,True,True,True,True,True,2027
+COIL100,0,CEHM,7200,100,93,0.07972222222222222,True,True,True,True,True,True,2027
+COIL100,2,CEHM,7200,100,90,0.06277777777777778,True,True,True,True,True,True,2027
+COIL100,1,CEHM,7200,100,91,0.07486111111111111,True,True,True,True,True,True,2027
+COIL20,0,CEHM,1440,20,19,0.12986111111111112,True,True,True,True,True,True,2027
+COIL20,1,CEHM,1440,20,19,0.09305555555555556,True,True,True,True,True,True,2027
+Caltech101-20-MV,0,CEHM,2386,20,5,0.7099748533109808,True,True,True,True,True,True,2027
+Caltech101-20-MV,1,CEHM,2386,20,5,0.5641240569991618,True,True,True,True,True,True,2027
+Caltech101-20-MV,2,CEHM,2386,20,5,0.5305951383067896,True,True,True,True,True,True,2027
+Cardiotocography,0,CEHM,2126,10,4,0.8292568203198495,True,True,True,True,True,True,2027
+Cardiotocography,1,CEHM,2126,10,6,0.4595484477892756,True,True,True,True,True,True,2027
+Cardiotocography,2,CEHM,2126,10,7,0.4633113828786453,True,True,True,True,True,True,2027
+Coauthor CS,0,CEHM,18333,15,4,0.7334860633829706,True,True,True,True,True,True,2027
+Coauthor CS,1,CEHM,18333,15,4,0.7313042055310096,True,True,True,True,True,True,2027
+Coauthor CS,2,CEHM,18333,15,6,0.6103747340860743,True,True,True,True,True,True,2027
+Coauthor Physics,0,CEHM,34493,5,4,0.5080741019917084,True,True,True,True,True,True,2027
+Coauthor Physics,1,CEHM,34493,5,4,0.5121039051401733,True,True,True,True,True,True,2027
+Coauthor Physics,2,CEHM,34493,5,4,0.5094366973009017,True,True,True,True,True,True,2027
+Cora,2,CEHM,2708,7,1,1.0,True,True,True,True,True,True,2027
+CoraFull,0,CEHM,19793,70,60,0.1343909462941444,True,True,True,True,True,True,2027
+CoraFull,1,CEHM,19793,70,55,0.09478098317587026,True,True,True,True,True,True,2027
+CoraFull,2,CEHM,19793,70,59,0.09442732279088567,True,True,True,True,True,True,2027
+DBLP,0,CEHM,4057,4,1,1.0,True,True,True,True,True,True,2027
+DBLP,1,CEHM,4057,4,1,1.0,True,True,True,True,True,True,2027
+DBLP,2,CEHM,4057,4,1,1.0,True,True,True,True,True,True,2027
+Extended Yale-B,0,CEHM,2414,38,33,0.07042253521126761,True,True,True,True,True,True,2027
+Extended Yale-B,1,CEHM,2414,38,33,0.1035625517812759,True,True,True,True,True,True,2027
+Extended Yale-B,2,CEHM,2414,38,34,0.08285004142502071,True,True,True,True,True,True,2027
+Human Kidney,2,CEHM,2100,11,10,0.7876190476190477,True,True,True,True,True,True,2027
+IMDB,0,CEHM,4278,3,1,1.0,True,True,True,True,True,True,2027
+IMDB,1,CEHM,4278,3,1,1.0,True,True,True,True,True,True,2027
+IMDB,2,CEHM,4278,3,1,1.0,True,True,True,True,True,True,2027
+LandUse-21,0,CEHM,2100,21,1,1.0,True,True,True,True,True,True,2027
+LandUse-21,1,CEHM,2100,21,2,0.9761904761904762,True,True,True,True,True,True,2027
+LandUse-21,2,CEHM,2100,21,4,0.9661904761904762,True,True,True,True,True,True,2027
+Letter,1,CEHM,20000,26,24,0.1445,True,True,True,True,True,True,2027
+MFeat-pix,2,CEHM,2000,10,9,0.2145,True,True,True,True,True,True,2027
+MSRC-v1,0,CEHM,210,7,1,1.0,True,True,True,True,True,True,2027
+MSRC-v1,2,CEHM,210,7,3,0.7428571428571429,True,True,True,True,True,True,2027
+Movies617,0,CEHM,617,17,1,1.0,True,True,True,True,True,True,2027
+Movies617,1,CEHM,617,17,1,1.0,True,True,True,True,True,True,2027
+Movies617,2,CEHM,617,17,1,1.0,True,True,True,True,True,True,2027
+NGs,0,CEHM,500,5,1,1.0,True,True,True,True,True,True,2027
+NGs,1,CEHM,500,5,1,1.0,True,True,True,True,True,True,2027
+NGs,2,CEHM,500,5,1,1.0,True,True,True,True,True,True,2027
+NUSWIDE-Object-2000,0,CEHM,2000,31,1,1.0,True,True,True,True,True,True,2027
+NUSWIDE-Object-2000,1,CEHM,2000,31,1,1.0,True,True,True,True,True,True,2027
+NUSWIDE-Object-2000,2,CEHM,2000,31,1,1.0,True,True,True,True,True,True,2027
+PubMed,0,CEHM,19717,3,2,0.7589897043160724,True,True,True,True,True,True,2027
+PubMed,1,CEHM,19717,3,2,0.7589897043160724,True,True,True,True,True,True,2027
+PubMed,2,CEHM,19717,3,2,0.7589897043160724,True,True,True,True,True,True,2027
+Reuters,0,CEHM,1500,6,1,1.0,True,True,True,True,True,True,2027
+Reuters,1,CEHM,1500,6,1,1.0,True,True,True,True,True,True,2027
+Reuters,2,CEHM,1500,6,1,1.0,True,True,True,True,True,True,2027
+Scene15,0,CEHM,4485,15,1,1.0,True,True,True,True,True,True,2027
+Scene15,1,CEHM,4485,15,1,1.0,True,True,True,True,True,True,2027
+Scene15,2,CEHM,4485,15,1,1.0,True,True,True,True,True,True,2027
+Squirrel,0,CEHM,5201,5,1,1.0,True,True,True,True,True,True,2027
+Squirrel,1,CEHM,5201,5,1,1.0,True,True,True,True,True,True,2027
+Squirrel,2,CEHM,5201,5,1,1.0,True,True,True,True,True,True,2027
+UMIST,0,CEHM,575,20,17,0.12695652173913044,True,True,True,True,True,True,2027
+WebKB,0,CEHM,1051,2,1,1.0,True,True,True,True,True,True,2027
+WebKB,1,CEHM,1051,2,1,1.0,True,True,True,True,True,True,2027
+WebKB,2,CEHM,1051,2,1,1.0,True,True,True,True,True,True,2027
+WebKB-Cornell,0,CEHM,195,5,4,0.4307692307692308,True,True,True,True,True,True,2027
+WebKB-Cornell,1,CEHM,195,5,3,0.7487179487179487,True,True,True,True,True,True,2027
+WebKB-Cornell,2,CEHM,195,5,3,0.7538461538461538,True,True,True,True,True,True,2027
+WebKB-Texas,0,CEHM,187,5,1,1.0,True,True,True,True,True,True,2027
+WebKB-Texas,1,CEHM,187,5,2,0.946524064171123,True,True,True,True,True,True,2027
+WebKB-Texas,2,CEHM,187,5,1,1.0,True,True,True,True,True,True,2027
+WebKB-Washington,0,CEHM,230,5,4,0.8130434782608695,True,True,True,True,True,True,2027
+WebKB-Washington,1,CEHM,230,5,2,0.9130434782608695,True,True,True,True,True,True,2027
+WebKB-Washington,2,CEHM,230,5,3,0.8695652173913043,True,True,True,True,True,True,2027
+WebKB-Wisconsin,0,CEHM,265,5,1,1.0,True,True,True,True,True,True,2027
+WebKB-Wisconsin,2,CEHM,265,5,1,1.0,True,True,True,True,True,True,2027
+Wiki,0,CEHM,2866,10,1,1.0,True,True,True,True,True,True,2027
+Wiki,1,CEHM,2866,10,1,1.0,True,True,True,True,True,True,2027
+Wiki,2,CEHM,2866,10,1,1.0,True,True,True,True,True,True,2027
+WikiCS,0,CEHM,11701,10,1,1.0,True,True,True,True,True,True,2027
+WikiCS,1,CEHM,11701,10,6,0.478933424493633,True,True,True,True,True,True,2027
+WikiCS,2,CEHM,11701,10,1,1.0,True,True,True,True,True,True,2027
+Worm Neuron,0,CEHM,4186,10,8,0.9116101290014333,True,True,True,True,True,True,2027
+Worm Neuron,2,CEHM,4186,10,7,0.939799331103679,True,True,True,True,True,True,2027

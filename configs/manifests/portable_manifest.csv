@@ -1,0 +1,172 @@
+name,pool,path,group,split
+Wine,0,../../data/frozen_bp/dev/wine__pool0.npz,phaseA15_nonoverlap,dev
+Seeds,0,../../data/frozen_bp/dev/seeds__pool0.npz,phaseA15_nonoverlap,dev
+Glass,0,../../data/frozen_bp/dev/glass__pool0.npz,phaseA15_nonoverlap,dev
+Breast Cancer,0,../../data/frozen_bp/dev/breastcancer__pool0.npz,phaseA15_nonoverlap,dev
+Segment,0,../../data/frozen_bp/dev/segment__pool0.npz,phaseA15_nonoverlap,dev
+Semeion,0,../../data/frozen_bp/dev/semeion__pool0.npz,phaseA15_nonoverlap,dev
+Optdigits,0,../../data/frozen_bp/dev/optdigits__pool0.npz,phaseA15_nonoverlap,dev
+Sat,0,../../data/frozen_bp/dev/sat__pool0.npz,phaseA15_nonoverlap,dev
+Multiple Features,0,../../data/frozen_bp/dev/multiplefeatures__pool0.npz,phaseA15_nonoverlap,dev
+Yale,0,../../data/frozen_bp/dev/yale__pool0.npz,phaseA15_nonoverlap,dev
+MNIST4000,0,../../data/frozen_bp/dev/mnist4000__pool0.npz,phaseA15_nonoverlap,dev
+USPS,0,../../data/frozen_bp/dev/usps__pool0.npz,phaseA15_nonoverlap,dev
+100Leaves,0,../../data/frozen_bp/formal/100leaves__pool0.npz,MULTI_RELATION_7,formal
+100Leaves,1,../../data/frozen_bp/formal/100leaves__pool1.npz,MULTI_RELATION_7,formal
+100Leaves,2,../../data/frozen_bp/formal/100leaves__pool2.npz,MULTI_RELATION_7,formal
+10X PBMC,0,../../data/frozen_bp/formal/10xpbmc__pool0.npz,BKCC_V2,formal
+10X PBMC,1,../../data/frozen_bp/formal/10xpbmc__pool1.npz,BKCC_V2,formal
+10X PBMC,2,../../data/frozen_bp/formal/10xpbmc__pool2.npz,BKCC_V2,formal
+11_Tumors,0,../../data/frozen_bp/formal/11tumors__pool0.npz,NEW10,formal
+11_Tumors,1,../../data/frozen_bp/formal/11tumors__pool1.npz,NEW10,formal
+11_Tumors,2,../../data/frozen_bp/formal/11tumors__pool2.npz,NEW10,formal
+3Sources,0,../../data/frozen_bp/formal/3sources__pool0.npz,TEXT_MV,formal
+3Sources,1,../../data/frozen_bp/formal/3sources__pool1.npz,TEXT_MV,formal
+3Sources,2,../../data/frozen_bp/formal/3sources__pool2.npz,TEXT_MV,formal
+ACM,0,../../data/frozen_bp/formal/acm__pool0.npz,CONTENT_RELATION_8,formal
+ACM,1,../../data/frozen_bp/formal/acm__pool1.npz,CONTENT_RELATION_8,formal
+ACM,2,../../data/frozen_bp/formal/acm__pool2.npz,CONTENT_RELATION_8,formal
+ALOI,0,../../data/frozen_bp/formal/aloi__pool0.npz,MULTI_RELATION_7,formal
+ALOI,1,../../data/frozen_bp/formal/aloi__pool1.npz,MULTI_RELATION_7,formal
+ALOI,2,../../data/frozen_bp/formal/aloi__pool2.npz,MULTI_RELATION_7,formal
+Actor,0,../../data/frozen_bp/formal/actor__pool0.npz,GRAPH_GEOMETRY_8,formal
+Actor,1,../../data/frozen_bp/formal/actor__pool1.npz,GRAPH_GEOMETRY_8,formal
+Actor,2,../../data/frozen_bp/formal/actor__pool2.npz,GRAPH_GEOMETRY_8,formal
+Amazon Computers,0,../../data/frozen_bp/formal/amazoncomputers__pool0.npz,MULTI_RELATION_7,formal
+Amazon Computers,1,../../data/frozen_bp/formal/amazoncomputers__pool1.npz,MULTI_RELATION_7,formal
+Amazon Computers,2,../../data/frozen_bp/formal/amazoncomputers__pool2.npz,MULTI_RELATION_7,formal
+Amazon Photo,0,../../data/frozen_bp/formal/amazonphoto__pool0.npz,MULTI_RELATION_7,formal
+Amazon Photo,1,../../data/frozen_bp/formal/amazonphoto__pool1.npz,MULTI_RELATION_7,formal
+Amazon Photo,2,../../data/frozen_bp/formal/amazonphoto__pool2.npz,MULTI_RELATION_7,formal
+BBC News Sport,0,../../data/frozen_bp/formal/bbcnewssport__pool0.npz,BKCC_V2,formal
+BBC News Sport,1,../../data/frozen_bp/formal/bbcnewssport__pool1.npz,BKCC_V2,formal
+BBC News Sport,2,../../data/frozen_bp/formal/bbcnewssport__pool2.npz,BKCC_V2,formal
+BBC-MV,0,../../data/frozen_bp/formal/bbcmv__pool0.npz,TEXT_MV,formal
+BBC-MV,1,../../data/frozen_bp/formal/bbcmv__pool1.npz,TEXT_MV,formal
+BBC-MV,2,../../data/frozen_bp/formal/bbcmv__pool2.npz,TEXT_MV,formal
+BBCSport-MV,0,../../data/frozen_bp/formal/bbcsportmv__pool0.npz,TEXT_MV,formal
+BBCSport-MV,1,../../data/frozen_bp/formal/bbcsportmv__pool1.npz,TEXT_MV,formal
+BBCSport-MV,2,../../data/frozen_bp/formal/bbcsportmv__pool2.npz,TEXT_MV,formal
+COIL100,0,../../data/frozen_bp/formal/coil100__pool0.npz,NEW10,formal
+COIL100,1,../../data/frozen_bp/formal/coil100__pool1.npz,NEW10,formal
+COIL100,2,../../data/frozen_bp/formal/coil100__pool2.npz,NEW10,formal
+COIL20,0,../../data/frozen_bp/formal/coil20__pool0.npz,BKCC_V2,formal
+COIL20,1,../../data/frozen_bp/formal/coil20__pool1.npz,BKCC_V2,formal
+COIL20,2,../../data/frozen_bp/formal/coil20__pool2.npz,BKCC_V2,formal
+Caltech101-20,0,../../data/frozen_bp/formal/caltech10120__pool0.npz,NEW10,formal
+Caltech101-20,1,../../data/frozen_bp/formal/caltech10120__pool1.npz,NEW10,formal
+Caltech101-20,2,../../data/frozen_bp/formal/caltech10120__pool2.npz,NEW10,formal
+Caltech101-20-MV,0,../../data/frozen_bp/formal/caltech10120mv__pool0.npz,TEXT_MV,formal
+Caltech101-20-MV,1,../../data/frozen_bp/formal/caltech10120mv__pool1.npz,TEXT_MV,formal
+Caltech101-20-MV,2,../../data/frozen_bp/formal/caltech10120mv__pool2.npz,TEXT_MV,formal
+Cardiotocography,0,../../data/frozen_bp/formal/cardiotocography__pool0.npz,NEW10,formal
+Cardiotocography,1,../../data/frozen_bp/formal/cardiotocography__pool1.npz,NEW10,formal
+Cardiotocography,2,../../data/frozen_bp/formal/cardiotocography__pool2.npz,NEW10,formal
+Chameleon,0,../../data/frozen_bp/formal/chameleon__pool0.npz,GRAPH_GEOMETRY_8,formal
+Chameleon,1,../../data/frozen_bp/formal/chameleon__pool1.npz,GRAPH_GEOMETRY_8,formal
+Chameleon,2,../../data/frozen_bp/formal/chameleon__pool2.npz,GRAPH_GEOMETRY_8,formal
+CiteSeer,0,../../data/frozen_bp/formal/citeseer__pool0.npz,CONTENT_RELATION_8,formal
+CiteSeer,1,../../data/frozen_bp/formal/citeseer__pool1.npz,CONTENT_RELATION_8,formal
+CiteSeer,2,../../data/frozen_bp/formal/citeseer__pool2.npz,CONTENT_RELATION_8,formal
+Coauthor CS,0,../../data/frozen_bp/formal/coauthorcs__pool0.npz,GRAPH_GEOMETRY_8,formal
+Coauthor CS,1,../../data/frozen_bp/formal/coauthorcs__pool1.npz,GRAPH_GEOMETRY_8,formal
+Coauthor CS,2,../../data/frozen_bp/formal/coauthorcs__pool2.npz,GRAPH_GEOMETRY_8,formal
+Coauthor Physics,0,../../data/frozen_bp/formal/coauthorphysics__pool0.npz,GRAPH_GEOMETRY_8,formal
+Coauthor Physics,1,../../data/frozen_bp/formal/coauthorphysics__pool1.npz,GRAPH_GEOMETRY_8,formal
+Coauthor Physics,2,../../data/frozen_bp/formal/coauthorphysics__pool2.npz,GRAPH_GEOMETRY_8,formal
+Cora,0,../../data/frozen_bp/formal/cora__pool0.npz,CONTENT_RELATION_8,formal
+Cora,1,../../data/frozen_bp/formal/cora__pool1.npz,CONTENT_RELATION_8,formal
+Cora,2,../../data/frozen_bp/formal/cora__pool2.npz,CONTENT_RELATION_8,formal
+CoraFull,0,../../data/frozen_bp/formal/corafull__pool0.npz,GRAPH_GEOMETRY_8,formal
+CoraFull,1,../../data/frozen_bp/formal/corafull__pool1.npz,GRAPH_GEOMETRY_8,formal
+CoraFull,2,../../data/frozen_bp/formal/corafull__pool2.npz,GRAPH_GEOMETRY_8,formal
+DBLP,0,../../data/frozen_bp/formal/dblp__pool0.npz,MULTI_RELATION_7,formal
+DBLP,1,../../data/frozen_bp/formal/dblp__pool1.npz,MULTI_RELATION_7,formal
+DBLP,2,../../data/frozen_bp/formal/dblp__pool2.npz,MULTI_RELATION_7,formal
+Extended Yale-B,0,../../data/frozen_bp/formal/extendedyaleb__pool0.npz,NEW10,formal
+Extended Yale-B,1,../../data/frozen_bp/formal/extendedyaleb__pool1.npz,NEW10,formal
+Extended Yale-B,2,../../data/frozen_bp/formal/extendedyaleb__pool2.npz,NEW10,formal
+Handwritten,0,../../data/frozen_bp/formal/handwritten__pool0.npz,TEXT_MV,formal
+Handwritten,1,../../data/frozen_bp/formal/handwritten__pool1.npz,TEXT_MV,formal
+Handwritten,2,../../data/frozen_bp/formal/handwritten__pool2.npz,TEXT_MV,formal
+Human Kidney,0,../../data/frozen_bp/formal/humankidney__pool0.npz,BKCC_V2,formal
+Human Kidney,1,../../data/frozen_bp/formal/humankidney__pool1.npz,BKCC_V2,formal
+Human Kidney,2,../../data/frozen_bp/formal/humankidney__pool2.npz,BKCC_V2,formal
+IMDB,0,../../data/frozen_bp/formal/imdb__pool0.npz,MULTI_RELATION_7,formal
+IMDB,1,../../data/frozen_bp/formal/imdb__pool1.npz,MULTI_RELATION_7,formal
+IMDB,2,../../data/frozen_bp/formal/imdb__pool2.npz,MULTI_RELATION_7,formal
+Isolet,0,../../data/frozen_bp/formal/isolet__pool0.npz,BKCC_V2,formal
+Isolet,1,../../data/frozen_bp/formal/isolet__pool1.npz,BKCC_V2,formal
+Isolet,2,../../data/frozen_bp/formal/isolet__pool2.npz,BKCC_V2,formal
+LandUse-21,0,../../data/frozen_bp/formal/landuse21__pool0.npz,NEW10,formal
+LandUse-21,1,../../data/frozen_bp/formal/landuse21__pool1.npz,NEW10,formal
+LandUse-21,2,../../data/frozen_bp/formal/landuse21__pool2.npz,NEW10,formal
+Letter,0,../../data/frozen_bp/formal/letter__pool0.npz,BKCC_V2,formal
+Letter,1,../../data/frozen_bp/formal/letter__pool1.npz,BKCC_V2,formal
+Letter,2,../../data/frozen_bp/formal/letter__pool2.npz,BKCC_V2,formal
+Leukemia,0,../../data/frozen_bp/formal/leukemia__pool0.npz,BKCC_V2,formal
+Leukemia,1,../../data/frozen_bp/formal/leukemia__pool1.npz,BKCC_V2,formal
+Leukemia,2,../../data/frozen_bp/formal/leukemia__pool2.npz,BKCC_V2,formal
+Leukemia2,0,../../data/frozen_bp/formal/leukemia2__pool0.npz,NEW10,formal
+Leukemia2,1,../../data/frozen_bp/formal/leukemia2__pool1.npz,NEW10,formal
+Leukemia2,2,../../data/frozen_bp/formal/leukemia2__pool2.npz,NEW10,formal
+MFeat-pix,0,../../data/frozen_bp/formal/mfeatpix__pool0.npz,BKCC_V2,formal
+MFeat-pix,1,../../data/frozen_bp/formal/mfeatpix__pool1.npz,BKCC_V2,formal
+MFeat-pix,2,../../data/frozen_bp/formal/mfeatpix__pool2.npz,BKCC_V2,formal
+MSRC-v1,0,../../data/frozen_bp/formal/msrcv1__pool0.npz,TEXT_MV,formal
+MSRC-v1,1,../../data/frozen_bp/formal/msrcv1__pool1.npz,TEXT_MV,formal
+MSRC-v1,2,../../data/frozen_bp/formal/msrcv1__pool2.npz,TEXT_MV,formal
+Movies617,0,../../data/frozen_bp/formal/movies617__pool0.npz,CONTENT_RELATION_8,formal
+Movies617,1,../../data/frozen_bp/formal/movies617__pool1.npz,CONTENT_RELATION_8,formal
+Movies617,2,../../data/frozen_bp/formal/movies617__pool2.npz,CONTENT_RELATION_8,formal
+NGs,0,../../data/frozen_bp/formal/ngs__pool0.npz,TEXT_MV,formal
+NGs,1,../../data/frozen_bp/formal/ngs__pool1.npz,TEXT_MV,formal
+NGs,2,../../data/frozen_bp/formal/ngs__pool2.npz,TEXT_MV,formal
+NUSWIDE-Object-2000,0,../../data/frozen_bp/formal/nuswideobject2000__pool0.npz,TEXT_MV,formal
+NUSWIDE-Object-2000,1,../../data/frozen_bp/formal/nuswideobject2000__pool1.npz,TEXT_MV,formal
+NUSWIDE-Object-2000,2,../../data/frozen_bp/formal/nuswideobject2000__pool2.npz,TEXT_MV,formal
+ORL,0,../../data/frozen_bp/formal/orl__pool0.npz,MULTI_RELATION_7,formal
+ORL,1,../../data/frozen_bp/formal/orl__pool1.npz,MULTI_RELATION_7,formal
+ORL,2,../../data/frozen_bp/formal/orl__pool2.npz,MULTI_RELATION_7,formal
+PubMed,0,../../data/frozen_bp/formal/pubmed__pool0.npz,GRAPH_GEOMETRY_8,formal
+PubMed,1,../../data/frozen_bp/formal/pubmed__pool1.npz,GRAPH_GEOMETRY_8,formal
+PubMed,2,../../data/frozen_bp/formal/pubmed__pool2.npz,GRAPH_GEOMETRY_8,formal
+Reuters,0,../../data/frozen_bp/formal/reuters__pool0.npz,NEW10,formal
+Reuters,1,../../data/frozen_bp/formal/reuters__pool1.npz,NEW10,formal
+Reuters,2,../../data/frozen_bp/formal/reuters__pool2.npz,NEW10,formal
+Scene15,0,../../data/frozen_bp/formal/scene15__pool0.npz,NEW10,formal
+Scene15,1,../../data/frozen_bp/formal/scene15__pool1.npz,NEW10,formal
+Scene15,2,../../data/frozen_bp/formal/scene15__pool2.npz,NEW10,formal
+Squirrel,0,../../data/frozen_bp/formal/squirrel__pool0.npz,GRAPH_GEOMETRY_8,formal
+Squirrel,1,../../data/frozen_bp/formal/squirrel__pool1.npz,GRAPH_GEOMETRY_8,formal
+Squirrel,2,../../data/frozen_bp/formal/squirrel__pool2.npz,GRAPH_GEOMETRY_8,formal
+UMIST,0,../../data/frozen_bp/formal/umist__pool0.npz,NEW10,formal
+UMIST,1,../../data/frozen_bp/formal/umist__pool1.npz,NEW10,formal
+UMIST,2,../../data/frozen_bp/formal/umist__pool2.npz,NEW10,formal
+USPS3568,0,../../data/frozen_bp/formal/usps3568__pool0.npz,BKCC_V2,formal
+USPS3568,1,../../data/frozen_bp/formal/usps3568__pool1.npz,BKCC_V2,formal
+USPS3568,2,../../data/frozen_bp/formal/usps3568__pool2.npz,BKCC_V2,formal
+WebKB,0,../../data/frozen_bp/formal/webkb__pool0.npz,TEXT_MV,formal
+WebKB,1,../../data/frozen_bp/formal/webkb__pool1.npz,TEXT_MV,formal
+WebKB,2,../../data/frozen_bp/formal/webkb__pool2.npz,TEXT_MV,formal
+WebKB-Cornell,0,../../data/frozen_bp/formal/webkbcornell__pool0.npz,CONTENT_RELATION_8,formal
+WebKB-Cornell,1,../../data/frozen_bp/formal/webkbcornell__pool1.npz,CONTENT_RELATION_8,formal
+WebKB-Cornell,2,../../data/frozen_bp/formal/webkbcornell__pool2.npz,CONTENT_RELATION_8,formal
+WebKB-Texas,0,../../data/frozen_bp/formal/webkbtexas__pool0.npz,CONTENT_RELATION_8,formal
+WebKB-Texas,1,../../data/frozen_bp/formal/webkbtexas__pool1.npz,CONTENT_RELATION_8,formal
+WebKB-Texas,2,../../data/frozen_bp/formal/webkbtexas__pool2.npz,CONTENT_RELATION_8,formal
+WebKB-Washington,0,../../data/frozen_bp/formal/webkbwashington__pool0.npz,CONTENT_RELATION_8,formal
+WebKB-Washington,1,../../data/frozen_bp/formal/webkbwashington__pool1.npz,CONTENT_RELATION_8,formal
+WebKB-Washington,2,../../data/frozen_bp/formal/webkbwashington__pool2.npz,CONTENT_RELATION_8,formal
+WebKB-Wisconsin,0,../../data/frozen_bp/formal/webkbwisconsin__pool0.npz,CONTENT_RELATION_8,formal
+WebKB-Wisconsin,1,../../data/frozen_bp/formal/webkbwisconsin__pool1.npz,CONTENT_RELATION_8,formal
+WebKB-Wisconsin,2,../../data/frozen_bp/formal/webkbwisconsin__pool2.npz,CONTENT_RELATION_8,formal
+Wiki,0,../../data/frozen_bp/formal/wiki__pool0.npz,TEXT_MV,formal
+Wiki,1,../../data/frozen_bp/formal/wiki__pool1.npz,TEXT_MV,formal
+Wiki,2,../../data/frozen_bp/formal/wiki__pool2.npz,TEXT_MV,formal
+WikiCS,0,../../data/frozen_bp/formal/wikics__pool0.npz,GRAPH_GEOMETRY_8,formal
+WikiCS,1,../../data/frozen_bp/formal/wikics__pool1.npz,GRAPH_GEOMETRY_8,formal
+WikiCS,2,../../data/frozen_bp/formal/wikics__pool2.npz,GRAPH_GEOMETRY_8,formal
+Worm Neuron,0,../../data/frozen_bp/formal/wormneuron__pool0.npz,BKCC_V2,formal
+Worm Neuron,1,../../data/frozen_bp/formal/wormneuron__pool1.npz,BKCC_V2,formal
+Worm Neuron,2,../../data/frozen_bp/formal/wormneuron__pool2.npz,BKCC_V2,formal
