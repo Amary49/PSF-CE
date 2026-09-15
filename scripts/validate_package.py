@@ -18,5 +18,5 @@ def main():
              'calibration_error_q2':f.calibration_error(2),
              'commutator_q2':f.commutator_ratio(2),
              'passed':bool(cp.returncode==0 and f.q1_raw_collapse_error()<1e-8 and f.calibration_error(2)<1e-8)}
-    (root/'VALIDATION_REPORT.json').write_text(json.dumps(payload,indent=2)); print(json.dumps(payload,indent=2)); raise SystemExit(0 if payload['passed'] else 1)
+    out=root/'runtime_results'/'core_validation.json'; out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(payload,indent=2)); print(json.dumps(payload,indent=2)); raise SystemExit(0 if payload['passed'] else 1)
 if __name__=='__main__': main()

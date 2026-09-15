@@ -1,12 +1,14 @@
 # License status
 
-No project license has been selected by the authors. This preparation package intentionally does not contain a `LICENSE` file and must not be presented as MIT, Apache, BSD, GPL, or another licensed public release.
+The original PSF-CE code, documentation, release scripts, independently written interoperability adapters, and author-generated result summaries/figures in this repository are released under the **MIT License** in `LICENSE`.
 
-Before public release, the authors must:
+The MIT License does **not** relicense or grant rights to:
 
-1. choose a license for original PSF-CE code and documentation;
-2. confirm that all contributors agree to that license;
-3. review third-party adapter boundaries and repository licenses;
-4. confirm rights for the archived score tables, figures, and any future data/BP release.
+- third-party author repositories fetched separately at runtime;
+- MATLAB, toolboxes, MEX/P-code, or other third-party binaries;
+- raw datasets, frozen base-partition matrices, labels, or prediction caches that are not distributed here;
+- any third-party content whose own terms continue to apply.
 
-Until then, private review and private-repository use are the appropriate status.
+`THIRD_PARTY.md` records the upstream repositories and pinned commits used for the paper baselines. Those repositories are not vendored into this release. Where an upstream repository did not expose an explicit license in the audited snapshot, the release records `NOASSERTION` rather than inventing a license on the upstream author's behalf.
+
+This public release therefore licenses only the material that the PSF-CE authors are distributing in this repository.

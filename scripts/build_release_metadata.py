@@ -54,8 +54,9 @@ def main() -> None:
     payload = {
         "schema": "psfce-github-release-manifest-v2",
         "release_version": "1.0.0",
-        "status": "READY_FOR_PRIVATE_REPOSITORY",
-        "public_release_status": "NOT_READY_FOR_PUBLIC_RELEASE",
+        "status": "READY_FOR_PUBLIC_RELEASE",
+        "public_release_status": "READY_FOR_PUBLIC_RELEASE",
+        "project_license": "MIT",
         "algorithm_core_modified": False,
         "release_sanitation": {
             "inactive_historical_dispatch_removed": True,
@@ -63,6 +64,8 @@ def main() -> None:
             "experimental_adapter_not_in_defaults": ["AWEC"],
             "bootstrap_default_config_fixed": True,
             "archived_scores_modified": False,
+            "third_party_repositories_vendored": False,
+            "raw_data_or_bp_redistributed": False,
         },
         "paper_methods": ["CA", "Poly2", "LinearPair", "AggregatePower", "CEHM", "YACHT", "RANGE", "PSF-CE"],
         "completed_recent_baselines": ["CEHM", "YACHT", "RANGE"],

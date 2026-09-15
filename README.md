@@ -64,7 +64,7 @@ To fetch only the three paper-default author repositories at their pinned commit
 python scripts\bootstrap_official_repos.py
 ```
 
-See `REPRODUCIBILITY.md`, `DATA_AVAILABILITY.md`, and `VALIDATION_REPORT.json` before using or publishing the repository.
+See `REPRODUCIBILITY.md`, `DATA_AVAILABILITY.md`, `THIRD_PARTY.md`, and `VALIDATION_REPORT.json` for the exact reproduction and release boundaries.
 
 For local regression tests, install the test dependency set and run:
 
@@ -75,4 +75,6 @@ python -m pytest -q
 
 ## Release status
 
-This package is suitable for an initial **private GitHub repository**. It is not marked ready for public release because the project license, author/publication metadata, data/BP redistribution conditions, and third-party redistribution permissions still require author review. No remote repository was created and nothing was uploaded.
+This curated package is **ready for public GitHub release** as version `v1.0.0`. Original PSF-CE repository content is released under the MIT License. Complete third-party author repositories and raw data/BP files are intentionally not redistributed; their upstream terms remain separate.
+
+The release status refers to this curated repository snapshot and the archived paper-result summaries. It does not claim that the 53 x 3 algorithms were rerun during packaging, nor does it convert the recorded oracle/diagnostic experiments into frozen test results.

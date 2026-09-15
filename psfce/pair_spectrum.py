@@ -29,7 +29,7 @@ class PairSpectrumFamily:
 
     V2 main model:
         G_{lambda,q} = A + lambda * s_q * R_q,
-        s_q = ||A-J||_F / (||R_q||_F + eps).
+        s_q = ||A-J||_F / ||R_q||_F when ||R_q||_F > eps, and 1 otherwise.
 
     Because R_q annihilates the complete-partition constant direction, this
     calibration only matches branch scale; it does not change pair-mode shape.

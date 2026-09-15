@@ -1,8 +1,9 @@
 {
   "schema": "psfce-github-release-manifest-v2",
   "release_version": "1.0.0",
-  "status": "READY_FOR_PRIVATE_REPOSITORY",
-  "public_release_status": "NOT_READY_FOR_PUBLIC_RELEASE",
+  "status": "READY_FOR_PUBLIC_RELEASE",
+  "public_release_status": "READY_FOR_PUBLIC_RELEASE",
+  "project_license": "MIT",
   "algorithm_core_modified": false,
   "release_sanitation": {
     "inactive_historical_dispatch_removed": true,
@@ -15,7 +16,9 @@
       "AWEC"
     ],
     "bootstrap_default_config_fixed": true,
-    "archived_scores_modified": false
+    "archived_scores_modified": false,
+    "third_party_repositories_vendored": false,
+    "raw_data_or_bp_redistributed": false
   },
   "paper_methods": [
     "CA",
@@ -56,6 +59,106 @@
       "source_id": "RELEASE_GENERATED",
       "source_sha256": null,
       "transformation": "release_only_generated"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1669,
+      "sha256": "9d9ffa877a485b510ac78625ad2d25d2d44bc20a00a463329aa736ea49e42537",
+      "experiment_phase": "release_packaging",
+      "role": "changelog",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "DATA_AVAILABILITY.md",
+      "bytes": 1463,
+      "sha256": "cfa3c57b4e0dcfad8260cd0ac5648a45a9d05cff3b8f8905ee05681eb19426a9",
+      "experiment_phase": "release_packaging",
+      "role": "data_document",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "5871d34ce0bf012374b49d588e7080519a132f4a7de69779e26753b759acae6c",
+      "experiment_phase": "release_packaging",
+      "role": "release_file",
+      "source_id": "RELEASE_GENERATED_OR_CURATED",
+      "source_sha256": null,
+      "transformation": "release_sanitation_or_byte_copy"
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "bytes": 1065,
+      "sha256": "032db96b46af559e2467e4283a4cd9cdd82a976549daed86a8864335d4800c69",
+      "experiment_phase": "release_packaging",
+      "role": "license_status",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4789,
+      "sha256": "8f2aa68e176212bbb1e29a3dffd203a37db33e80a031161a6d69aea41732b2cd",
+      "experiment_phase": "release_packaging",
+      "role": "readme",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "RELEASE_CHECKLIST_CN.md",
+      "bytes": 2049,
+      "sha256": "71c88627a5fc068ffcbd56536abd6bd1e6c825fba82e0df125fb22b947f0a40c",
+      "experiment_phase": "release_packaging",
+      "role": "release_checklist",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "bytes": 4432,
+      "sha256": "f2a6e5480ec318b0775e28c9ae58dc890489e55670b710f7eed3366a0fc12cef",
+      "experiment_phase": "release_packaging",
+      "role": "reproducibility_document",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_generated_or_documented_revision"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 2337,
+      "sha256": "41764ccbd9ff0089ba0cc2f3f2d105fa275c8365e5c8db7862e69324d730f74c",
+      "experiment_phase": "release_packaging",
+      "role": "third_party_document",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "VALIDATION_REPORT.json",
+      "bytes": 4800,
+      "sha256": "49784c80e61ca429304110dc1a8436c0f059d5a2f238d6eb84a5b6620f71c022",
+      "experiment_phase": "release_packaging",
+      "role": "release_document",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_only_generated"
+    },
+    {
+      "path": "artifacts/paper_v1/README.md",
+      "bytes": 957,
+      "sha256": "9f30acb2946a341a58649659fc62edb8fed77b81487a898d277ac3f695213b06",
+      "experiment_phase": "paper_v1",
+      "role": "artifact_documentation",
+      "source_id": "RELEASE_GENERATED",
+      "source_sha256": null,
+      "transformation": "release_generated_or_documented_revision"
     },
     {
       "path": "artifacts/paper_v1/provenance/ablation_integration_validation.json",
@@ -156,16 +259,6 @@
       "source_id": "PAPER_ARCHIVE",
       "source_sha256": "185437f6b29fecdf722bb27d42a59b9e8aad5593ca950979df45828c4d864f54",
       "transformation": "zip_member_byte_copy"
-    },
-    {
-      "path": "artifacts/paper_v1/README.md",
-      "bytes": 957,
-      "sha256": "9f30acb2946a341a58649659fc62edb8fed77b81487a898d277ac3f695213b06",
-      "experiment_phase": "paper_v1",
-      "role": "artifact_documentation",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_generated_or_documented_revision"
     },
     {
       "path": "artifacts/paper_v1/scores/fixed_strength_ablation_pool_scores.csv",
@@ -408,16 +501,6 @@
       "transformation": "byte_copy"
     },
     {
-      "path": "CHANGELOG.md",
-      "bytes": 1435,
-      "sha256": "c026e2fddda5f4b359c9406c13bdaf5d46d37ca205215fb61b79bce3549fc836",
-      "experiment_phase": "release_packaging",
-      "role": "changelog",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
-    },
-    {
       "path": "configs/examples/main_table_selection.json",
       "bytes": 2404,
       "sha256": "6fc548e86b0bb45cd4b093807232fac9cffe1512c242988844991f29fa1aaf5e",
@@ -516,16 +599,6 @@
       "source_id": "V4_PROJECT",
       "source_sha256": "6893c5493933a9d5db13dbd5f5b8940ea367466b2d85592f7a9fb5b706f1983f",
       "transformation": "byte_copy"
-    },
-    {
-      "path": "DATA_AVAILABILITY.md",
-      "bytes": 1120,
-      "sha256": "9c8bdd5ea6695c129ce33def08aad4503c7ef5703971cf6b370330eb5dea1387",
-      "experiment_phase": "release_packaging",
-      "role": "data_document",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
     },
     {
       "path": "docs/engineering/BASELINE_FAIRNESS_PROTOCOL.md",
@@ -658,16 +731,6 @@
       "transformation": "zip_member_byte_copy"
     },
     {
-      "path": "LICENSE_STATUS.md",
-      "bytes": 634,
-      "sha256": "81abda49eb0dcdc07e2316be9bef525830e50db30989e2157a153d35ac434a70",
-      "experiment_phase": "release_packaging",
-      "role": "license_status",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
-    },
-    {
       "path": "psfce/__init__.py",
       "bytes": 212,
       "sha256": "d7f1810664451fcbc055a1b3ee11f1b31c8667894567557cd70e3c638c9f9c6b",
@@ -769,8 +832,8 @@
     },
     {
       "path": "psfce/pair_spectrum.py",
-      "bytes": 8677,
-      "sha256": "90da80c05b5841b190a1c234d0577c5c25d027a517fc1e997f06a4d578eb5d0e",
+      "bytes": 8707,
+      "sha256": "4955ceb8b09b3dee72654b6dee57dd19f7b57bdd35df6e114b7621024da8c851",
       "experiment_phase": "implementation",
       "role": "python_source",
       "source_id": "V4_PROJECT",
@@ -848,36 +911,6 @@
       "transformation": "byte_copy"
     },
     {
-      "path": "README.md",
-      "bytes": 4544,
-      "sha256": "b32098364285d6d1ac026af5080768c5fcb24964b91224ba3485bd9c3c55040a",
-      "experiment_phase": "release_packaging",
-      "role": "readme",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
-    },
-    {
-      "path": "RELEASE_CHECKLIST_CN.md",
-      "bytes": 1201,
-      "sha256": "5abc3966a5c13636ab73de5f6b5bf2b7f4e65a47a0dd7945b56f0dff75684fd1",
-      "experiment_phase": "release_packaging",
-      "role": "release_checklist",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
-    },
-    {
-      "path": "REPRODUCIBILITY.md",
-      "bytes": 4197,
-      "sha256": "9b8c7837ff117cca3a68bbb553156ec612062f9f4a7335c52c7b77db9eb43fe6",
-      "experiment_phase": "release_packaging",
-      "role": "reproducibility_document",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_generated_or_documented_revision"
-    },
-    {
       "path": "requirements-dev.txt",
       "bytes": 32,
       "sha256": "0e7d800c45d87cda68e95d462890ae6a7a006b839af6247af7dc55d25aa725dc",
@@ -939,8 +972,8 @@
     },
     {
       "path": "scripts/build_release_metadata.py",
-      "bytes": 3460,
-      "sha256": "d8046bf18a2fd87b137627017650b39402125fd05db5c154bd9c7078d4968407",
+      "bytes": 3593,
+      "sha256": "25bb6c352f6edbe2e8d3cb3bfad3082dfa451a8f7d7f5f2c83892b1cba9ee50b",
       "experiment_phase": "release_packaging",
       "role": "execution_or_validation_script",
       "source_id": "RELEASE_GENERATED_OR_CURATED",
@@ -999,8 +1032,8 @@
     },
     {
       "path": "scripts/run_release_validation.py",
-      "bytes": 10441,
-      "sha256": "fb7d44781c6c780bc1029555d21e12979f83de895357bd71ecfb79fa1476867b",
+      "bytes": 10807,
+      "sha256": "e0a2345ed673e30ee5eacbe20af6d667379bfa8867c2b6fc88ac4e057dd86a37",
       "experiment_phase": "release_packaging",
       "role": "execution_or_validation_script",
       "source_id": "RELEASE_GENERATED_OR_CURATED",
@@ -1019,8 +1052,8 @@
     },
     {
       "path": "scripts/validate_package.py",
-      "bytes": 1256,
-      "sha256": "6ae5ab6af6be53788b60dee707b5879e13c6d178488f77e6c99a5804d1085460",
+      "bytes": 1325,
+      "sha256": "f3a264e90dc17129a49631e5e096fd10423a18ce9bb1161158c190cd3a3f6bbd",
       "experiment_phase": "implementation",
       "role": "execution_or_audit_script",
       "source_id": "V4_PROJECT",
@@ -1066,26 +1099,6 @@
       "source_id": "V4_PROJECT",
       "source_sha256": "6e4b187bf59608c9c6960d9381849038b0ef7098513725a2a7bfe0d16ffbb1a0",
       "transformation": "byte_copy"
-    },
-    {
-      "path": "THIRD_PARTY.md",
-      "bytes": 1811,
-      "sha256": "c99138c294892518c48033ea9610ecb5f5a6a4b740a48771f9feab05a88f55ba",
-      "experiment_phase": "release_packaging",
-      "role": "third_party_document",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
-    },
-    {
-      "path": "VALIDATION_REPORT.json",
-      "bytes": 5310,
-      "sha256": "863df9a2a4c7104ec6cc7ad598cc67551a7716b52f6c0c8239e18719e41192e0",
-      "experiment_phase": "release_packaging",
-      "role": "release_document",
-      "source_id": "RELEASE_GENERATED",
-      "source_sha256": null,
-      "transformation": "release_only_generated"
     }
   ]
 }

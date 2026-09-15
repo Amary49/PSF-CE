@@ -15,7 +15,7 @@
     "command": "python -m pytest -q -p no:cacheprovider",
     "result": {
       "returncode": 0,
-      "stdout_tail": ".............                                                            [100%]\n============================== warnings summary ===============================\ntests/test_core.py::test_energy_preservation\n  <PYTHON_ENV>\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:\n  [WinError 2] 系统找不到指定的文件。\n  Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n13 passed, 1 warning in 16.15s\n",
+      "stdout_tail": ".............                                                            [100%]\n13 passed in 2.09s\n",
       "stderr_tail": ""
     },
     "import_status": "PASS"
@@ -32,7 +32,7 @@
     "result": {
       "returncode": 0,
       "stdout_tail": "{\n  \"schema\": \"psfce-paper-v1-rebuild-v1\",\n  \"main_rows\": 1272,\n  \"methods\": [\n    \"CA\",\n    \"Poly2\",\n    \"LinearPair\",\n    \"AggregatePower\",\n    \"CEHM\",\n    \"YACHT\",\n    \"RANGE\",\n    \"PSF-CE\"\n  ],\n  \"datasets\": 53,\n  \"pools_per_method\": 159,\n  \"ablation_rows\": 477,\n  \"figure_grid_rows\": 20,\n  \"statistics_unit\": \"dataset after three-pool mean\",\n  \"statistical_note\": \"Recomputed statistics are explicitly named current_env; archived historical statistics are never overwritten.\",\n  \"scores_recomputed_from_labels\": false,\n  \"algorithm_executed\": false\n}\n",
-      "stderr_tail": "<RELEASE_ROOT>\\scripts\\rebuild_paper_artifacts.py:113: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.\n  fig.tight_layout(); fig.savefig(out/\"psf_acc_nmi_rebuilt.pdf\",format=\"pdf\",bbox_inches=\"tight\"); plt.close(fig)\n"
+      "stderr_tail": "<RELEASE_ROOT>/scripts/rebuild_paper_artifacts.py:113: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.\n  fig.tight_layout(); fig.savefig(out/\"psf_acc_nmi_rebuilt.pdf\",format=\"pdf\",bbox_inches=\"tight\"); plt.close(fig)\n"
     }
   },
   "figure_rebuild": {
@@ -69,13 +69,18 @@
     },
     "archived_hash_status": "PASS"
   },
+  "project_license_checks": {
+    "status": "PASS",
+    "license": "MIT",
+    "scope": "Original PSF-CE repository content only; upstream third-party software and undistributed datasets/BP files remain outside this grant."
+  },
   "data_provenance_checks": {
-    "status": "NOT_VERIFIED",
-    "detail": "Portable manifests and archived hashes were checked, but data/BP redistribution rights and historical input identity remain author-review items."
+    "status": "PASS_WITH_BOUNDARY",
+    "detail": "Raw datasets, frozen BP arrays, labels, and prediction caches are not redistributed. Portable manifests and archived hashes are provided for reproducibility; historical byte identity is not overclaimed."
   },
   "third_party_license_checks": {
-    "status": "NOT_VERIFIED",
-    "detail": "Pinned repositories are documented as NOASSERTION and are not vendored; redistribution permission still requires confirmation."
+    "status": "PASS_WITH_BOUNDARY",
+    "detail": "Complete upstream repositories/MEX/P-code are not redistributed. Pinned sources are documented; NOASSERTION is retained where the audited upstream snapshot did not expose an explicit license, and users must comply with upstream terms."
   },
   "matlab_execution_verified": {
     "status": "NOT_VERIFIED",
@@ -87,15 +92,11 @@
     "metric recomputation from raw labels and predictions",
     "dataset and BP redistribution license adjudication"
   ],
-  "blockers": [
-    "project license and contributor authorization are not selected",
-    "public author/publication metadata are not finalized",
-    "data and BP redistribution rights are not confirmed",
-    "third-party repositories remain NOASSERTION"
-  ],
+  "blockers": [],
   "release_status": {
     "private_repository": "READY_FOR_PRIVATE_REPOSITORY",
-    "public_release": "NOT_READY_FOR_PUBLIC_RELEASE"
+    "public_release": "READY_FOR_PUBLIC_RELEASE",
+    "public_release_allowed": true
   },
   "validation_status": "PASS"
 }

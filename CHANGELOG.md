@@ -13,5 +13,7 @@
 - Added recorded-score reconstruction, validation, provenance, release documentation, and Git ignore rules.
 - Archived the eight-method paper scores, fixed-strength ablation, and real parameter-grid figure inputs.
 - Excluded raw data, BP matrices, predictions, caches, downloaded third-party repositories, historical-method results, and incomplete experimental results.
+- Added the MIT project license and explicit public-release boundaries for upstream software and undistributed data/BP assets.
+- Marked the curated v1.0.0 repository snapshot ready for public release after release-package validation.
 
 No model equation, numerical operator, normalization, calibration, candidate rule, random seed logic, solver budget, or recorded score was changed.

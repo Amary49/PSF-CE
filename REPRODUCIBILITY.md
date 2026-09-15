@@ -39,6 +39,7 @@ The execution scripts load only frozen settings. Development grid scripts are no
 - RANGE depends on Windows MEX/P-code supplied by the author repository.
 - The optional AWEC adapter remains for audit continuity, but it is marked experimental, excluded from every paper-default registry/audit/report, and has no paper-v1 result.
 - FSEC is excluded because its full method regenerates base partitions from features.
+- Formal PSF-CE score rows record `commutator_ratio` as a numerical diagnostic. It is not used for parameter, seed, restart, or candidate selection, and finite-precision nonzero values are not treated as proof of exact noncommutation.
 
 ## Timing boundary
 
