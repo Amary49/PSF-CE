@@ -1,0 +1,3 @@
+data_root: <LOCAL_DATA_ROOT>
+bp_root: <LOCAL_FROZEN_BP_ROOT>
+results_root: <LOCAL_RESULTS_ROOT>

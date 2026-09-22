@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source_csv": "data/fig1_source.csv",
+  "source_csv_sha256": "ac391b5c2bedb54d9f6922a2422bacf6f3798bf0c031a6558828b25806f45a08",
+  "pdf": "figures/fig1_revised_core10_postfreeze_sensitivity.pdf",
+  "pdf_sha256": "10880cb1be8e26331ed3bc734a3688afb91a7eeaa2b1ac99c3548a6eca011286",
+  "svg": "figures/fig1_revised_core10_postfreeze_sensitivity.svg",
+  "svg_sha256": "a1636d75a5027ecc6acaf6786840fbcfea39d2359ade66ccc34dfbf316bc73fc",
+  "png": "figures/fig1_revised_core10_postfreeze_sensitivity.png",
+  "png_sha256": "32b039520825249bc6b58944af94e2046c4b0a0facaec93d37f210769054cdcc",
+  "tex": "figures/fig1_revised_core10_postfreeze_sensitivity.tex",
+  "tex_sha256": "d3c056ab68385f56318f284ff7901285ddfeec5833d274c8448b9aca72a1932d",
+  "x_spacing": "categorical_equal_spacing",
+  "shared_y_axis": true,
+  "y_range_percent": [
+    36.0,
+    60.0
+  ],
+  "frozen_marked_as_best": false,
+  "data_values_modified_for_styling": false,
+  "panel_labels_position": "below panels",
+  "legend_position": "shared upper center",
+  "legend_labels": [
+    "ACC",
+    "NMI",
+    "Frozen"
+  ],
+  "native_canvas_inches": [
+    3.39,
+    1.82
+  ],
+  "minimum_configured_font_pt": 9.0,
+  "intended_manuscript_width": "one ICASSP column (3.39 inches)",
+  "manuscript_downscaling_required": false
+}

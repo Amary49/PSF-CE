@@ -1,0 +1,227 @@
+{
+  "schema": "psfce-chameleon-mcla-native-output-audit-v1",
+  "generated_at": "2026-09-21T16:19:56.069006+00:00",
+  "status": "NO_OBVIOUS_CODE_ERROR",
+  "obvious_code_error": false,
+  "classification": "ENVIRONMENT_SENSITIVE_NATIVE_OUTPUT",
+  "adapter_path": "baseline_adapters/python/classic_baselines.py",
+  "adapter_sha256": "0b658c45361814aea6eadafe2f42f4bf4cd8bca87b0bcf2e3bcd41a0ac9bc49e",
+  "expected_adapter_sha256": "0b658c45361814aea6eadafe2f42f4bf4cd8bca87b0bcf2e3bcd41a0ac9bc49e",
+  "adapter_hash_match": true,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pymetis_version": "2025.2.2",
+  "pymetis_expected_version": "2025.2.2",
+  "five_repeats_identical_per_pool": true,
+  "all_repeats_match_saved_formal_prediction": true,
+  "metis_returns_target_meta_clusters": true,
+  "finding": "METIS returns c nonempty meta-clusters, but the MCLA mean-association collapse may leave a meta-cluster with no winning samples. Pools 0 and 2 therefore natively return k=4.",
+  "old_vs_current_boundary": "The prior V2 release recorded k=5 but explicitly did not execute the frozen PyMetis backend in its Windows validation environment. The frozen audit also anticipates heuristic differences between METIS generations.",
+  "perturbation_check": "Both unperturbed and exact-tie-only variants are reported. A mismatch between the code comment and its unconditional small perturbation is disclosed, but is not classified as the returned-k cause unless those variants restore k=5.",
+  "pools": [
+    {
+      "pool": 0,
+      "pool_file": "<PRIVATE_FROZEN_BP_ROOT>/formal/chameleon__pool0.npz",
+      "pool_file_sha256": "6a549bbbeb4c04a05f6528ad57e91a93742d5f61ca9f0e456b6b3ca8c237b4ab",
+      "n": 2277,
+      "target_c": 5,
+      "five_repeats_identical": true,
+      "repeat_returned_k": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "repeat_label_hash": "f54d79cdbb924803e9d0ea1aa5456a47c8a1f27ba314394994803a6e1449d11c",
+      "formal_prediction_returned_k": 4,
+      "formal_prediction_label_hash": "f54d79cdbb924803e9d0ea1aa5456a47c8a1f27ba314394994803a6e1449d11c",
+      "repeat_matches_formal_prediction": true,
+      "old_prediction_returned_k": 5,
+      "old_prediction_label_hash": "0952af88e5999c6c9707c2e4f570b0d0285d6847378b9764a2fc52b3f822e624",
+      "repeat_matches_old_prediction": false,
+      "edge_cut": 21633751,
+      "meta_clusters_returned": 5,
+      "meta_cluster_base_cluster_counts": [
+        30,
+        7,
+        22,
+        57,
+        16
+      ],
+      "meta_cluster_vertex_weight_sums": [
+        7941,
+        8587,
+        9587,
+        10204,
+        9221
+      ],
+      "unperturbed_returned_k": 4,
+      "frozen_perturbation_returned_k": 4,
+      "exact_tie_only_returned_k": 4,
+      "unperturbed_cluster_sizes": [
+        0,
+        1229,
+        122,
+        348,
+        578
+      ],
+      "frozen_cluster_sizes": [
+        0,
+        1229,
+        122,
+        348,
+        578
+      ],
+      "exact_tie_only_cluster_sizes": [
+        0,
+        1229,
+        122,
+        348,
+        578
+      ],
+      "rows_with_exact_top_tie": 0,
+      "frozen_vs_unperturbed_changed_samples": 0,
+      "exact_tie_only_vs_unperturbed_changed_samples": 0,
+      "frozen_labels_sha256_int32_c": "f54d79cdbb924803e9d0ea1aa5456a47c8a1f27ba314394994803a6e1449d11c",
+      "unperturbed_labels_sha256_int32_c": "f54d79cdbb924803e9d0ea1aa5456a47c8a1f27ba314394994803a6e1449d11c",
+      "exact_tie_only_labels_sha256_int32_c": "f54d79cdbb924803e9d0ea1aa5456a47c8a1f27ba314394994803a6e1449d11c"
+    },
+    {
+      "pool": 1,
+      "pool_file": "<PRIVATE_FROZEN_BP_ROOT>/formal/chameleon__pool1.npz",
+      "pool_file_sha256": "2bb8825d69ff6f077e51ad669ed7390a3ca08eea68407a84b70a309c03358983",
+      "n": 2277,
+      "target_c": 5,
+      "five_repeats_identical": true,
+      "repeat_returned_k": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "repeat_label_hash": "36aa08f11dd32317b6c323fbfcf33734569e2b03d37a94463c5b1a86e16ff36f",
+      "formal_prediction_returned_k": 5,
+      "formal_prediction_label_hash": "36aa08f11dd32317b6c323fbfcf33734569e2b03d37a94463c5b1a86e16ff36f",
+      "repeat_matches_formal_prediction": true,
+      "old_prediction_returned_k": 5,
+      "old_prediction_label_hash": "1e66c6ee4b6d7b18cadc0f2d7048ab812f9a92197f5d628160dfdd4da39de4f2",
+      "repeat_matches_old_prediction": false,
+      "edge_cut": 21971220,
+      "meta_clusters_returned": 5,
+      "meta_cluster_base_cluster_counts": [
+        31,
+        25,
+        28,
+        21,
+        27
+      ],
+      "meta_cluster_vertex_weight_sums": [
+        7597,
+        10224,
+        8897,
+        8445,
+        10377
+      ],
+      "unperturbed_returned_k": 5,
+      "frozen_perturbation_returned_k": 5,
+      "exact_tie_only_returned_k": 5,
+      "unperturbed_cluster_sizes": [
+        214,
+        579,
+        69,
+        620,
+        795
+      ],
+      "frozen_cluster_sizes": [
+        214,
+        579,
+        70,
+        619,
+        795
+      ],
+      "exact_tie_only_cluster_sizes": [
+        214,
+        579,
+        69,
+        620,
+        795
+      ],
+      "rows_with_exact_top_tie": 0,
+      "frozen_vs_unperturbed_changed_samples": 1,
+      "exact_tie_only_vs_unperturbed_changed_samples": 0,
+      "frozen_labels_sha256_int32_c": "36aa08f11dd32317b6c323fbfcf33734569e2b03d37a94463c5b1a86e16ff36f",
+      "unperturbed_labels_sha256_int32_c": "d8ab76d3d77ec17b801060c155d549609fe23520f5e18e0a50c9a37b3598be08",
+      "exact_tie_only_labels_sha256_int32_c": "d8ab76d3d77ec17b801060c155d549609fe23520f5e18e0a50c9a37b3598be08"
+    },
+    {
+      "pool": 2,
+      "pool_file": "<PRIVATE_FROZEN_BP_ROOT>/formal/chameleon__pool2.npz",
+      "pool_file_sha256": "5237b77bef2ba9a5e669e484823cac29d5a8a056d126167981847c6163e9b7fd",
+      "n": 2277,
+      "target_c": 5,
+      "five_repeats_identical": true,
+      "repeat_returned_k": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "repeat_label_hash": "1c370093563ed6a2cafd74262601900c56242a711b337dfc8ee7e81cf205303d",
+      "formal_prediction_returned_k": 4,
+      "formal_prediction_label_hash": "1c370093563ed6a2cafd74262601900c56242a711b337dfc8ee7e81cf205303d",
+      "repeat_matches_formal_prediction": true,
+      "old_prediction_returned_k": 5,
+      "old_prediction_label_hash": "34e07dceff9df40e75ee7a678c02436cba5d65827e9c9f967f18ff074ce1832a",
+      "repeat_matches_old_prediction": false,
+      "edge_cut": 20904824,
+      "meta_clusters_returned": 5,
+      "meta_cluster_base_cluster_counts": [
+        38,
+        9,
+        39,
+        22,
+        24
+      ],
+      "meta_cluster_vertex_weight_sums": [
+        9040,
+        8602,
+        9118,
+        10835,
+        7945
+      ],
+      "unperturbed_returned_k": 4,
+      "frozen_perturbation_returned_k": 4,
+      "exact_tie_only_returned_k": 4,
+      "unperturbed_cluster_sizes": [
+        0,
+        1229,
+        246,
+        578,
+        224
+      ],
+      "frozen_cluster_sizes": [
+        0,
+        1229,
+        246,
+        578,
+        224
+      ],
+      "exact_tie_only_cluster_sizes": [
+        0,
+        1229,
+        246,
+        578,
+        224
+      ],
+      "rows_with_exact_top_tie": 0,
+      "frozen_vs_unperturbed_changed_samples": 0,
+      "exact_tie_only_vs_unperturbed_changed_samples": 0,
+      "frozen_labels_sha256_int32_c": "1c370093563ed6a2cafd74262601900c56242a711b337dfc8ee7e81cf205303d",
+      "unperturbed_labels_sha256_int32_c": "1c370093563ed6a2cafd74262601900c56242a711b337dfc8ee7e81cf205303d",
+      "exact_tie_only_labels_sha256_int32_c": "1c370093563ed6a2cafd74262601900c56242a711b337dfc8ee7e81cf205303d"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Versions recorded by the formal execution audit. This is evidence, not a claim
+# that every optional MATLAB or plotting dependency was captured.
+numpy==2.5.2
+scipy==1.18.1
+scikit-learn==1.9.0
+pymetis==2025.2.2

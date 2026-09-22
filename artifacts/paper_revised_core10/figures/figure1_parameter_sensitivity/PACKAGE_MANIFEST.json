@@ -1,0 +1,93 @@
+{
+  "package": "PSF_CE_FIG1_REVISED_CORE10_INTEGRATED_V8",
+  "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
+  "scope": "native-column Figure 1 evidence integrated into the V8 public repository; no raw feature data, prediction archives, machine paths, or private paths",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/MANUSCRIPT_INSERTION.md",
+      "size_bytes": 1487,
+      "sha256": "cec2fb81204c3070c7d145a1b3d39d3ebcbaad17ca14dce3acd3e91f42fa1065"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/README_CN.md",
+      "size_bytes": 2191,
+      "sha256": "78174dd577cf150aa0875c8ab71b1a153f4df48c25314df1345e66f306a6da38"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/audit/FIG1_BUILD_AUDIT.json",
+      "size_bytes": 1300,
+      "sha256": "59385859ca9072fd6062a6832e3848f77b4223d89fff1b6d8951dbae55e90a8e"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/audit/FIG1_COMPUTATION_AUDIT.json",
+      "size_bytes": 2198,
+      "sha256": "febb01d3f4571633a8c5a952c6bfa974a75ba833d05d9a1e4e2c8c3c7ebb5dbb"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/audit/VALIDATION_REPORT.json",
+      "size_bytes": 1894,
+      "sha256": "6d12fcaa7c7c47c2ec9291b9d10873222d2f9b1d380637851447bda17714e9d2"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/data/fig1_dataset_means.csv",
+      "size_bytes": 8859,
+      "sha256": "00e201c1dd79d924b33e2a9da6a672b746ed8c528289a676990e87331391dfcd"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/data/fig1_pool_level.csv",
+      "size_bytes": 56149,
+      "sha256": "5a2d9490d8b18951362407055639d257128cfdd9fe593345b582532c61f09766"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/data/fig1_source.csv",
+      "size_bytes": 1747,
+      "sha256": "ac391b5c2bedb54d9f6922a2422bacf6f3798bf0c031a6558828b25806f45a08"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/data/frozen_point_vs_formal.csv",
+      "size_bytes": 8700,
+      "sha256": "7ed076334e30650f1c12270aa293c9a88f62ca0acefda528c1d535ff2938ebe9"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/data/input_pool_manifest.csv",
+      "size_bytes": 2972,
+      "sha256": "709e7cb4437842a15fce8cbcae89728c72fce9441c3565fe08af315bedb20a8a"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.pdf",
+      "size_bytes": 33616,
+      "sha256": "10880cb1be8e26331ed3bc734a3688afb91a7eeaa2b1ac99c3548a6eca011286"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.png",
+      "size_bytes": 67330,
+      "sha256": "32b039520825249bc6b58944af94e2046c4b0a0facaec93d37f210769054cdcc"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.svg",
+      "size_bytes": 27855,
+      "sha256": "a1636d75a5027ecc6acaf6786840fbcfea39d2359ade66ccc34dfbf316bc73fc"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.tex",
+      "size_bytes": 790,
+      "sha256": "d3c056ab68385f56318f284ff7901285ddfeec5833d274c8448b9aca72a1932d"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/protocol/FIG1_REVISED_CORE10_PROTOCOL.json",
+      "size_bytes": 1679,
+      "sha256": "5eed2c838244ee3d447ebd9f18f3414f2d6f55962746bac7792a831dd2357d45"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/requirements-figure.txt",
+      "size_bytes": 46,
+      "sha256": "5d19ec78e1ac09d2c2b8bf6836d0f988638495ed7b26b110065174a84847d50d"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/scripts/build_figure1.py",
+      "size_bytes": 9231,
+      "sha256": "dcb5515a7aca794da0096f326b5101be8a3246d8bb639b3f685a8c5a26cd810b"
+    }
+  ]
+}

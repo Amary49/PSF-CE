@@ -1,0 +1,116 @@
+{
+  "schema": "psfce-manuscript-source-of-truth-v5",
+  "version_id": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "status": "ACTIVE_SINGLE_SOURCE_OF_TRUTH",
+  "created_date": "2026-09-22",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+  "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "release_cleanup_only": true,
+  "release_artifact_update_only": false,
+  "scientific_results_changed_from_v4": false,
+  "public_frozen_bp_policy": {
+    "redistributed_datasets": [
+      "Iris",
+      "Mushroom"
+    ],
+    "redistributed_pools": 6,
+    "license": "CC BY 4.0",
+    "hash_only_pools": 24,
+    "raw_feature_data_included": false
+  },
+  "formal_protocol_id": "PSFCE-REVISED-CORE10-REPLACEMENT-20260921-V1",
+  "formal_cohort": [
+    "BBC News Sport",
+    "Leukemia",
+    "Caltech101-20",
+    "Leukemia2",
+    "Chameleon",
+    "Amazon Photo",
+    "ORL",
+    "ACM",
+    "Iris",
+    "Mushroom"
+  ],
+  "formal_methods": [
+    "MCLA",
+    "HBGF",
+    "CEHM",
+    "YACHT",
+    "RANGE",
+    "GPEC",
+    "PSF-CE"
+  ],
+  "pool_protocol": {
+    "pools_per_dataset": 3,
+    "M": 20,
+    "aggregation": "mean pools within dataset, then equal-weight datasets"
+  },
+  "psfce_lock": {
+    "q": 0.72,
+    "lambda": 0.665,
+    "seed": 2027,
+    "rounding": "strong",
+    "kmeans_n_init": 40,
+    "calibration": "fro_centered"
+  },
+  "main_result": {
+    "PSF-CE_ACC_mean": 0.5778271412032832,
+    "PSF-CE_NMI_mean": 0.4014577895910667,
+    "ACC_descriptive_rank": 3,
+    "NMI_descriptive_rank": 1,
+    "NMI_Holm_significant_comparisons": "0/6"
+  },
+  "active_structural_evidence": {
+    "status": "EXPLORATORY_NOT_CONFIRMATORY",
+    "fragmentation_profile": "5/6 comparators favorable under the frozen exploratory gate",
+    "cluster_mixing_geometry": "M-B LOCALIZED_RESIDUAL_MIXING on revised Core-10 and no-Chameleon Core-9",
+    "joint_profile": "fragmentation plus localized residual mixing for 4/6 comparators",
+    "causal_claim": "NOT_ESTABLISHED"
+  },
+  "active_paper_artifacts": {
+    "figure1": {
+      "role": "post-freeze one-factor sensitivity diagnostic",
+      "cohort": "revised Core-10",
+      "parameter_reselection": false,
+      "source": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/data/fig1_source.csv"
+    },
+    "table2": {
+      "role": "exploratory partition-structure directional profiles",
+      "counts_are_significance_tests": false,
+      "causal_claim": "NOT_ESTABLISHED",
+      "source": "artifacts/paper_revised_core10/tables/table2_partition_structure_source.csv"
+    }
+  },
+  "native_output_exception": {
+    "dataset": "Chameleon",
+    "method": "MCLA",
+    "affected_pools": [
+      0,
+      2
+    ],
+    "returned_k": 4,
+    "target_c": 5,
+    "policy": "retain native output; no post-hoc repair or deletion"
+  },
+  "scope_boundaries": {
+    "core10_is_independent_holdout": false,
+    "reason": "Historical development tasks overlap with the Handwritten/USPS source families. Those two tasks were removed, but global settings were still selected in the historical development phase.",
+    "correct_label": "post-freeze revised formal cohort with disclosed provenance history",
+    "exact_c_rule": "candidate-replacement screening criterion only; not a property required of all final method outputs"
+  },
+  "supersedes": [
+    "PSF_CE_CORE10_MANUSCRIPT_HANDOFF_V2_20260921",
+    "the early SCIENTIFIC_UPDATE_NOT_ACCEPTED decision in 12_AUDIT/CLAIMS_ACCEPTANCE_DECISION.json",
+    "the old Core-10 cohort containing USPS3568 and Handwritten"
+  ],
+  "not_current": [
+    "Core-11 results containing Isolet",
+    "Core-10 results containing USPS3568 and Handwritten",
+    "parameter-sensitivity figures based on the old Core-10 cohort",
+    "claims that completeness alone explains the revised-cohort NMI profile",
+    "claims of a proved upstream causal mechanism"
+  ],
+  "public_release_status": "READY_FOR_PUBLIC_GITHUB_UPLOAD",
+  "project_license": "MIT",
+  "third_party_notice_status": "DOCUMENTED_NONVENDORED_DEPENDENCIES"
+}

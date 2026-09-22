@@ -1,0 +1,62 @@
+{
+  "schema": "psfce-revised-core10-seven-method-lock-v3",
+  "version_id": "PSFCE-MANUSCRIPT-REVISED-CORE10-V3-20260922",
+  "cohort": [
+    "BBC News Sport",
+    "Leukemia",
+    "Caltech101-20",
+    "Leukemia2",
+    "Chameleon",
+    "Amazon Photo",
+    "ORL",
+    "ACM",
+    "Iris",
+    "Mushroom"
+  ],
+  "methods": {
+    "MCLA": {
+      "citation_key": "Strehl2002MCLA",
+      "execution_identity": "controlled PyMetis reimplementation",
+      "source_revision": "classic lock + released source hash"
+    },
+    "HBGF": {
+      "citation_key": "Fern2004HBGF",
+      "execution_identity": "controlled unweighted hybrid-bipartite PyMetis reimplementation",
+      "source_revision": "classic lock + released source hash"
+    },
+    "CEHM": {
+      "citation_key": "Li2025CEHM",
+      "execution_identity": "author MATLAB source via thin adapter",
+      "source_revision": "29c22fb18e05eed67728eebcb29cd7e9133723f7"
+    },
+    "YACHT": {
+      "citation_key": "Xu2025YACHT",
+      "execution_identity": "author MATLAB source via adapter and documented compatibility patch",
+      "source_revision": "44cb0fc35b80ec17befa199879ac947fee15f464"
+    },
+    "RANGE": {
+      "citation_key": "Xu2026RANGE",
+      "execution_identity": "author MATLAB source via thin adapter",
+      "source_revision": "85d93c54d72d500034d05b5ef131bd90630a3632"
+    },
+    "GPEC": {
+      "citation_key": "Zhang2025GPEC",
+      "execution_identity": "author MATLAB snapshot via frozen-pool wrapper",
+      "source_revision": "archive sha256 dc849a46...; canonical 19-file tree sha256 13a96419...; commit not verified"
+    },
+    "PSF-CE": {
+      "citation_key": "PROJECT_METHOD",
+      "execution_identity": "project implementation",
+      "source_revision": "VERSION_LOCK.json"
+    }
+  },
+  "psfce": {
+    "q": 0.72,
+    "lambda": 0.665,
+    "seed": 2027,
+    "rounding": "strong",
+    "kmeans_n_init": 40,
+    "calibration": "fro_centered"
+  },
+  "native_output_policy": "No silent repair, deletion, or outcome-dependent rerun."
+}

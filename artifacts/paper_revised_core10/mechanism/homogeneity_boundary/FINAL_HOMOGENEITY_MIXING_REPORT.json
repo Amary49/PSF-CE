@@ -1,0 +1,184 @@
+{
+  "schema": "psfce-exploratory-homogeneity-mixing-final-v1",
+  "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+  "common8_identity": {
+    "total_runs": 168,
+    "identity_preserved_runs": 126,
+    "mismatched_runs": 42,
+    "mismatch_rate": 0.25,
+    "mismatch_datasets": [
+      "ACM",
+      "Amazon Photo",
+      "BBC News Sport",
+      "Caltech101-20",
+      "Chameleon",
+      "Leukemia",
+      "Leukemia2",
+      "ORL"
+    ],
+    "mismatch_methods": [
+      "HBGF",
+      "MCLA"
+    ],
+    "chameleon_mcla_mismatch_runs": 3,
+    "chameleon_mcla_is_only_difference": false,
+    "all_truth_arrays_identical": true,
+    "broad_prediction_drift": true,
+    "verdict": "ENVIRONMENTAL_PARTITION_DRIFT_PRESENT"
+  },
+  "favorable_profile_counts": {
+    "OLD_CORE10": {
+      "homogeneity": 3,
+      "H_Y_given_Z": 2,
+      "MacroMixEntropy": 5,
+      "PairMixRate": 1,
+      "MacroPurity": 5,
+      "NMI": 6,
+      "completeness": 6
+    },
+    "REVISED_CORE10_NATIVE": {
+      "homogeneity": 5,
+      "H_Y_given_Z": 4,
+      "MacroMixEntropy": 5,
+      "PairMixRate": 1,
+      "MacroPurity": 5,
+      "NMI": 4,
+      "completeness": 4
+    },
+    "REVISED_CORE9_NO_CHAMELEON": {
+      "homogeneity": 5,
+      "H_Y_given_Z": 4,
+      "MacroMixEntropy": 5,
+      "PairMixRate": 1,
+      "MacroPurity": 5,
+      "NMI": 4,
+      "completeness": 4
+    },
+    "COMMON8_OLD": {
+      "homogeneity": 2,
+      "H_Y_given_Z": 1,
+      "MacroMixEntropy": 5,
+      "PairMixRate": 1,
+      "MacroPurity": 5,
+      "NMI": 4,
+      "completeness": 4
+    },
+    "COMMON8_REVISED": {
+      "homogeneity": 3,
+      "H_Y_given_Z": 2,
+      "MacroMixEntropy": 5,
+      "PairMixRate": 1,
+      "MacroPurity": 5,
+      "NMI": 3,
+      "completeness": 3
+    }
+  },
+  "independent_mixing_metrics_reaching_4_of_6": {
+    "REVISED_CORE10_NATIVE": 2,
+    "REVISED_CORE9_NO_CHAMELEON": 2
+  },
+  "replacement_profile_counts": {
+    "OLD_FULL": 3,
+    "OLD_MINUS_USPS3568": 5,
+    "OLD_MINUS_HANDWRITTEN": 2,
+    "OLD_COMMON8": 2,
+    "REVISED_COMMON8": 3,
+    "REVISED_COMMON8_PLUS_IRIS": 4,
+    "REVISED_COMMON8_PLUS_MUSHROOM": 6,
+    "REVISED_FULL": 5
+  },
+  "iris_individual_favorable_flips_from_revised_common8": [
+    "YACHT"
+  ],
+  "mushroom_individual_favorable_flips_from_revised_common8": [
+    "MCLA",
+    "YACHT",
+    "RANGE"
+  ],
+  "old_dataset_removal_favorable_flips": [
+    {
+      "dataset": "Handwritten",
+      "comparator": "MCLA",
+      "full_favorable": true,
+      "without_favorable": false
+    },
+    {
+      "dataset": "USPS3568",
+      "comparator": "HBGF",
+      "full_favorable": false,
+      "without_favorable": true
+    },
+    {
+      "dataset": "USPS3568",
+      "comparator": "GPEC",
+      "full_favorable": false,
+      "without_favorable": true
+    }
+  ],
+  "nmi_hc_attribution": {
+    "OLD_CORE10": {
+      "positive_delta_nmi_cases": 40,
+      "phi_h_positive_fraction": 0.875,
+      "phi_c_positive_fraction": 0.975,
+      "h_abs_dominant_fraction": 0.3,
+      "c_abs_dominant_fraction": 0.7
+    },
+    "REVISED_CORE10_NATIVE": {
+      "positive_delta_nmi_cases": 34,
+      "phi_h_positive_fraction": 1.0,
+      "phi_c_positive_fraction": 0.9705882352941176,
+      "h_abs_dominant_fraction": 0.35294117647058826,
+      "c_abs_dominant_fraction": 0.6470588235294118
+    },
+    "REVISED_CORE9_NO_CHAMELEON": {
+      "positive_delta_nmi_cases": 32,
+      "phi_h_positive_fraction": 1.0,
+      "phi_c_positive_fraction": 0.96875,
+      "h_abs_dominant_fraction": 0.34375,
+      "c_abs_dominant_fraction": 0.65625
+    }
+  },
+  "two_axis_both_counts": {
+    "REVISED_CORE10_NATIVE": 3,
+    "REVISED_CORE9_NO_CHAMELEON": 3
+  },
+  "two_axis_partition_reorganization_supported": false,
+  "final_case": "H-D",
+  "final_label": "ATTRIBUTION_UNRESOLVED_DUE_TO_PREDICTION_DRIFT",
+  "reduced_inter_class_mixing_phenotype_supported": false,
+  "scientific_boundary": "All findings are post-hoc exploratory structural interpretations. H(Y|Z) and Homogeneity are definition-linked and are not counted as independent evidence. No result establishes causal mediation or an upstream mechanism.",
+  "required_question_answers": {
+    "Q01_common8_predictions_identical": "No. 126/168 runs are partition-identical; 42 differ (25.0%). Drift affects HBGF and MCLA across all eight datasets.",
+    "Q02_homogeneity_5_of_6_maintained_in_core9": "Yes: 5/6.",
+    "Q03_H_Y_given_Z_profile": "Revised Core-10: 4/6; Core-9: 4/6.",
+    "Q04_macro_mix_entropy_profile": "Revised Core-10: 5/6; Core-9: 5/6.",
+    "Q05_pair_mix_rate_profile": "Revised Core-10: 1/6; Core-9: 1/6.",
+    "Q06_macro_purity_profile": "Revised Core-10: 5/6; Core-9: 5/6.",
+    "Q07_comparators_supporting_reduced_mixing": [
+      "HBGF",
+      "YACHT",
+      "GPEC"
+    ],
+    "Q08_comparators_not_supporting_reduced_mixing": [
+      "MCLA",
+      "CEHM",
+      "RANGE"
+    ],
+    "Q09_iris_contribution": "From revised common-8, adding Iris alone raises the Homogeneity favorable count from 3/6 to 4/6 and individually flips YACHT.",
+    "Q10_mushroom_and_removed_dataset_contribution": "Adding Mushroom alone raises revised common-8 from 3/6 to 6/6 and flips MCLA, YACHT, and RANGE. In the old predictions, removing USPS3568 flips HBGF and GPEC to favorable, whereas removing Handwritten flips MCLA from favorable to unfavorable. These are descriptive because common-8 predictions drift.",
+    "Q11_replacement_or_prediction_drift": "Unresolved: broad common-8 prediction drift prevents isolating dataset replacement from environment effects.",
+    "Q12_positive_nmi_phi_h_positive": {
+      "OLD_CORE10": 0.875,
+      "REVISED_CORE10_NATIVE": 1.0,
+      "REVISED_CORE9_NO_CHAMELEON": 1.0
+    },
+    "Q13_homogeneity_contribution_more_often_dominant": "No. In revised Core-10 positive-NMI cases, |phi_h| dominates in 35.3% while |phi_c| dominates in 64.7%.",
+    "Q14_old_vs_revised_hc_attribution": "phi_h>0 rises from 87.5% (old) to 100% (revised), but completeness remains more often dominant: 70.0% old versus 64.7% revised.",
+    "Q15_fragmentation_and_mixing_axes_jointly_hold": "Only 3/6 comparators (HBGF, YACHT, GPEC); the >=4/6 two-axis gate is not met.",
+    "Q16_final_classification": "H-D — ATTRIBUTION_UNRESOLVED_DUE_TO_PREDICTION_DRIFT",
+    "Q17_reduced_inter_class_mixing_supported": "Not robustly under the frozen composite gate; evidence is metric-dependent and attribution is confounded by prediction drift.",
+    "Q18_two_axis_reorganization_supported": "No: both-axis support is 3/6 in both revised Core-10 and Core-9.",
+    "Q19_exploratory_only_conclusions": "All new Homogeneity/mixing, replacement-attribution, h/c Shapley, and two-axis interpretations are exploratory.",
+    "Q20_paper_narrative": "Do not promote dataset replacement, reduced inter-class mixing, or two-axis reorganization to a main mechanism claim. Keep fragmentation as the cleaner existing structural observation and disclose revised-cohort Homogeneity as an exploratory, environment/cohort-sensitive observation if mentioned."
+  }
+}

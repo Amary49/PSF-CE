@@ -1,0 +1,88 @@
+{
+  "schema": "psfce-release-validation-v8",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+  "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "scientific_results_changed": false,
+  "public_release_status": "READY_FOR_PUBLIC_GITHUB_UPLOAD",
+  "packaging_checks": {
+    "status": "PASS",
+    "details": "Portable text is UTF-8 without BOM and LF-only; public manifests use POSIX paths; root and Figure 1 manifests/checksums are regenerated; no GitHub-size file issue is present."
+  },
+  "release_validator": {
+    "status": "PASS",
+    "details": "The validator passes source locks, machine-path and secret scans, 210-cell score coverage, citation coverage/corrections, cohort provenance, BP redistribution scope, Path A, Figure 1, table typography, Table II reconstruction, YACHT helper exclusion, and V8 public-license/readiness guards."
+  },
+  "license_scope_checks": {
+    "status": "PASS",
+    "details": "A root MIT license covers project-authored source/docs/configs/artifacts; pyproject.toml and CITATION.cff declare MIT. Six UCI-derived Iris/Mushroom frozen-BP files remain separately attributed under CC BY 4.0 and are excluded from the MIT scope by NOTICE.md."
+  },
+  "third_party_license_checks": {
+    "status": "PASS_FOR_DISTRIBUTED_SCOPE",
+    "details": "No third-party author repository, MATLAB binary/P-code/MEX component, or dependency wheel/source is vendored. PyMetis 2025.2.2 is separately installed and its PyPI metadata reports MIT AND Apache-2.0. Upstream author-repository licenses left as NOASSERTION are not guessed because those repositories are not redistributed."
+  },
+  "git_normalization_check": {
+    "status": "PASS",
+    "details": "A fresh Git staging test with core.autocrlf=false showed zero staged-vs-working blob hash differences."
+  },
+  "python_import": {
+    "status": "PASS",
+    "details": "psfce and baseline_adapters remain included in package discovery."
+  },
+  "python_tests": {
+    "status": "PASS_WITH_SKIP",
+    "details": "16 passed and 1 skipped after the V8 public-release changes. The skip is not counted as a pass."
+  },
+  "python_wheel_build": {
+    "status": "PASS",
+    "details": "A source wheel build completed with the already-installed build backend using --no-build-isolation; package metadata including the root LICENSE was accepted."
+  },
+  "citation_metadata_checks": {
+    "status": "PASS",
+    "details": "Repository bibliography corrections include Derek Greene attribution for the BBC dataset repository, cnab014 as an article number, Jhy1993/HAN repository attribution, UCI Iris year 1936 with 1988 donation note, and UCI Mushroom year 1981 with 1987 donation note."
+  },
+  "table_rebuild": {
+    "status": "PASS",
+    "details": "Path A and Table II rebuild deterministically. Table I and Table II retain explicit 9-pt body/note text; displayed values and counts are unchanged."
+  },
+  "figure_rebuild": {
+    "status": "PASS",
+    "details": "Figure 1 rebuilds from its full-precision CSV on a native 3.39 by 1.82 inch canvas with a configured minimum font size of 9 pt and no manuscript downscaling."
+  },
+  "frozen_config_checks": {
+    "status": "PASS",
+    "details": "Every source lock matches its public frozen file; the provenance copy is identical; the recent-baseline source path uses POSIX separators."
+  },
+  "frozen_bp_redistribution": {
+    "status": "PASS",
+    "details": "Exactly six Iris/Mushroom pools are present and byte-match the formal hashes; y and 20-by-n parts array contracts pass. The remaining 24 pools expose no public path and remain hash-only."
+  },
+  "data_provenance_checks": {
+    "status": "PASS_WITH_DOCUMENTED_GAPS",
+    "details": "All ten tasks have source mappings. Iris and Mushroom use official UCI CC BY 4.0 records; incomplete derived-byte lineage for other tasks remains explicitly disclosed and their exact local pools are not redistributed."
+  },
+  "matlab_execution_verified": {
+    "status": "NOT_VERIFIED",
+    "details": "No MATLAB algorithm rerun was performed during packaging. The installed packaging host was identified as R2026a Update 5, but the historical formal-run MATLAB version remains unrecorded."
+  },
+  "linux_execution": {
+    "status": "NOT_VERIFIED",
+    "details": "Native Linux algorithm execution is not claimed; POSIX path, LF, checksum, rebuild, Git staging, and Python tests are checked separately."
+  },
+  "path_b_public_end_to_end": {
+    "status": "NOT_CLAIMED",
+    "details": "Only Iris/Mushroom BP inputs are public. The other 24 pools, prediction archives, and the YACHT private helper are not redistributed, so a full public ten-dataset rerun is outside the release claim."
+  },
+  "skipped_checks": [
+    "native Linux execution",
+    "full Python/MATLAB algorithm rerun from raw features",
+    "raw-y metric recomputation",
+    "historical formal-run MATLAB version reconstruction"
+  ],
+  "blockers": [],
+  "readiness": {
+    "private_github": "READY",
+    "public_source_release": "READY",
+    "public_end_to_end_reproduction": "NOT_CLAIMED"
+  },
+  "scope_note": "Public-release readiness here is a repository packaging and provenance determination for the material actually distributed, not a legal opinion about omitted upstream materials."
+}

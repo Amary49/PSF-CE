@@ -1,0 +1,6 @@
+frozen_order,candidate,official_source,provenance_status,mcla_exact_c_pools,cehm_exact_c_pools,joint_exact_c_pools,decision,admitted_to_revised_core10,performance_read_before_admission
+1,Ecoli,https://archive.ics.uci.edu/dataset/39/ecoli,RESOLVED,3,0,0,FAIL,false,false
+2,Dermatology,https://archive.ics.uci.edu/dataset/33/dermatology,RESOLVED,3,0,0,FAIL,false,false
+3,Iris,https://archive.ics.uci.edu/dataset/53/iris,RESOLVED,3,3,3,PASS,true,false
+4,Heart,https://archive.ics.uci.edu/dataset/45/heart+disease,PROVENANCE_UNRESOLVED,0,0,0,PROVENANCE_UNRESOLVED,false,false
+5,Mushroom,https://archive.ics.uci.edu/dataset/73/mushroom,RESOLVED,3,3,3,PASS,true,false

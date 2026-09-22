@@ -1,0 +1,96 @@
+{
+  "development_csv_sha256": "a7f1c558e134fe60e21e05f942d7c3573014292d13a365672ef64ca04122dfcb",
+  "diagnostics": {
+    "AggregatePower": {
+      "best_selection_ACC": 0.70065520899771,
+      "candidates_within_epsilon": 3,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6583367258974187,
+      "q25_ACC": 0.5522727272727272,
+      "selected_mean_ACC": 0.70065520899771,
+      "selection_score_ACC": 0.70065520899771
+    },
+    "DCKL": {
+      "best_selection_ACC": 0.6992348305050404,
+      "candidates_within_epsilon": 3,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6490054661773564,
+      "q25_ACC": 0.5522727272727272,
+      "selected_mean_ACC": 0.6992348305050404,
+      "selection_score_ACC": 0.6992348305050404
+    },
+    "LinearPair": {
+      "best_selection_ACC": 0.7012476152281056,
+      "candidates_within_epsilon": 1,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6490054661773564,
+      "q25_ACC": 0.5659090909090909,
+      "selected_mean_ACC": 0.7012476152281056,
+      "selection_score_ACC": 0.7012476152281056
+    },
+    "PSF-CE": {
+      "best_selection_ACC": 0.6965920435480429,
+      "candidates_within_epsilon": 72,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6490054661773564,
+      "q25_ACC": 0.5522727272727272,
+      "selected_mean_ACC": 0.6965920435480429,
+      "selection_score_ACC": 0.6965920435480429
+    },
+    "Poly2": {
+      "best_selection_ACC": 0.7085428915704042,
+      "candidates_within_epsilon": 1,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6729926169036379,
+      "q25_ACC": 0.5670995670995671,
+      "selected_mean_ACC": 0.7085428915704042,
+      "selection_score_ACC": 0.7085428915704042
+    },
+    "SA-CSI": {
+      "best_selection_ACC": 0.706079375702518,
+      "candidates_within_epsilon": 3,
+      "datasets": 12,
+      "families": 0,
+      "family_balanced": false,
+      "median_ACC": 0.6584855743231337,
+      "q25_ACC": 0.5482683982683982,
+      "selected_mean_ACC": 0.706079375702518,
+      "selection_score_ACC": 0.706079375702518
+    }
+  },
+  "epsilon_pp": 0.15,
+  "methods": {
+    "AggregatePower": {
+      "q_after": 6.0
+    },
+    "CA": {},
+    "DCKL": {
+      "alpha": 0.6
+    },
+    "LinearPair": {
+      "lambda": 3.0
+    },
+    "PSF-CE": {
+      "lambda": 0.665,
+      "q": 0.72
+    },
+    "Poly2": {
+      "eta": 8.0
+    },
+    "SA-CSI": {
+      "gamma": 8.0,
+      "lambda": 0.5
+    }
+  },
+  "policy": "family_robust"
+}

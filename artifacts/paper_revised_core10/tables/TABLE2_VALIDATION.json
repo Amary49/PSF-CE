@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+  "cohort": "REVISED_CORE10_NATIVE",
+  "comparators": [
+    "MCLA",
+    "HBGF",
+    "CEHM",
+    "YACHT",
+    "RANGE",
+    "GPEC"
+  ],
+  "displayed_counts": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    1
+  ],
+  "profile_gate": ">=4/6 comparator-level median changes in the stated direction",
+  "counts_are_significance_tests": false,
+  "exclude_chameleon_core9_all_six_counts_unchanged": true,
+  "causal_claim": "NOT_ESTABLISHED",
+  "source_files": [
+    {
+      "path": "artifacts/paper_revised_core10/mechanism/experiment3/FINAL_EXPLORATORY_REPORT.json",
+      "sha256": "e236ec3d75caeca819931a18652a3e5293fa279ac5e45a924630257470dab4d4"
+    },
+    {
+      "path": "artifacts/paper_revised_core10/mechanism/mixing_geometry/FINAL_CLUSTER_MIXING_GEOMETRY_REPORT.json",
+      "sha256": "6fbf2612dcc9d500a1e25b72b336aab6511d75a8ec834d38756ffc39ff549fe0"
+    }
+  ],
+  "source_csv": "artifacts/paper_revised_core10/tables/table2_partition_structure_source.csv",
+  "source_csv_sha256": "89d2843ff1d32eb780f89380a91884cb370074c8f8b9bd2f90a770da9dc39c5d",
+  "tex": "artifacts/paper_revised_core10/tables/table2_partition_structure.tex",
+  "tex_sha256": "e6148e1086a90796cce3f52c29820021bae589261146896fd0fb97a7ccf73429",
+  "latex_compile": "NOT_RUN_NO_LOCAL_TEX_ENGINE",
+  "static_latex_checks": "performed by release validator"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "psfce-environment-evidence-v1",
+  "formal_execution": {
+    "source_record_sha256": "59bd412701f2b0df4290a68f73f2a3bd6374ee9a1e481d5654fac6c8f6ea3f2a",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0",
+    "pymetis": "2025.2.2",
+    "matlab": "NOT_RECORDED",
+    "unrecorded_packages": ["pandas", "matplotlib", "h5py", "threadpoolctl"]
+  },
+  "release_packaging_validation": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "threadpoolctl": "3.6.0",
+    "h5py": "3.16.0",
+    "pymetis": "NOT_INSTALLED_IN_VALIDATION_ENVIRONMENT"
+  },
+  "current_host_matlab_inspection": {
+    "release": "R2026a",
+    "version": "26.1.0.3346908",
+    "update": 5,
+    "release_date": "2026-08-03",
+    "source": "local MATLAB installation VersionInfo.xml (exact machine path retained only in private audit)",
+    "boundary": "This identifies the MATLAB installation inspected during V8 packaging; it does not prove that the historical formal run used this exact release."
+  },
+  "boundary": "Python packaging tests do not verify MATLAB execution. Missing historical formal-run versions remain unrecorded rather than inferred."
+}

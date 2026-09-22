@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psfce"
+version = "1.0.0"
+description = "Frozen PSF-CE experiments with audited official recent-baseline adapters"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Haiyun Zhang"},
+  {name = "Luoqi Wang"},
+  {name = "Liang Du"},
+]
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0", "scipy>=1.13", "scikit-learn>=1.5", "pandas>=2.1", "matplotlib>=3.8", "threadpoolctl>=3.4"]
+
+[project.optional-dependencies]
+audit = ["h5py>=3.12"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["psfce*", "baseline_adapters*"]

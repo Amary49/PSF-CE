@@ -1,0 +1,145 @@
+{
+  "schema": "psfce-exploratory-cluster-mixing-geometry-final-v1",
+  "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+  "cohort_classifications": {
+    "REVISED_CORE10_NATIVE": "M-B",
+    "REVISED_CORE9_NO_CHAMELEON": "M-B"
+  },
+  "cohort_profile_counts": {
+    "REVISED_CORE10_NATIVE": {
+      "homogeneity": 5,
+      "MacroMixEntropy": 5,
+      "MacroPurity": 5,
+      "PairMixRate": 1,
+      "rho_size_entropy": 3,
+      "rho_size_pairmix": 4,
+      "LCMER": 1,
+      "Top1MixExcessRatio": 3,
+      "MixingHHI": 5,
+      "PurityGap": 4,
+      "EntropyGap": 4,
+      "PairMixGap": 4,
+      "concentration_metrics_ge4": 5
+    },
+    "REVISED_CORE9_NO_CHAMELEON": {
+      "homogeneity": 5,
+      "MacroMixEntropy": 5,
+      "MacroPurity": 5,
+      "PairMixRate": 1,
+      "rho_size_entropy": 3,
+      "rho_size_pairmix": 4,
+      "LCMER": 0,
+      "Top1MixExcessRatio": 3,
+      "MixingHHI": 5,
+      "PurityGap": 4,
+      "EntropyGap": 4,
+      "PairMixGap": 4,
+      "concentration_metrics_ge4": 5
+    }
+  },
+  "final_case": "M-B",
+  "final_label": "LOCALIZED_RESIDUAL_MIXING",
+  "comparator_classes_core10": {
+    "MCLA": "M",
+    "HBGF": "C",
+    "CEHM": "M",
+    "YACHT": "C",
+    "RANGE": "C",
+    "GPEC": "C"
+  },
+  "joint_localized_with_fragmentation": [
+    "HBGF",
+    "YACHT",
+    "RANGE",
+    "GPEC"
+  ],
+  "case_studies": {
+    "Iris": {
+      "psf_mean_returned_k": 3.0,
+      "psf_mean_cluster_size_cv": 0.06304755635512016,
+      "psf_mean_LCMER": 1.5429596114161939,
+      "psf_mean_Top1MixExcessRatio": 1.5429596114161939,
+      "psf_mean_MixingHHI": 0.5216437265009942,
+      "psf_mean_PurityGap": 0.16385792146661712,
+      "psf_mean_EntropyGap": 0.31153002728740836,
+      "psf_mean_PairMixGap": 0.22990673420921373
+    },
+    "Mushroom": {
+      "psf_mean_returned_k": 2.0,
+      "psf_mean_cluster_size_cv": 0.5580173970129657,
+      "psf_mean_LCMER": 1.071691910025131,
+      "psf_mean_Top1MixExcessRatio": 1.071691910025131,
+      "psf_mean_MixingHHI": 0.9839335620289363,
+      "psf_mean_PurityGap": 0.3184017873612801,
+      "psf_mean_EntropyGap": 0.7688390904799812,
+      "psf_mean_PairMixGap": 0.4045182934578968
+    }
+  },
+  "required_answers": {
+    "Q01_homogeneity_reproduced": 5,
+    "Q02_macro_mix_entropy_reproduced": 5,
+    "Q03_macro_purity_reproduced": 5,
+    "Q04_pair_mix_rate_reproduced": 1,
+    "Q05_stronger_size_mixing_association": {
+      "rho_size_entropy": 3,
+      "rho_size_pairmix": 4
+    },
+    "Q06_LCMER": 1,
+    "Q07_Top1MixExcessRatio": 3,
+    "Q08_MixingHHI": 5,
+    "Q09_PurityGap": 4,
+    "Q10_EntropyGap": 4,
+    "Q11_PairMixGap": 4,
+    "Q12_concentration_metrics_ge4": 5,
+    "Q13_core9_same_top_level": true,
+    "Q14_localized_comparators": [
+      "HBGF",
+      "YACHT",
+      "RANGE",
+      "GPEC"
+    ],
+    "Q15_uniform_comparators": [],
+    "Q16_mixed_or_unsupported_comparators": {
+      "mixed": [
+        "MCLA",
+        "CEHM"
+      ],
+      "unsupported": []
+    },
+    "Q17_mushroom": {
+      "psf_mean_returned_k": 2.0,
+      "psf_mean_cluster_size_cv": 0.5580173970129657,
+      "psf_mean_LCMER": 1.071691910025131,
+      "psf_mean_Top1MixExcessRatio": 1.071691910025131,
+      "psf_mean_MixingHHI": 0.9839335620289363,
+      "psf_mean_PurityGap": 0.3184017873612801,
+      "psf_mean_EntropyGap": 0.7688390904799812,
+      "psf_mean_PairMixGap": 0.4045182934578968
+    },
+    "Q18_iris": {
+      "psf_mean_returned_k": 3.0,
+      "psf_mean_cluster_size_cv": 0.06304755635512016,
+      "psf_mean_LCMER": 1.5429596114161939,
+      "psf_mean_Top1MixExcessRatio": 1.5429596114161939,
+      "psf_mean_MixingHHI": 0.5216437265009942,
+      "psf_mean_PurityGap": 0.16385792146661712,
+      "psf_mean_EntropyGap": 0.31153002728740836,
+      "psf_mean_PairMixGap": 0.22990673420921373
+    },
+    "Q19_joint_stable_structure": {
+      "localized_with_fragmentation": [
+        "HBGF",
+        "YACHT",
+        "RANGE",
+        "GPEC"
+      ],
+      "count": 4
+    },
+    "Q20_final_case": "M-B",
+    "Q21_uniform_purification_supported": false,
+    "Q22_localized_residual_mixing_supported": true,
+    "Q23_fragmentation_plus_localized_supported": true,
+    "Q24_paper_narrative": "LOCALIZED_RESIDUAL_MIXING"
+  },
+  "boundary": "Cluster-level geometry is exploratory structural evidence, not causal mechanism proof; no prediction or model was changed."
+}

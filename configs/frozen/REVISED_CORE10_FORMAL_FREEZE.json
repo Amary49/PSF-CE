@@ -1,0 +1,89 @@
+{
+  "M": 20,
+  "admission_performance_blind": true,
+  "admitted_by_frozen_exact_c_rule": [
+    "Iris",
+    "Mushroom"
+  ],
+  "cohort_name": "provenance-controlled revised Core-10 diagnostic cohort",
+  "dataset_order": [
+    {
+      "id": "D1",
+      "name": "BBC News Sport"
+    },
+    {
+      "id": "D2",
+      "name": "Leukemia"
+    },
+    {
+      "id": "D3",
+      "name": "Caltech101-20"
+    },
+    {
+      "id": "D4",
+      "name": "Leukemia2"
+    },
+    {
+      "id": "D5",
+      "name": "Chameleon"
+    },
+    {
+      "id": "D6",
+      "name": "Amazon Photo"
+    },
+    {
+      "id": "D7",
+      "name": "ORL"
+    },
+    {
+      "id": "D8",
+      "name": "ACM"
+    },
+    {
+      "id": "D9",
+      "name": "Iris"
+    },
+    {
+      "id": "D10",
+      "name": "Mushroom"
+    }
+  ],
+  "internal_controls": [
+    "CA",
+    "AggregatePower_q6",
+    "q1-fixed"
+  ],
+  "method_order": [
+    "MCLA",
+    "HBGF",
+    "CEHM",
+    "YACHT",
+    "RANGE",
+    "GPEC",
+    "PSF-CE"
+  ],
+  "pools_per_dataset": 3,
+  "protocol_id": "PSFCE-REVISED-CORE10-REPLACEMENT-20260921-V1",
+  "psfce": {
+    "calibration": "fro_centered",
+    "kmeans_n_init": 40,
+    "lambda": 0.665,
+    "q": 0.72,
+    "rounding": "strong",
+    "seed": 2027
+  },
+  "removed_for_development_provenance_overlap": [
+    "USPS3568",
+    "Handwritten"
+  ],
+  "schema": "psfce-revised-core10-freeze-v1",
+  "source_locks": {
+    "SEVEN_METHOD_LOCK.json": "728e707d428981a8dad16670213bf7ef206546e01eb881a5e76bf2b500b577b5",
+    "classic_frozen_methods.json": "d6d1bd2a33e8b926a65cac886b35320f39d266b7c4bf59ec0256ad4bab14c0b3",
+    "gpec_frozen_config.json": "343370e77494ee713e3bcf2c628c0428256de083570851c781f47abdc37bf749",
+    "gpec_official_source_lock.json": "95c7207866f273d1c5cf78eaf68f9ae54e043d97de16379bf66de3277e3e1ef9",
+    "psf_formal_options.json": "0fefee88c5c2a3d8c63ee760577ca3dbe4e97ae5bed4a25086a04877ca66a2c2",
+    "psf_frozen_methods.json": "0fb03df842879921e619f9702dc8db9426ccbc96b6428569444efed296c071d3",
+    "recent_frozen_methods.json": "dd16163d9e388e34b7d8a70004633c910b854a2f5ba7a9c90b11ac4e07ad72e6"
+  }
+}

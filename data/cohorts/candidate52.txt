@@ -1,0 +1,52 @@
+100Leaves
+10X PBMC
+11_Tumors
+3Sources
+ACM
+Actor
+ALOI
+Amazon Computers
+Amazon Photo
+BBC News Sport
+BBC-MV
+BBCSport-MV
+Caltech101-20
+Caltech101-20-MV
+Cardiotocography
+Chameleon
+CiteSeer
+Coauthor CS
+Coauthor Physics
+COIL100
+COIL20
+Cora
+CoraFull
+DBLP
+Extended Yale-B
+Handwritten
+Human Kidney
+IMDB
+LandUse-21
+Letter
+Leukemia
+Leukemia2
+MFeat-pix
+Movies617
+MSRC-v1
+NGs
+NUSWIDE-Object-2000
+ORL
+PubMed
+Reuters
+Scene15
+Squirrel
+UMIST
+USPS3568
+WebKB
+WebKB-Cornell
+WebKB-Texas
+WebKB-Washington
+WebKB-Wisconsin
+Wiki
+WikiCS
+Worm Neuron

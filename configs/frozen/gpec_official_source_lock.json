@@ -1,0 +1,111 @@
+{
+  "schema": "gpec-official-source-lock-v1",
+  "audited_utc_date": "2026-09-18",
+  "repo_url": "https://github.com/xuz2019/GPEC",
+  "reference_archive_name": "GPEC-main.zip",
+  "reference_archive_sha256": "dc849a46bd70b697015867205bc667267761dcb556e15e85bb90172e10e6f5b7",
+  "reference_note": "User supplied GitHub main-branch archive from the official xuz2019/GPEC repository. The archive has no .git metadata, so this lock identifies the exact audited source contents rather than asserting a commit hash.",
+  "canonicalization": "For text files, CRLF and lone CR are normalized to LF; all other bytes are preserved.",
+  "source_tree_policy": "All *.m files recursively; sort relative POSIX paths; hash each canonical file; SHA-256 the concatenated lines <relpath>|<canonical_sha256>\\n.",
+  "source_tree_file_count": 19,
+  "source_tree_canonical_sha256": "13a964195b463939d11f9e89b76bb1de7548bc1b0b05f90506fbc0e37c08c636",
+  "readme_canonical_sha256": "464768a37d7db135e4a8d9f8aa3e68729270b81b4795d24632b04247d413ee37",
+  "readme_reference_raw_sha256": "74f23a89dc6c9f8f90cc6c3f24f77b05c6725a2580767c3e5017b72ea6066226",
+  "files": [
+    {
+      "path": "main.m",
+      "canonical_sha256": "e007f33b19b235beed68e212387955d98a831d403fe195b1099115f213f42160",
+      "reference_raw_sha256": "1ef39f02cb0f4dfc948998c0f1f062766ee83aad7e75e0e1f5a4e6f68d68c3c0"
+    },
+    {
+      "path": "metric/Contingency.m",
+      "canonical_sha256": "1d09e52962fcde44b6c6a6dea068976bee42156d5524fd1e46514ac332f3d339",
+      "reference_raw_sha256": "1d09e52962fcde44b6c6a6dea068976bee42156d5524fd1e46514ac332f3d339"
+    },
+    {
+      "path": "metric/RandIndex.m",
+      "canonical_sha256": "ac26b18057c9823603222083741b2b46c00d8a425bbe92eb9206c1c3a65a001e",
+      "reference_raw_sha256": "ac26b18057c9823603222083741b2b46c00d8a425bbe92eb9206c1c3a65a001e"
+    },
+    {
+      "path": "metric/compute_nmi.m",
+      "canonical_sha256": "2fbe6e6670e24250b72d1041ff589bdd0c4aebeaba9f98b60a7c25aeb8aa4500",
+      "reference_raw_sha256": "2fbe6e6670e24250b72d1041ff589bdd0c4aebeaba9f98b60a7c25aeb8aa4500"
+    },
+    {
+      "path": "metric/compute_purity.m",
+      "canonical_sha256": "be9d5032bace4fb6d9dcf295da51c1f499d57ef68793821db00ca381674be1b2",
+      "reference_raw_sha256": "1bd97042a38cf9a3247b280b8e6e224554ccf02659432f56cc59fc1fdf576e9d"
+    },
+    {
+      "path": "optimization/BiasDiversity.m",
+      "canonical_sha256": "a25257188090da8277a46b67eb59b332c7ddde8806d47b544aa17cc8dd116d48",
+      "reference_raw_sha256": "a25257188090da8277a46b67eb59b332c7ddde8806d47b544aa17cc8dd116d48"
+    },
+    {
+      "path": "optimization/BiasDiversityGrad.m",
+      "canonical_sha256": "10a99015e1401f8a0b5a51f28994a03497a7de40ba4e9de42c161add104071c0",
+      "reference_raw_sha256": "10a99015e1401f8a0b5a51f28994a03497a7de40ba4e9de42c161add104071c0"
+    },
+    {
+      "path": "optimization/BiasDiversityUpdate.m",
+      "canonical_sha256": "8bc7a17c1d72a5b81d1f2f3cf7ac00933344bb28bcb800aabb8712528c695e60",
+      "reference_raw_sha256": "8bc7a17c1d72a5b81d1f2f3cf7ac00933344bb28bcb800aabb8712528c695e60"
+    },
+    {
+      "path": "optimization/computeNECI.m",
+      "canonical_sha256": "afcb2f0ab439f5fcdbb5d417e739b3ba51227d9c42e0518b780810a9a134bdb3",
+      "reference_raw_sha256": "afcb2f0ab439f5fcdbb5d417e739b3ba51227d9c42e0518b780810a9a134bdb3"
+    },
+    {
+      "path": "optimization/costFunction.m",
+      "canonical_sha256": "e1ec2b74d199fc7cfc07a50b43dccd1e0502d7e8172d3b8f955a9630651fb54c",
+      "reference_raw_sha256": "58026e1363f35c8fb9edb0a09d90a6fa5901779bbd48dad53550abf2f7f65ce8"
+    },
+    {
+      "path": "optimization/getSpectralZ.m",
+      "canonical_sha256": "8db9b0c1bd5abb987105af3ee61208894fb937be4fbaf0d6ff1a6a0505998bdd",
+      "reference_raw_sha256": "9ba73cd181754f2614fa325d27add5350e1109caf81252db6086efb2102b59cc"
+    },
+    {
+      "path": "optimization/initialWeightKer.m",
+      "canonical_sha256": "8c1624d5ea32700f1dc43651eac6e6b95ba9403506536fd5794d5e65ff0edb94",
+      "reference_raw_sha256": "8707516b6758c42c1e349a10c88ebbd73f58dc6892b36eb8f5d262440252d1e5"
+    },
+    {
+      "path": "optimization/litekmeans.m",
+      "canonical_sha256": "d619eb5ff4f56516836ea05bc07448b3fa34e1568f71d269fae4711c14c91f8f",
+      "reference_raw_sha256": "dcfd11bd866c5ac61b0d28e184e237654428faed2974027117a2252188d48619"
+    },
+    {
+      "path": "optimization/runBiasDiversity.m",
+      "canonical_sha256": "6953a5ae8cedc3bb59a5c3fef5e0bf47190b140ae4f5f0e2c57fbfe423435983",
+      "reference_raw_sha256": "65003ca09619ad5f3f3ae451891b92ce858f1c8700ec8f58cfda2197b5bada61"
+    },
+    {
+      "path": "optimization/sumKbeta.m",
+      "canonical_sha256": "b1137fea0622bc61e520c48e5c60df867337104deb4090dd03075078d25d0e2f",
+      "reference_raw_sha256": "b1137fea0622bc61e520c48e5c60df867337104deb4090dd03075078d25d0e2f"
+    },
+    {
+      "path": "utils/computeMetrics.m",
+      "canonical_sha256": "177362d45ec905fcd6d3f5743ff9f90490542da0fb8ceb87ec0772d5ca117499",
+      "reference_raw_sha256": "c1db482f44322c2c37a25418ea3d3337fcf8af3ed0ea08467517ff5ad23628ea"
+    },
+    {
+      "path": "utils/getAllSegs.m",
+      "canonical_sha256": "c7f6b651023bfb9917afddd72abdaadde7d67f1593b8e35a0946f18bedd079d5",
+      "reference_raw_sha256": "2fea4d4d283f8deac2d94e2fa64e12033c26c09e3785c5c6308ebceb77809d82"
+    },
+    {
+      "path": "utils/initialAdj.m",
+      "canonical_sha256": "995341964454776a58c3b880a6c4164b996e8994455705d5e7eb425a90dcb6af",
+      "reference_raw_sha256": "4d2b66025406523c8a18aed9939c36f622e590bb83dc3e2fe9ebb04eabc3746d"
+    },
+    {
+      "path": "utils/initialRandom.m",
+      "canonical_sha256": "10c8d31a532265d9f138696658e55770aa087736c6132e838d4f3852be217946",
+      "reference_raw_sha256": "ac1c38ed4302d5ada68c379db5d11206e0d619530460d94573f390c3c9f71b01"
+    }
+  ]
+}

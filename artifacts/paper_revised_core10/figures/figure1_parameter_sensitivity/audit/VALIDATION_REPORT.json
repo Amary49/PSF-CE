@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
+  "coverage": {
+    "datasets": 10,
+    "pools_per_dataset": 3,
+    "unique_parameter_configurations": 10,
+    "displayed_parameter_points": 11,
+    "unique_predictions": 300,
+    "displayed_pool_rows": 330,
+    "dataset_mean_rows": 110,
+    "summary_rows": 11
+  },
+  "aggregation": "three pools within each dataset, then equal-weight mean over ten datasets",
+  "frozen_point_check": {
+    "status": "PASS",
+    "formal_pool_rows_compared": 30,
+    "max_ACC_absolute_difference": 5.551115123125783e-17,
+    "max_NMI_absolute_difference": 5.551115123125783e-17,
+    "tolerance": 1e-12
+  },
+  "figure_check": {
+    "status": "PASS",
+    "x_spacing": "categorical_equal_spacing",
+    "shared_y_axis": true,
+    "y_range_percent": [36.0, 60.0],
+    "panel_labels_below_axes": true,
+    "legend_upper_center": true,
+    "frozen_marked_as_best": false,
+    "pdf_pages": 1,
+    "pdf_image_xobjects": 0,
+    "pdf_render_inspected": true,
+    "clipping_or_overlap_found": false
+  },
+  "portable_rebuild": {
+    "status": "PASS",
+    "environment": "fresh temporary directory containing only fig1_source.csv and build_figure1.py",
+    "hidden_dependency_on_original_workspace": false,
+    "rebuilt_png_matches_packaged_png_sha256": true
+  },
+  "observed_ranges_percentage_points": {
+    "q_sweep_ACC": 0.6023876060499256,
+    "q_sweep_NMI": 0.814048183536098,
+    "lambda_sweep_ACC": 0.7554532940084902,
+    "lambda_sweep_NMI": 1.6937287478372032
+  },
+  "resolved_build_issue": "The first plot-only build used exact floating-point dictionary lookup for categorical ordering. It was replaced by a 1e-12 tolerance match. No experiment value or aggregation output was changed.",
+  "full_algorithm_rerun_from_raw_data_in_public_package": "NOT_INCLUDED",
+  "parameter_reselection_performed": false,
+  "blockers": []
+}

@@ -1,0 +1,11 @@
+claim_id,status,claim,evidence,boundary
+C-MAIN-01,ALLOWED_DESCRIPTIVE,PSF-CE has highest mean NMI on revised Core-10,main_results_method_summary.csv,No Holm-significant comparison
+C-MAIN-02,ALLOWED_DESCRIPTIVE,PSF-CE ranks third in mean ACC,main_results_method_summary.csv,Descriptive rank only
+C-STRUCT-01,ALLOWED_EXPLORATORY,Reduced true-class fragmentation profile,experiment3/FINAL_EXPLORATORY_REPORT.json,"5/6; association, not causality"
+C-STRUCT-02,ALLOWED_EXPLORATORY,Localized residual mixing profile,mixing_geometry/FINAL_CLUSTER_MIXING_GEOMETRY_REPORT.json,M-B; not large-cluster concentration
+C-STRUCT-03,ALLOWED_EXPLORATORY,Fragmentation plus localized mixing,mixing_geometry/PARTITION_GEOMETRY_JOINT_SUMMARY.csv,4/6 comparators
+C-STRUCT-04,ALLOWED_EXPLORATORY,Favorable MI and AMI directions with MI-dominant positive-NMI decomposition,experiment3/FINAL_EXPLORATORY_REPORT.json,"MI 5/6; AMI 4/6; exploratory and non-causal"
+C-SENS-01,ALLOWED_DIAGNOSTIC,Post-freeze one-factor responses are bounded on the prespecified revised Core-10 grids,figure1_parameter_sensitivity/data/fig1_source.csv,Not parameter selection and not optimality evidence
+C-TABLE2-01,ALLOWED_EXPLORATORY,Table II reports six comparator-level directional profiles,tables/table2_partition_structure_source.csv,Not counts of significant tests and not causal proof
+C-CAUSAL-01,FORBIDDEN,Upstream spectral support causes the NMI profile,none,Causal source not isolated
+C-DEV-01,FORBIDDEN,Core-10 is an independent holdout,provenance history,Use post-freeze revised formal cohort

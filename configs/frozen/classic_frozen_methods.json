@@ -1,0 +1,55 @@
+{
+  "protocol_id": "PSF_CE_CLASSIC_MCLA_HBGF_FROZEN_20260916",
+  "status": "FROZEN_BEFORE_CURRENT_FORMAL_OUTCOMES",
+  "input_manifest": "<DATA_ROOT>/combined_manifest.csv",
+  "split": "formal",
+  "expected_datasets": 53,
+  "expected_pools_per_dataset": 3,
+  "expected_cells_per_method": 159,
+  "methods": {
+    "MCLA": {
+      "variant": "MCLA-METIS-PyMetis",
+      "definition": "binary base-cluster hyperedges; pairwise Jaccard meta-graph; recursive METIS into c meta-clusters with base-cluster sizes as vertex weights; mean association collapse; seeded epsilon tie break; argmax assignment",
+      "backend": "pymetis==2025.2.2",
+      "algorithm_seed": 0,
+      "resource_gate": {
+        "max_meta_similarity_cells": 25000000,
+        "action": "RESOURCE_BLOCKED",
+        "no_approximation": true
+      }
+    },
+    "HBGF": {
+      "variant": "HBGF-METIS-PyMetis",
+      "definition": "unweighted bipartite graph over samples and canonical base clusters; unit membership edges; recursive METIS into c parts; return sample-vertex labels",
+      "backend": "pymetis==2025.2.2",
+      "algorithm_seed": 0,
+      "resource_gate": {
+        "max_directed_edges": 50000000,
+        "action": "RESOURCE_BLOCKED",
+        "no_approximation": true
+      }
+    }
+  },
+  "class_count_rule": "c is the benchmark class count derived from y; y is otherwise unavailable to the consensus method",
+  "metrics": [
+    "ACC",
+    "NMI",
+    "ARI",
+    "MacroF1"
+  ],
+  "execution": {
+    "checkpoint_each_cell": true,
+    "resume_requires_explicit_flag": true,
+    "no_silent_retry": true,
+    "fail_closed_on_unexpected_error": true,
+    "source_inputs_read_only": true
+  },
+  "prohibited": [
+    "no development search or parameter tuning",
+    "no BP regeneration, filtering, weighting, or reordering",
+    "no spectral or hierarchical fallback",
+    "no paper-label oracle over multiple backends",
+    "no dataset deletion after outcomes"
+  ],
+  "public_copy_note": "Machine path replaced by a portable placeholder; original file hash is recorded in PRIVATE_AUDIT_SOURCE_MAP.csv."
+}

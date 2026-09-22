@@ -1,0 +1,23 @@
+{
+  "schema": "psfce-gpec-frozen-v2",
+  "protocol_id": "GPEC_ICML2025_FIXED_ALPHA01_CORE11_SOURCELOCK_V2",
+  "method": "GPEC",
+  "alpha": 0.1,
+  "M": 20,
+  "rng_seed": 2025,
+  "rng_policy": "The audited official optimization/litekmeans.m calls rng(2025) at function entry. The wrapper does not reseed the solver; deterministic per-input k-means initialization is therefore source-internal.",
+  "wrapper_rng_reset": false,
+  "author_main_rng_seed": 2025,
+  "author_litekmeans_rng_seed": 2025,
+  "author_internal_kmeans_replicates": 10,
+  "author_internal_kmeans_max_iter": 100,
+  "author_outer_nbitermax_declared": 500,
+  "author_outer_nbitermax_effectively_enforced": false,
+  "author_outer_stop_note": "The supplied runBiasDiversity.m sets options.nbitermax=500, but BiasDiversity.m does not test nbitermax in its while loop. The runner does not patch this author-code behavior.",
+  "parameter_selection": "Use alpha=0.1 uniformly for every formal dataset. The value is the one in the audited official author main.m demo; the repository readme also documents dataset-specific settings for the original comparative experiments. No PSF development or formal labels are used to choose alpha.",
+  "paper_url": "https://proceedings.mlr.press/v267/zhang25bl.html",
+  "repo_url": "https://github.com/xuz2019/GPEC",
+  "adapter_note": "Author main.m randomly subsamples M=20 from a larger member pool; this runner instead passes each benchmark-supplied frozen n-by-20 BP pool directly to the unchanged author runBiasDiversity entry point.",
+  "source_lock_file": "official_gpec_source_lock.json",
+  "source_setting_evidence": "Audited official main.m contains alpha = 0.1, M = 20, and rng(2025)."
+}

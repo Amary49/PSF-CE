@@ -1,0 +1,117 @@
+{
+  "schema": "psfce-exp3-exploratory-core10-core9-comparison-v1",
+  "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+  "overall_validation": "PASS",
+  "mcla_anomaly_verdict": "NO_OBVIOUS_CODE_ERROR; ENVIRONMENT_SENSITIVE_NATIVE_OUTPUT",
+  "variants": {
+    "native-output Core-10": {
+      "status": "PASS",
+      "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+      "dataset_count": 10,
+      "prediction_rows": 210,
+      "model_runs_performed": 0,
+      "provenance_rows": 300,
+      "exploratory_valid_rows": 300,
+      "original_all_checks_pass_rows": 298,
+      "returned_k_mismatch_rows": 2,
+      "internal_checksum_entries": 39,
+      "internal_checksum_failures": [],
+      "zip_artifact_id": "PSFCE-EXP3-NATIVE-CORE10-20260922",
+      "zip_members": 40,
+      "zip_test": "PASS",
+      "experiment1_reproduction_max_abs_error": 5.551115123125783e-16
+    },
+    "exclude-Chameleon Core-9": {
+      "status": "PASS",
+      "analysis_status": "EXPLORATORY_NOT_CONFIRMATORY",
+      "dataset_count": 9,
+      "prediction_rows": 189,
+      "model_runs_performed": 0,
+      "provenance_rows": 270,
+      "exploratory_valid_rows": 270,
+      "original_all_checks_pass_rows": 270,
+      "returned_k_mismatch_rows": 0,
+      "internal_checksum_entries": 39,
+      "internal_checksum_failures": [],
+      "zip_artifact_id": "PSFCE-EXP3-EXCLUDE-CHAMELEON-CORE9-20260922",
+      "zip_members": 40,
+      "zip_test": "PASS",
+      "experiment1_reproduction_max_abs_error": 5.551115123125783e-16
+    }
+  },
+  "top_level_outcomes_identical": true,
+  "all_24_comparator_metric_favorable_flags_identical": true,
+  "shared_core9_dataset_rows_numerically_identical": true,
+  "shared_core9_dataset_max_abs_difference": 0.0,
+  "native_core10": {
+    "H3_A": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians < -1e-12"
+    },
+    "H3_B": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians < -1e-12"
+    },
+    "AMI_profile": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 4,
+      "threshold": ">=4/6 comparator medians > 1e-12"
+    },
+    "MI_profile": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians > 1e-12"
+    },
+    "H3_C": {
+      "positive_delta_nmi_count": 34,
+      "phi_MI_positive_fraction": 1.0,
+      "phi_entropy_positive_fraction": 0.6470588235294118,
+      "MI_abs_dominant_fraction": 0.8529411764705882,
+      "entropy_abs_dominant_fraction": 0.14705882352941177,
+      "both_positive_fraction": 0.6470588235294118,
+      "MI_positive_entropy_negative_fraction": 0.35294117647058826,
+      "entropy_positive_MI_negative_fraction": 0.0,
+      "classification": "MI_DOMINANT"
+    },
+    "final_case": "Case A",
+    "final_interpretation": "Reduced true-class fragmentation co-occurs with favorable MI and AMI profiles on this exploratory cohort."
+  },
+  "exclude_chameleon_core9": {
+    "H3_A": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians < -1e-12"
+    },
+    "H3_B": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians < -1e-12"
+    },
+    "AMI_profile": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 4,
+      "threshold": ">=4/6 comparator medians > 1e-12"
+    },
+    "MI_profile": {
+      "status": "SUPPORTED",
+      "favorable_comparators": 5,
+      "threshold": ">=4/6 comparator medians > 1e-12"
+    },
+    "H3_C": {
+      "positive_delta_nmi_count": 32,
+      "phi_MI_positive_fraction": 1.0,
+      "phi_entropy_positive_fraction": 0.65625,
+      "MI_abs_dominant_fraction": 0.875,
+      "entropy_abs_dominant_fraction": 0.125,
+      "both_positive_fraction": 0.65625,
+      "MI_positive_entropy_negative_fraction": 0.34375,
+      "entropy_positive_MI_negative_fraction": 0.0,
+      "classification": "MI_DOMINANT"
+    },
+    "final_case": "Case A",
+    "final_interpretation": "Reduced true-class fragmentation co-occurs with favorable MI and AMI profiles on this exploratory cohort."
+  },
+  "interpretation": "The prespecified exploratory Experiment 3 profile is insensitive to excluding Chameleon at the top-level gate and per-comparator favorable-flag levels. This does not convert either run into a confirmatory result, repair MCLA's under-k output, or establish causality."
+}

@@ -1,0 +1,5 @@
+Ecoli
+Dermatology
+Iris
+Heart
+Mushroom

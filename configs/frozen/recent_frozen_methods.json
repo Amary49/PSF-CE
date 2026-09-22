@@ -1,0 +1,57 @@
+{
+  "coverage": {
+    "CEHM": {
+      "expected_records": 12,
+      "successful_records": 12
+    },
+    "RANGE": {
+      "expected_records": 12,
+      "successful_records": 12
+    },
+    "YACHT": {
+      "expected_records": 12,
+      "successful_records": 12
+    }
+  },
+  "dev_scores": {
+    "CEHM": {
+      "ACC": 0.6660894323461289,
+      "ARI": 0.5118235041457481,
+      "F1": 0.6185314304755776,
+      "NMI": 0.6230597930674038
+    },
+    "RANGE": {
+      "ACC": 0.7201578460430006,
+      "ARI": 0.5674795400720046,
+      "F1": 0.7124468605521067,
+      "NMI": 0.6320376139524497
+    },
+    "YACHT": {
+      "ACC": 0.6964067211506699,
+      "ARI": 0.5272573967763495,
+      "F1": 0.6919135832981484,
+      "NMI": 0.6066504287972007
+    }
+  },
+  "methods": {
+    "CEHM": {},
+    "RANGE": {
+      "alpha": 0.8,
+      "anchor_offset": 0,
+      "fuzzy_threshold": 0.8,
+      "kmeans_replicates": 3,
+      "lambda": 0.1
+    },
+    "YACHT": {
+      "alpha": 0.99,
+      "anchor_offset": 2,
+      "kmeans_replicates": 3,
+      "theta": 0.4,
+      "walk_order": 20
+    }
+  },
+  "schema": "psfce-v4-frozen-recent-baselines-v1",
+  "selection_metric": "ACC",
+  "source": "results/recent_dev.csv",
+  "source_sha256": "41c72aef656d27ecb43d2e10a3eaf7b941bee3a0d8da40839793000c34b3c669"
+}

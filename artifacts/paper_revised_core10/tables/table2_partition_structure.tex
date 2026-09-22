@@ -1,0 +1,35 @@
+% Revised Core-10 manuscript Table II
+% Requires: booktabs, amsmath
+\begin{table}[t]
+\centering
+\caption{Exploratory partition-structure directional profiles on revised Core-10.}
+\label{tab:partition_structure}
+\begingroup
+\fontsize{9}{10.2}\selectfont
+\setlength{\tabcolsep}{3.0pt}
+\renewcommand{\arraystretch}{1.01}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Diagnostic & Direction & Fav./6 \\
+\midrule
+\multicolumn{3}{l}{\textit{True-class fragmentation}} \\
+\quad $H(\hat{Z}\mid Y)$ & $\downarrow$ & \textbf{5/6} \\
+\quad Macro fragmentation & $\downarrow$ & \textbf{5/6} \\
+\addlinespace[1pt]
+\multicolumn{3}{l}{\textit{Predicted-cluster purification}} \\
+\quad Homogeneity & $\uparrow$ & \textbf{5/6} \\
+\quad Macro mixing entropy & $\downarrow$ & \textbf{5/6} \\
+\quad Macro purity & $\uparrow$ & \textbf{5/6} \\
+\addlinespace[1pt]
+\multicolumn{3}{l}{\textit{Residual inter-class mixing}} \\
+\quad Pair mixing rate & $\downarrow$ & 1/6 \\
+\bottomrule
+\end{tabular*}
+
+\vspace{2pt}
+\begin{minipage}{\columnwidth}
+\fontsize{9}{10.2}\selectfont
+\textit{Note:} Fav./6 counts comparator-level median changes beyond the numerical tolerance in the stated direction; these are not significance-test counts. Bold denotes the prespecified $\geq 4/6$ profile gate. The macro/pair contrast is consistent with localized residual mixing. All counts are unchanged after excluding Chameleon.
+\end{minipage}
+\endgroup
+\end{table}

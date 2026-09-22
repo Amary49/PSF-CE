@@ -1,0 +1,71 @@
+{
+  "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
+  "purpose": "post-freeze one-factor sensitivity diagnostic; not used for parameter reselection",
+  "cohort": [
+    "BBC News Sport",
+    "Leukemia",
+    "Caltech101-20",
+    "Leukemia2",
+    "Chameleon",
+    "Amazon Photo",
+    "ORL",
+    "ACM",
+    "Iris",
+    "Mushroom"
+  ],
+  "pools_per_dataset": 3,
+  "base_partitions_per_pool": 20,
+  "frozen_operating_point": {
+    "q": 0.72,
+    "lambda": 0.665
+  },
+  "q_sweep": {
+    "values": [
+      0.3,
+      0.72,
+      1.0,
+      6.0,
+      12.0
+    ],
+    "fixed_lambda": 0.665
+  },
+  "lambda_sweep": {
+    "values": [
+      0.1,
+      0.5,
+      0.665,
+      1.0,
+      4.0,
+      12.0
+    ],
+    "fixed_q": 0.72
+  },
+  "solver_lock": {
+    "seed": 2027,
+    "kmeans_n_init": 40,
+    "rounding": "strong",
+    "calibration": "fro_centered",
+    "pair_tolerance": 1e-11
+  },
+  "aggregation": "average three pools within each dataset, then equally average the ten dataset means",
+  "plot_contract": {
+    "x_positions": "categorical and equally spaced",
+    "shared_y_axis": true,
+    "units": "percent",
+    "acc_style": "solid line with circle markers",
+    "nmi_style": "dashed line with square markers",
+    "frozen_style": "filled markers and a thin vertical dotted line",
+    "legend_labels": [
+      "ACC",
+      "NMI",
+      "Frozen"
+    ],
+    "forbidden_labels": [
+      "best",
+      "optimal"
+    ]
+  },
+  "frozen_point_execution": "computed once and reused in both displayed panels",
+  "source_freeze_role": "revised Core-10 formal freeze protocol",
+  "source_freeze_sha256": "5e609072db6e70560f1fafee737050c459b0e00afcf911e874716677fdd1f0cc"
+}

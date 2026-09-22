@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
+  "purpose": "post-freeze one-factor sensitivity diagnostic; not used for parameter reselection",
+  "cohort": [
+    "BBC News Sport",
+    "Leukemia",
+    "Caltech101-20",
+    "Leukemia2",
+    "Chameleon",
+    "Amazon Photo",
+    "ORL",
+    "ACM",
+    "Iris",
+    "Mushroom"
+  ],
+  "q_grid": [
+    0.3,
+    0.72,
+    1.0,
+    6.0,
+    12.0
+  ],
+  "lambda_grid": [
+    0.1,
+    0.5,
+    0.665,
+    1.0,
+    4.0,
+    12.0
+  ],
+  "frozen_operating_point": {
+    "q": 0.72,
+    "lambda": 0.665
+  },
+  "aggregation": "three pools averaged within dataset, then ten datasets equally averaged",
+  "unique_configurations": 10,
+  "unique_predictions": 300,
+  "displayed_pool_rows": 330,
+  "dataset_rows": 110,
+  "summary_rows": 11,
+  "frozen_point_reused_across_panels": true,
+  "frozen_point_matches_formal_archive": true,
+  "max_frozen_ACC_abs_diff": 5.551115123125783e-17,
+  "max_frozen_NMI_abs_diff": 5.551115123125783e-17,
+  "elapsed_seconds": 281.95985555648804,
+  "source_manifest": [
+    {
+      "file_name": "cache.py",
+      "sha256": "6f17d9dff510c68b5b60f5e830609e73fea202234b015a0b8e6791c567467ab3",
+      "size_bytes": 1331
+    },
+    {
+      "file_name": "metrics.py",
+      "sha256": "9d34bd558ca49dd5c55c0abe678ce33fd620f7d6ba8a7953bcd291db911fd37b",
+      "size_bytes": 2756
+    },
+    {
+      "file_name": "models.py",
+      "sha256": "46cb9aff6e4ade8f8da739fa142bb7d40ab0ede8aadc2707675a4efcca7548c3",
+      "size_bytes": 8967
+    },
+    {
+      "file_name": "pair_spectrum.py",
+      "sha256": "90da80c05b5841b190a1c234d0577c5c25d027a517fc1e997f06a4d578eb5d0e",
+      "size_bytes": 8677
+    },
+    {
+      "file_name": "solver.py",
+      "sha256": "84c3403a9d137b7055a6ec4530bdfbccd02e5283afaa431cd31b451b96f93bbf",
+      "size_bytes": 6138
+    },
+    {
+      "file_name": "REVISED_CORE10_FORMAL_FREEZE.json",
+      "sha256": "5e609072db6e70560f1fafee737050c459b0e00afcf911e874716677fdd1f0cc",
+      "size_bytes": 2094
+    },
+    {
+      "file_name": "main_pool_scores.csv",
+      "sha256": "eb80641244e92f906576f98e206e0fd472ae8977514b6b1353238136bd54d8ca",
+      "size_bytes": 90017
+    }
+  ]
+}
