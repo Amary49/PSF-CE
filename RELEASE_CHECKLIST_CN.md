@@ -2,7 +2,7 @@
 
 ## 当前状态
 
-`READY_FOR_PUBLIC_GITHUB_UPLOAD`。V8 已补齐项目许可证、许可范围说明、第三方依赖说明，并保持既有科学结果不变。
+`READY_FOR_PUBLIC_GITHUB_UPLOAD`。V9 已补齐项目许可证、许可范围说明、第三方依赖说明，并与英文稿 V9.1 的最新证据口径对齐；既有算法、预测、分数、参数、图表和正式数据集均未改变。
 
 ## 可以直接公开上传
 
@@ -19,10 +19,10 @@
 ## 后续新增内容时必须重新核对
 
 - 新增任何数据、BP、第三方源码或二进制时，重新核对其许可和再分发条款。
-- 若以后希望公开 YACHT 端到端运行能力，需另行确认 `psfce_v4_yacht_walk` 的代码来源与可再分发性；V8 不包含该 helper。
+- 若以后希望公开 YACHT 端到端运行能力，需另行确认 `psfce_v4_yacht_walk` 的代码来源与可再分发性；V9 不包含该 helper。
 - Path B 目前只对 Iris/Mushroom 的 BP 输入闭合；其余八个任务仍不可公开端到端复现。这个边界不影响源码和 Path A 证据公开。
 - 最终论文题目、DOI 和 GitHub URL 尚未确定，因此 `CITATION.cff` 不虚构这些字段。
 
 ## 发布前最后一条命令
 
-运行 `python scripts/validate_release.py`，并确认 `python -m pytest -q` 通过。V8 的归档 ZIP 已按上述规则重新生成 manifest 和 SHA-256。
+运行 `python scripts/validate_release.py`，并确认 `python -m pytest -q` 通过。V9 的归档 ZIP 必须按上述规则重新生成 manifest 和 SHA-256；不得把私有审计、旧版 ZIP 或本机路径映射一并上传。

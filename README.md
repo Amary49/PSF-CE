@@ -4,9 +4,9 @@ This repository contains the PSF-CE implementation, audited baseline adapters, f
 
 ## Current version
 
-The manuscript evidence version is `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; the current repository package is `PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922`. V8 preserves the frozen algorithms, predictions, settings, and scores while closing the public-release packaging boundary: the project-authored material is MIT-licensed, separately licensed data artifacts are explicitly carved out, dependency notices are documented, and the public YACHT adapter does not embed the privately audited compatibility helper. Read `VERSION_LOCK.json` before using any number or claim.
+Three identifiers are intentionally separated. The frozen scientific evidence remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; the active English submission source is `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922`; and this public repository package is `PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922`. V9 preserves the frozen algorithms, predictions, settings, scores, figures, and tables while aligning the public claim contract and manuscript handoff with V9.1. Read `VERSION_LOCK.json` and `docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md` before using any number or claim.
 
-Authors: Haiyun Zhang (Zhejiang University; Shanxi University), Luoqi Wang (Shanxi University), and Liang Du (Shanxi University). The final paper title, DOI, and public repository URL remain pending and are not fabricated here.
+Authors: Haiyun Zhang (Zhejiang University; Shanxi University), Luoqi Wang (Shanxi University), and Liang Du (Shanxi University). The active manuscript title is *Pairwise Spectral Filtering Before Fusion for Clustering Ensembles*. The DOI and final public repository URL remain pending and are not fabricated here.
 
 **Release status:** `READY_FOR_PUBLIC_GITHUB_UPLOAD`. Upload the contents of this directory at the repository root. Read `LICENSE_STATUS.md`, `NOTICE.md`, and `THIRD_PARTY.md` before adding any new data or third-party code.
 
@@ -15,6 +15,8 @@ The revised Core-10 cohort contains BBC News Sport, Leukemia, Caltech101-20, Leu
 PSF-CE has the highest descriptive mean NMI and third-highest descriptive mean ACC. No NMI comparison is significant after Holm correction. Exploratory diagnostics associate the NMI-oriented profile with reduced true-class fragmentation and localized residual mixing; they do not prove a causal upstream mechanism.
 
 The paper-artifact directory now includes (i) a post-freeze one-factor sensitivity figure rebuilt on revised Core-10 and (ii) an exploratory Table II whose six profile counts are generated from the archived structural reports. The sensitivity sweep is diagnostic only and is not used for parameter reselection. See `artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/` and `artifacts/paper_revised_core10/tables/table2_partition_structure.tex`.
+
+The manuscript source itself is not duplicated in this code repository. Its archive identity and SHA-256 are recorded in `docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json`; that lock is provenance metadata, not a claim that the manuscript ZIP is distributed here.
 
 ## Cohort provenance
 
@@ -25,7 +27,7 @@ The historical 53-dataset archive became `Candidate-52` after exclusion of the p
 - Path A: `python scripts/rebuild_paper_results.py --output-dir runtime_results/rebuilt` rebuilds the main summaries from archived pool scores. It requires no raw data or MATLAB and does not rerun clustering.
 - Path B is only partially public. The six exact Iris and Mushroom frozen-BP pools are redistributed under their upstream CC BY 4.0 terms in `frozen_bp/`; the other 24 pools remain hash-only and private. A full ten-dataset rerun therefore still requires locally supplied, legally obtained inputs and the third-party environments listed in `THIRD_PARTY.md`.
 
-Install the source checkout with `python -m pip install -e .`; install audit-only dependencies with `python -m pip install -e ".[audit,test]"`; run tests with `python -m pytest -q`.
+Install the source checkout with `python -m pip install -e .`; install audit/test dependencies with `python -m pip install -e ".[audit,test]"`; run tests with `python -m pytest -q`. The controlled MCLA/HBGF regression test additionally requires the frozen optional dependency in `requirements-classic.txt`; without it, that single test is reported as skipped rather than passed.
 
 ## Important boundaries
 

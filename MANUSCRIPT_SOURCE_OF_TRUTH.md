@@ -1,6 +1,6 @@
-# Manuscript Source of Truth V5 (public repository release V8)
+# Manuscript Source of Truth (English V9.1 / public repository V9)
 
-This directory is the only active source for writing the PSF-CE manuscript after 2026-09-22.
+This directory is the public evidence source for the active English manuscript `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922`. The scientific evidence lock remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; repository V9 changes documentation, validation, and claim alignment only. New manuscript edits must use this file and `PAPER_CLAIMS_CONTRACT.md`, not older handoffs or chat history.
 
 ## Active formal scope
 
@@ -12,7 +12,7 @@ This directory is the only active source for writing the PSF-CE manuscript after
 
 ## What the evidence supports
 
-PSF-CE has the highest descriptive mean NMI and the third-highest descriptive mean ACC in the revised Core-10 table. None of its six NMI comparisons is significant after Holm correction. Exploratory analyses associate the NMI-oriented profile with (i) reduced true-class fragmentation, (ii) macro-level cluster purification with localized residual mixing, and (iii) favorable MI/AMI directions whose positive-NMI decomposition is MI-dominant overall. These are partition-level structural associations, not causal mediation or proof of an upstream component.
+PSF-CE has the highest descriptive mean NMI and the third-highest descriptive mean ACC in the revised Core-10 table. None of its six NMI comparisons is significant after Holm correction. Exploratory analyses associate the NMI-oriented profile with (i) reduced true-class fragmentation, (ii) macro-level cluster purification with localized residual mixing, and (iii) favorable MI and AMI directions for 5/6 and 4/6 comparators, respectively. These are partition-level structural associations, not causal mediation, proof of an upstream component, or evidence that mutual information dominates every positive NMI difference.
 
 Safe manuscript sentence:
 
@@ -27,7 +27,7 @@ Safe manuscript sentence:
 
 - Revised Core-10 must not be called an independent holdout. It is a post-freeze revised formal cohort with disclosed development provenance.
 - Only the six exact Iris/Mushroom frozen-BP files are public under CC BY 4.0. The remaining 24 formal pools are authenticated by hash but not redistributed.
-- The public YACHT adapter requires a separately supplied audited compatibility helper; the helper is not included in V8.
+- The public YACHT adapter requires a separately supplied audited compatibility helper; the helper is not included in V9.
 - Chameleon/MCLA pool 0 and pool 2 return four clusters for a five-class task. These native outputs remain in all reported scores.
 - Exact-c was used only for performance-blind replacement-candidate admission with MCLA and CEHM; it is not a promise that every final method returns c clusters.
 - The cluster-geometry evidence is exploratory and does not establish causality.
@@ -36,3 +36,5 @@ Safe manuscript sentence:
 ## Superseded material
 
 Core-11/Isolet, the old Core-10 with USPS3568 and Handwritten, and the early `SCIENTIFIC_UPDATE_NOT_ACCEPTED` decision are retained only as historical audit records outside this active handoff.
+
+The old wording that characterized the positive-NMI decomposition as “MI-dominant overall” is also superseded. Only the directly reported MI and AMI comparator counts may be used.

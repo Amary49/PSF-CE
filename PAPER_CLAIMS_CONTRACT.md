@@ -6,7 +6,7 @@
 - PSF-CE is third by descriptive mean ACC on the revised Core-10 cohort.
 - The revised Core-10 NMI comparisons do not reach Holm-corrected significance.
 - The NMI-oriented profile is associated with reduced true-class fragmentation and localized residual mixing at the partition level.
-- MI and AMI have favorable exploratory directions for 5/6 and 4/6 comparators, respectively; positive NMI differences are MI-dominant overall and are not explained only by entropy normalization.
+- MI and AMI have favorable exploratory directions for 5/6 and 4/6 comparators, respectively.
 - The native-output and no-Chameleon sensitivity analyses give the same top-level exploratory classifications.
 - The post-freeze one-factor sensitivity sweep shows bounded variation on the prespecified revised-Core-10 grids and was not used for parameter reselection.
 
@@ -29,3 +29,4 @@
 - “All methods returned exactly the target number of clusters.”
 - “Core-10 is completely independent of development.”
 - “The frozen operating point is optimal on revised Core-10.”
+- “Positive NMI differences are MI-dominant overall.”

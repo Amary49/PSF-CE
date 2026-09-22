@@ -29,7 +29,7 @@
     "update": 5,
     "release_date": "2026-08-03",
     "source": "local MATLAB installation VersionInfo.xml (exact machine path retained only in private audit)",
-    "boundary": "This identifies the MATLAB installation inspected during V8 packaging; it does not prove that the historical formal run used this exact release."
+    "boundary": "This identifies the MATLAB installation first inspected during V8 packaging and carried unchanged into V9; it does not prove that the historical formal run used this exact release."
   },
   "boundary": "Python packaging tests do not verify MATLAB execution. Missing historical formal-run versions remain unrecorded rather than inferred."
 }

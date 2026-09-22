@@ -1,7 +1,8 @@
 {
-  "schema": "psfce-release-manifest-v8",
-  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+  "schema": "psfce-release-manifest-v9",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
   "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
   "portability_cleanup_only": false,
   "public_boundary_update": true,
   "public_release_ready": true,
@@ -9,12 +10,12 @@
   "algorithms_predictions_frozen_settings_and_scores_changed": false,
   "path_format": "POSIX forward slashes",
   "text_format": "UTF-8 without BOM; LF line endings",
-  "file_count_excluding_manifest_and_sums": 148,
+  "file_count_excluding_manifest_and_sums": 150,
   "files": [
     {
       "path": ".gitattributes",
-      "sha256": "e08dd2d9d489f3a7e0eae202bbf7486c4211fcb9ec4dcbbce6f1b719d7c03899",
-      "bytes": 285,
+      "sha256": "b3eeb7b00f64053d979fa3c97a6025aec6ca5ba806e4902b38e87ee4e48dd6b0",
+      "bytes": 292,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -26,162 +27,8 @@
       "public_scope": true
     },
     {
-      "path": "CHANGELOG.md",
-      "sha256": "a2abbf7d17fd17590dad5fc15cc2b8ed69e89cc9f9ac228172c226f56c02680f",
-      "bytes": 5128,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "CITATION.cff",
-      "sha256": "71013c363e4df3f3b9802d96721f594148613c265d2e1b4fafadf001979bb6dc",
-      "bytes": 702,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "DATA_AVAILABILITY.md",
-      "sha256": "4e6c4fa1d05683fe6f040ba6bda94dabe61c6f3d81046b2f79ac73cf5ba4119d",
-      "bytes": 1566,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "ENVIRONMENT_LOCK.json",
-      "sha256": "818fa65ef606661fc69a55b4858e1433dceb701e513b0edda25d46955b3bad9b",
-      "bytes": 1375,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "KNOWN_LIMITATIONS.md",
-      "sha256": "025dd897177ab943efcdb05f68ac62170439b15d9b4ec294b4263c53cf89a8ec",
-      "bytes": 1631,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "LICENSE",
-      "sha256": "01a9eaa664ef03808dfa3b4c62892dce5daef94325711e2c7c03e2800c0af194",
-      "bytes": 1095,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "LICENSE_STATUS.md",
-      "sha256": "bffaf8836f44d6b56a3d8698ab3fda3adc8bdbba2ec74c6246fdb54761a62d98",
-      "bytes": 1231,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "MANUSCRIPT_SOURCE_OF_TRUTH.md",
-      "sha256": "dccbe8f5bb1a5eb7ca57a16b581969f819b7282edb0e9acbd3edf50eebb43d61",
-      "bytes": 3474,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "NOTICE.md",
-      "sha256": "650254addb35a90d6a58aa667d81eeee02cf3e4a72c4fffe09f26faaf9a149c7",
-      "bytes": 1157,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "PAPER_CLAIMS_CONTRACT.csv",
-      "sha256": "056e075279175c558511c9bf3334bd88e80e64b7ba898f552a0be8a9a912a49d",
-      "bytes": 1559,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "PAPER_CLAIMS_CONTRACT.md",
-      "sha256": "43a390d3b835a05cc9f403ba6fdef1e5ebd04a3ee6838b10e42b1d532d2956a3",
-      "bytes": 2152,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "README.md",
-      "sha256": "12261d81373e0bfb7e7e4dee1928d77e0b2ba2319d1d4f7081f71470885c681c",
-      "bytes": 4816,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "RELEASE_CHECKLIST_CN.md",
-      "sha256": "94f586b9a6ffaf358f61fcdc3b6463d7bef63197f76442eca5053a2e184aa54b",
-      "bytes": 1773,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "REPRODUCIBILITY.md",
-      "sha256": "1668f035d1ae6e572fd19086fcddff78b63b0681fe0503624a6b35801c35b426",
-      "bytes": 2442,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "SOURCE_MAP.csv",
-      "sha256": "5d3452d7309d3243dc03e4e9a33bf07cf3c8bc49e75321bb5937356b57dbb26f",
-      "bytes": 33745,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "THIRD_PARTY.md",
-      "sha256": "6e48af0a0e76824648b33603dabd66cfcacb4e1ed515d273b7be3e6dfa1fea01",
-      "bytes": 3196,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "VALIDATION_REPORT.json",
-      "sha256": "4af53ff12c0040503cbe5ac88885ab377470e94ad0eb062d18f002eafa084427",
-      "bytes": 5262,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "VERSION_LOCK.json",
-      "sha256": "804c0598572ddd17923623605008b2ccfff4b9da048ce91aa9d1a50bc572727c",
-      "bytes": 4037,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/README.md",
-      "sha256": "7fcab8f95791f24af0136fb4cca24a4b5505def937f62bebf0c4de0d9c1339e8",
-      "bytes": 1101,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/MANUSCRIPT_INSERTION.md",
-      "sha256": "cec2fb81204c3070c7d145a1b3d39d3ebcbaad17ca14dce3acd3e91f42fa1065",
-      "bytes": 1487,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/PACKAGE_MANIFEST.json",
-      "sha256": "c324b1ac9fce6d467094643f2e22ea159f40a614b0611ea86030b6d84e29e0ad",
-      "bytes": 4032,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/README_CN.md",
-      "sha256": "78174dd577cf150aa0875c8ab71b1a153f4df48c25314df1345e66f306a6da38",
-      "bytes": 2191,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
       "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/audit/FIG1_BUILD_AUDIT.json",
-      "sha256": "59385859ca9072fd6062a6832e3848f77b4223d89fff1b6d8951dbae55e90a8e",
+      "sha256": "fb10538aaf991aa0c078b5b33801ffdd717f67122c1348acecb2bd49b62367eb",
       "bytes": 1300,
       "category": "paper_evidence",
       "public_scope": true
@@ -251,8 +98,8 @@
     },
     {
       "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.svg",
-      "sha256": "a1636d75a5027ecc6acaf6786840fbcfea39d2359ade66ccc34dfbf316bc73fc",
-      "bytes": 27855,
+      "sha256": "50db2b7b25c5ca8ff1ad5e0263fa4fc39c0c5164ffd08aa51974b8b52d9bac6c",
+      "bytes": 27702,
       "category": "figure",
       "public_scope": true
     },
@@ -264,9 +111,30 @@
       "public_scope": true
     },
     {
+      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/MANUSCRIPT_INSERTION.md",
+      "sha256": "cec2fb81204c3070c7d145a1b3d39d3ebcbaad17ca14dce3acd3e91f42fa1065",
+      "bytes": 1487,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
+      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/PACKAGE_MANIFEST.json",
+      "sha256": "69c3f83f7f135604bc41726eda371ba13c55c51446c87d49c3bd086e32e1a7dc",
+      "bytes": 4032,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
       "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/protocol/FIG1_REVISED_CORE10_PROTOCOL.json",
       "sha256": "5eed2c838244ee3d447ebd9f18f3414f2d6f55962746bac7792a831dd2357d45",
       "bytes": 1679,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
+      "path": "artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/README_CN.md",
+      "sha256": "78174dd577cf150aa0875c8ab71b1a153f4df48c25314df1345e66f306a6da38",
+      "bytes": 2191,
       "category": "paper_evidence",
       "public_scope": true
     },
@@ -300,8 +168,8 @@
     },
     {
       "path": "artifacts/paper_revised_core10/mechanism/experiment1/PART1_INFORMATION_MECHANISM_REPORT.md",
-      "sha256": "ca2a7f8679a65a5ae5870f2de80da16b47695c736a08b815722bf300b87ae770",
-      "bytes": 6901,
+      "sha256": "0a85caa6eb90b6a8ab725158f0b7fd4b9dfd88299d5dbda634a1650a6b79d4aa",
+      "bytes": 6899,
       "category": "paper_evidence",
       "public_scope": true
     },
@@ -309,13 +177,6 @@
       "path": "artifacts/paper_revised_core10/mechanism/experiment1/PART1_MECHANISM_SUMMARY.csv",
       "sha256": "74e72e7fa22ab0a3a93f6948692aebad968ad6e292c4f91369b9007bc280fcd8",
       "bytes": 1985,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/mechanism/experiment3/FINAL_EXPLORATORY_REPORT.json",
-      "sha256": "e236ec3d75caeca819931a18652a3e5293fa279ac5e45a924630257470dab4d4",
-      "bytes": 4437,
       "category": "paper_evidence",
       "public_scope": true
     },
@@ -330,6 +191,13 @@
       "path": "artifacts/paper_revised_core10/mechanism/experiment3/comparator_profiles.csv",
       "sha256": "abcd410bfe01431ffa6ed07fc603faf7eea364250c74c99b276eaf9a14124732",
       "bytes": 1704,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
+      "path": "artifacts/paper_revised_core10/mechanism/experiment3/FINAL_EXPLORATORY_REPORT.json",
+      "sha256": "e236ec3d75caeca819931a18652a3e5293fa279ac5e45a924630257470dab4d4",
+      "bytes": 4437,
       "category": "paper_evidence",
       "public_scope": true
     },
@@ -404,6 +272,13 @@
       "public_scope": true
     },
     {
+      "path": "artifacts/paper_revised_core10/README.md",
+      "sha256": "7fcab8f95791f24af0136fb4cca24a4b5505def937f62bebf0c4de0d9c1339e8",
+      "bytes": 1101,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
       "path": "artifacts/paper_revised_core10/scores/main_pool_scores.csv",
       "sha256": "eb80641244e92f906576f98e206e0fd472ae8977514b6b1353238136bd54d8ca",
       "bytes": 90017,
@@ -432,20 +307,6 @@
       "public_scope": true
     },
     {
-      "path": "artifacts/paper_revised_core10/tables/TABLE2_REVIEW.md",
-      "sha256": "736161a3ce0d2672c07cd750f29d5684e1f1f3cb45cee5292928e5059bc46892",
-      "bytes": 1302,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
-      "path": "artifacts/paper_revised_core10/tables/TABLE2_VALIDATION.json",
-      "sha256": "50d82b668831650850a22a6d747dd3816ea4da33e7f97f06dc21949e5a77a88b",
-      "bytes": 1394,
-      "category": "paper_evidence",
-      "public_scope": true
-    },
-    {
       "path": "artifacts/paper_revised_core10/tables/revised_main_table.tex",
       "sha256": "8e5643255c6724096dcce31fb0a0215a44b7ea761694ad8c9e9145d10a99490a",
       "bytes": 2416,
@@ -470,6 +331,20 @@
       "path": "artifacts/paper_revised_core10/tables/table2_partition_structure_source.csv",
       "sha256": "89d2843ff1d32eb780f89380a91884cb370074c8f8b9bd2f90a770da9dc39c5d",
       "bytes": 1622,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
+      "path": "artifacts/paper_revised_core10/tables/TABLE2_REVIEW.md",
+      "sha256": "736161a3ce0d2672c07cd750f29d5684e1f1f3cb45cee5292928e5059bc46892",
+      "bytes": 1302,
+      "category": "paper_evidence",
+      "public_scope": true
+    },
+    {
+      "path": "artifacts/paper_revised_core10/tables/TABLE2_VALIDATION.json",
+      "sha256": "50d82b668831650850a22a6d747dd3816ea4da33e7f97f06dc21949e5a77a88b",
+      "bytes": 1394,
       "category": "paper_evidence",
       "public_scope": true
     },
@@ -551,16 +426,16 @@
       "public_scope": true
     },
     {
-      "path": "configs/frozen/REVISED_CORE10_FORMAL_FREEZE.json",
-      "sha256": "5e609072db6e70560f1fafee737050c459b0e00afcf911e874716677fdd1f0cc",
-      "bytes": 2094,
+      "path": "CHANGELOG.md",
+      "sha256": "c071e001680ebf2c96562fd60efa08d070d40d27e25e14935b62df32106a2aac",
+      "bytes": 5901,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
-      "path": "configs/frozen/SEVEN_METHOD_LOCK.json",
-      "sha256": "728e707d428981a8dad16670213bf7ef206546e01eb881a5e76bf2b500b577b5",
-      "bytes": 2007,
+      "path": "CITATION.cff",
+      "sha256": "dd91a80479aeab1dc8c132f9b6715c3cbd04cb5705844d9d6e89652443c49df7",
+      "bytes": 702,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -607,6 +482,20 @@
       "public_scope": true
     },
     {
+      "path": "configs/frozen/REVISED_CORE10_FORMAL_FREEZE.json",
+      "sha256": "5e609072db6e70560f1fafee737050c459b0e00afcf911e874716677fdd1f0cc",
+      "bytes": 2094,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "configs/frozen/SEVEN_METHOD_LOCK.json",
+      "sha256": "728e707d428981a8dad16670213bf7ef206546e01eb881a5e76bf2b500b577b5",
+      "bytes": 2007,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
       "path": "configs/official_repositories.json",
       "sha256": "afccb24b23b23f973a5a57745455e1e6f0c535bdcdf5f50592f11f95e9e61349",
       "bytes": 707,
@@ -617,13 +506,6 @@
       "path": "configs/recent_baselines_registry.json",
       "sha256": "28442021bc2ba031a79434d3e2715287d86ba9d11a99db40f4914ebd093ba796",
       "bytes": 1135,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "data/README.md",
-      "sha256": "f078eb65440f4fb6c4d3228adf1b6c8f59a09470c5256393e5426a778c9d6f26",
-      "bytes": 633,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -691,9 +573,23 @@
       "public_scope": true
     },
     {
+      "path": "data/README.md",
+      "sha256": "f078eb65440f4fb6c4d3228adf1b6c8f59a09470c5256393e5426a778c9d6f26",
+      "bytes": 633,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
       "path": "data/sources.csv",
       "sha256": "e1ef0a0a64f0a4b810af9a19c2a72757e865b2dae5632168936072c7c4fde90c",
       "bytes": 4080,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "DATA_AVAILABILITY.md",
+      "sha256": "4e6c4fa1d05683fe6f040ba6bda94dabe61c6f3d81046b2f79ac73cf5ba4119d",
+      "bytes": 1566,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -708,6 +604,20 @@
       "path": "docs/fairness/BASELINE_FAIRNESS_AUDIT.md",
       "sha256": "7efed7f0246fdc279947a8ae6e85daba3b912c4a9a64c92af38b5414317b0a81",
       "bytes": 791,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md",
+      "sha256": "4e7311073ea3c9442c564857d14af19a04e52dc3e2fc828b1735809ff3311384",
+      "bytes": 2180,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json",
+      "sha256": "78374f387e367ecf8f253372658c15c2a8159223475b66cc8cd3ac42d28af520",
+      "bytes": 889,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -740,13 +650,6 @@
       "public_scope": true
     },
     {
-      "path": "docs/provenance/REPLACEMENT_CANDIDATE_SCREENING.csv",
-      "sha256": "2c19ffa78aa8cf287b8206734894de79a93ca3b1f5d491fe3b567cda41b6aad8",
-      "bytes": 662,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
       "path": "docs/provenance/refs_baselines_datasets_verified.bib",
       "sha256": "5126eec538df9ad2790809e30999e9b727c97b679f24ea69344cd80ae0a5353a",
       "bytes": 6765,
@@ -754,23 +657,16 @@
       "public_scope": true
     },
     {
-      "path": "frozen_bp/NOTICE_CC_BY_4.0.md",
-      "sha256": "ac11ffe8e47ae033d4d993c5e2ba2f5a1312e9f4af5bfb5cd906764e9bb7792e",
-      "bytes": 1025,
+      "path": "docs/provenance/REPLACEMENT_CANDIDATE_SCREENING.csv",
+      "sha256": "2c19ffa78aa8cf287b8206734894de79a93ca3b1f5d491fe3b567cda41b6aad8",
+      "bytes": 662,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
-      "path": "frozen_bp/README.md",
-      "sha256": "b00fc7d1db8b00f31554bd6d5054bce9c37d5f94e6052682681836b61a6ce46a",
-      "bytes": 1366,
-      "category": "documentation_or_config",
-      "public_scope": true
-    },
-    {
-      "path": "frozen_bp/REDISTRIBUTION_STATUS.csv",
-      "sha256": "895c37ea4a0ead1fd0c7bbb713f0b7f5bc3aae9c8bdc276d2d8054abf4326d05",
-      "bytes": 6723,
+      "path": "ENVIRONMENT_LOCK.json",
+      "sha256": "28d20f3c3023772f131116b2a6ddf4ebec170df775161b545057cc1c370c9363",
+      "bytes": 1411,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -813,6 +709,76 @@
       "path": "frozen_bp/mushroom/pool2.npz",
       "sha256": "b57b2c1c3d30f8b103baa240fe84b0be08e9269e6362928bc789e16b4c08490b",
       "bytes": 27903,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "frozen_bp/NOTICE_CC_BY_4.0.md",
+      "sha256": "ac11ffe8e47ae033d4d993c5e2ba2f5a1312e9f4af5bfb5cd906764e9bb7792e",
+      "bytes": 1025,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "frozen_bp/README.md",
+      "sha256": "b00fc7d1db8b00f31554bd6d5054bce9c37d5f94e6052682681836b61a6ce46a",
+      "bytes": 1366,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "frozen_bp/REDISTRIBUTION_STATUS.csv",
+      "sha256": "895c37ea4a0ead1fd0c7bbb713f0b7f5bc3aae9c8bdc276d2d8054abf4326d05",
+      "bytes": 6723,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "KNOWN_LIMITATIONS.md",
+      "sha256": "025dd897177ab943efcdb05f68ac62170439b15d9b4ec294b4263c53cf89a8ec",
+      "bytes": 1631,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "01a9eaa664ef03808dfa3b4c62892dce5daef94325711e2c7c03e2800c0af194",
+      "bytes": 1095,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "sha256": "bffaf8836f44d6b56a3d8698ab3fda3adc8bdbba2ec74c6246fdb54761a62d98",
+      "bytes": 1231,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "MANUSCRIPT_SOURCE_OF_TRUTH.md",
+      "sha256": "f4a199fe3cf6d8951cf853e7f6cbde2f02e1342204d6cf42cc27a495835560ab",
+      "bytes": 4050,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "650254addb35a90d6a58aa667d81eeee02cf3e4a72c4fffe09f26faaf9a149c7",
+      "bytes": 1157,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "PAPER_CLAIMS_CONTRACT.csv",
+      "sha256": "2fb8d77d3fb0a5f150c7fd445cb2138c4eac6f83c88302c40a2ccd2d2ecbfaa4",
+      "bytes": 1714,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "PAPER_CLAIMS_CONTRACT.md",
+      "sha256": "0b98a738056604b8901e442d8bdf0d7e3f48043f669f1d2e8b70f4cc4d959cab",
+      "bytes": 2108,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -943,6 +909,27 @@
       "public_scope": true
     },
     {
+      "path": "README.md",
+      "sha256": "6b7bdf7d50be3b50a95dda3c495fec396af734adf0ac231e2e9dc80cde2e9d02",
+      "bytes": 5396,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "RELEASE_CHECKLIST_CN.md",
+      "sha256": "57376f393faef19c2450f819991b40d2d7c45ab30c0a60a9c84199189b83d2fe",
+      "bytes": 1943,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "sha256": "9d94238295181838a6b66b1fb9381c3e7656929fd9cf0b243ebba23b138b08e6",
+      "bytes": 2689,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
       "path": "requirements-audit.txt",
       "sha256": "e3f07fa31656cdf6299e3371f0cbd002958f3ca427af195a8cd6415bf6a14486",
       "bytes": 31,
@@ -986,8 +973,8 @@
     },
     {
       "path": "scripts/rebuild_portable_manifests.py",
-      "sha256": "e5694ee8c85c652dfb907a1865224d4bf305570de26df2a62cb695f07e22bd88",
-      "bytes": 8483,
+      "sha256": "79cb4e449ffea411f0f721e2b094caf30bdd285c0d2a57506ce919707c62f084",
+      "bytes": 8597,
       "category": "source",
       "public_scope": true
     },
@@ -1000,9 +987,16 @@
     },
     {
       "path": "scripts/validate_release.py",
-      "sha256": "e178779f80369a168fc9b891dd2dc9dbff963770b14bbaf13d227b15578465ea",
-      "bytes": 20211,
+      "sha256": "749fd70c03c0226cf62b480e8753ee5088c2e4b63d2d1682a90349571d176929",
+      "bytes": 24032,
       "category": "source",
+      "public_scope": true
+    },
+    {
+      "path": "SOURCE_MAP.csv",
+      "sha256": "69a50225cdb73f6ae38f59376addad46ed4b3b33f6e40cf75cc29239736e7106",
+      "bytes": 34236,
+      "category": "documentation_or_config",
       "public_scope": true
     },
     {
@@ -1045,6 +1039,27 @@
       "sha256": "7fdad453d391d9274fbecd54f02ae9cb42e1a1039d5c0ff2f58960ac2a574af9",
       "bytes": 1170,
       "category": "source",
+      "public_scope": true
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "6e48af0a0e76824648b33603dabd66cfcacb4e1ed515d273b7be3e6dfa1fea01",
+      "bytes": 3196,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "VALIDATION_REPORT.json",
+      "sha256": "dd29d4ca1da896dfc7ed131c724101734c0c1380b70c915ca2833ffcac99d79b",
+      "bytes": 6525,
+      "category": "documentation_or_config",
+      "public_scope": true
+    },
+    {
+      "path": "VERSION_LOCK.json",
+      "sha256": "652400eded5bf7468e6cf12cc866c866ebb39092503cde6ab0e5715b61facac4",
+      "bytes": 4362,
+      "category": "documentation_or_config",
       "public_scope": true
     }
   ]

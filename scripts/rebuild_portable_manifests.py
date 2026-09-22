@@ -102,9 +102,9 @@ def update_figure1_hash_contracts() -> None:
         if p.is_file() and p.name not in {"PACKAGE_MANIFEST.json", "SHA256SUMS.txt"}
     )
     package = {
-        "package": "PSF_CE_FIG1_REVISED_CORE10_INTEGRATED_V8",
+        "package": "PSF_CE_FIG1_REVISED_CORE10_INTEGRATED_V9",
         "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
-        "scope": "native-column Figure 1 evidence integrated into the V8 public repository; no raw feature data, prediction archives, machine paths, or private paths",
+        "scope": "native-column Figure 1 evidence integrated into the V9 public repository; no raw feature data, prediction archives, machine paths, or private paths",
         "file_count": len(members),
         "files": [
             {
@@ -159,7 +159,7 @@ def build_root_manifests() -> None:
             writer.writerow({
                 "path": path.relative_to(ROOT).as_posix(),
                 "role": category(path),
-                "origin": "current V8 public-release material; scientific results unchanged from the frozen revised Core-10 archive",
+                "origin": "current V9 public-release material; scientific results unchanged from the frozen revised Core-10 archive",
                 "sha256": sha256_file(path),
             })
 
@@ -169,9 +169,10 @@ def build_root_manifests() -> None:
         if p.is_file() and p.name not in {"RELEASE_MANIFEST.json", "SHA256SUMS.txt"}
     )
     manifest = {
-        "schema": "psfce-release-manifest-v8",
-        "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+        "schema": "psfce-release-manifest-v9",
+        "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
         "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+        "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
         "portability_cleanup_only": False,
         "public_boundary_update": True,
         "public_release_ready": True,

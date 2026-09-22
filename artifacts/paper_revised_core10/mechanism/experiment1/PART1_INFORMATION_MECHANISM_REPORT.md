@@ -103,5 +103,5 @@ This is an exploratory association under the revised frozen Core-10 diagnostic. 
 
 **The revised-cohort NMI profile is directionally accompanied by both homogeneity and completeness; causal and confirmatory interpretations are not established.**
 
-Filter-before-fusion attribution: **INCONCLUSIVE**  
+Filter-before-fusion attribution: **INCONCLUSIVE**
 Nonlinear `q!=1` attribution: **INCONCLUSIVE**

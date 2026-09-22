@@ -1,23 +1,13 @@
 {
-  "package": "PSF_CE_FIG1_REVISED_CORE10_INTEGRATED_V8",
+  "package": "PSF_CE_FIG1_REVISED_CORE10_INTEGRATED_V9",
   "protocol_id": "PSFCE-FIG1-REVISED-CORE10-POSTFREEZE-20260922-V1",
-  "scope": "native-column Figure 1 evidence integrated into the V8 public repository; no raw feature data, prediction archives, machine paths, or private paths",
+  "scope": "native-column Figure 1 evidence integrated into the V9 public repository; no raw feature data, prediction archives, machine paths, or private paths",
   "file_count": 17,
   "files": [
     {
-      "path": "core10/figures/figure1_parameter_sensitivity/MANUSCRIPT_INSERTION.md",
-      "size_bytes": 1487,
-      "sha256": "cec2fb81204c3070c7d145a1b3d39d3ebcbaad17ca14dce3acd3e91f42fa1065"
-    },
-    {
-      "path": "core10/figures/figure1_parameter_sensitivity/README_CN.md",
-      "size_bytes": 2191,
-      "sha256": "78174dd577cf150aa0875c8ab71b1a153f4df48c25314df1345e66f306a6da38"
-    },
-    {
       "path": "core10/figures/figure1_parameter_sensitivity/audit/FIG1_BUILD_AUDIT.json",
       "size_bytes": 1300,
-      "sha256": "59385859ca9072fd6062a6832e3848f77b4223d89fff1b6d8951dbae55e90a8e"
+      "sha256": "fb10538aaf991aa0c078b5b33801ffdd717f67122c1348acecb2bd49b62367eb"
     },
     {
       "path": "core10/figures/figure1_parameter_sensitivity/audit/FIG1_COMPUTATION_AUDIT.json",
@@ -66,8 +56,8 @@
     },
     {
       "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.svg",
-      "size_bytes": 27855,
-      "sha256": "a1636d75a5027ecc6acaf6786840fbcfea39d2359ade66ccc34dfbf316bc73fc"
+      "size_bytes": 27702,
+      "sha256": "50db2b7b25c5ca8ff1ad5e0263fa4fc39c0c5164ffd08aa51974b8b52d9bac6c"
     },
     {
       "path": "core10/figures/figure1_parameter_sensitivity/figures/fig1_revised_core10_postfreeze_sensitivity.tex",
@@ -75,9 +65,19 @@
       "sha256": "d3c056ab68385f56318f284ff7901285ddfeec5833d274c8448b9aca72a1932d"
     },
     {
+      "path": "core10/figures/figure1_parameter_sensitivity/MANUSCRIPT_INSERTION.md",
+      "size_bytes": 1487,
+      "sha256": "cec2fb81204c3070c7d145a1b3d39d3ebcbaad17ca14dce3acd3e91f42fa1065"
+    },
+    {
       "path": "core10/figures/figure1_parameter_sensitivity/protocol/FIG1_REVISED_CORE10_PROTOCOL.json",
       "size_bytes": 1679,
       "sha256": "5eed2c838244ee3d447ebd9f18f3414f2d6f55962746bac7792a831dd2357d45"
+    },
+    {
+      "path": "core10/figures/figure1_parameter_sensitivity/README_CN.md",
+      "size_bytes": 2191,
+      "sha256": "78174dd577cf150aa0875c8ab71b1a153f4df48c25314df1345e66f306a6da38"
     },
     {
       "path": "core10/figures/figure1_parameter_sensitivity/requirements-figure.txt",

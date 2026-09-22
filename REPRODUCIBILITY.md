@@ -14,6 +14,8 @@ The exploratory Experiment 3 and mixing-geometry scripts are archival analysis e
 
 Use `python -m pip install -e .` followed by `python -m pytest -q`. Audit scripts additionally require `requirements-audit.txt` or the `audit` optional dependency.
 
+The classic MCLA/HBGF regression test requires `requirements-classic.txt` and is explicitly skipped when frozen `pymetis==2025.2.2` is unavailable. A skip is not counted as a pass. This dependency is not required for Path A score reconstruction.
+
 ## Paper artifacts
 
 - Rebuild Figure 1 from its archived full-precision summary with `python artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/scripts/build_figure1.py --root artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity`. This redraws the figure but does not rerun clustering or reselect parameters.

@@ -32,7 +32,9 @@ def sha256_file(path: Path) -> str:
 
 required = [
     "VERSION_LOCK.json", "MANUSCRIPT_SOURCE_OF_TRUTH.md", "LICENSE", "LICENSE_STATUS.md", "NOTICE.md", "THIRD_PARTY.md",
-    "PAPER_CLAIMS_CONTRACT.md", "CITATION.cff", "ENVIRONMENT_LOCK.json",
+    "PAPER_CLAIMS_CONTRACT.md", "PAPER_CLAIMS_CONTRACT.csv", "CITATION.cff", "ENVIRONMENT_LOCK.json",
+    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json",
+    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md",
     "psfce/__init__.py", "configs/frozen/REVISED_CORE10_FORMAL_FREEZE.json",
     "data/dataset_manifest.csv", "data/dataset_manifest_candidate52.csv",
     "data/bp_pool_hashes.csv", "data/cohorts/candidate52.txt",
@@ -62,17 +64,29 @@ text_extensions = {".py", ".md", ".json", ".csv", ".tex", ".yaml", ".yml", ".tom
 portable_text_extensions = text_extensions | {".bib", ".m", ".svg"}
 portable_text_names = {".gitattributes", ".gitignore", ".gitkeep"}
 drive_path = re.compile(r"(?i)\b[A-Z]:[\\/]+")
+forbidden_names = {".env", "id_rsa", "id_ed25519", "credentials.json", "secrets.json"}
+archive_suffixes = {".zip", ".7z", ".rar", ".tar", ".tgz", ".gz"}
 for path in ROOT.rglob("*"):
     rel_parts = path.relative_to(ROOT).parts
     if any(part in {".git", ".venv", "__pycache__", ".pytest_cache"} for part in rel_parts):
         errors.append("forbidden path: " + path.relative_to(ROOT).as_posix())
-    if path.is_file() and path.suffix.lower() in text_extensions:
+    if path.is_symlink():
+        errors.append("symlink not allowed in public archive: " + path.relative_to(ROOT).as_posix())
+    if path.is_file() and path.name.lower() in forbidden_names:
+        errors.append("sensitive filename: " + path.relative_to(ROOT).as_posix())
+    if path.is_file() and path.suffix.lower() in archive_suffixes:
+        errors.append("nested archive: " + path.relative_to(ROOT).as_posix())
+    if path.is_file() and path.stat().st_size > 90 * 1024 * 1024:
+        errors.append("file exceeds 90 MiB public-release guard: " + path.relative_to(ROOT).as_posix())
+    if path.is_file() and (path.suffix.lower() in portable_text_extensions or path.name in portable_text_names):
         text = path.read_text(encoding="utf-8-sig", errors="replace")
         if drive_path.search(text):
             errors.append("machine path: " + path.relative_to(ROOT).as_posix())
         for pattern in (
             r"AKIA[0-9A-Z]{16}", r"gh[pousr]_[A-Za-z0-9_]{20,}",
             r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
+            r"sk-[A-Za-z0-9_-]{20,}", r"AIza[0-9A-Za-z_-]{35}",
+            r"xox[baprs]-[0-9A-Za-z-]{20,}",
         ):
             if re.search(pattern, text):
                 errors.append("possible secret: " + path.relative_to(ROOT).as_posix())
@@ -102,6 +116,8 @@ if "MIT AND Apache-2.0" not in third_party_text or "not vendored" not in third_p
     errors.append("third-party dependency notice incomplete")
 if 'license = {file = "LICENSE"}' not in pyproject:
     errors.append("Python project license metadata missing")
+if "version: 1.0.1" not in (ROOT / "CITATION.cff").read_text(encoding="utf-8"):
+    errors.append("CITATION.cff release version mismatch")
 
 current_text_files = [
     ROOT / "README.md", ROOT / "LICENSE_STATUS.md", ROOT / "RELEASE_CHECKLIST_CN.md", ROOT / "KNOWN_LIMITATIONS.md"
@@ -126,12 +142,39 @@ for required_bib in (
 version_lock = json.loads((ROOT / "VERSION_LOCK.json").read_text(encoding="utf-8"))
 if version_lock.get("version_id") != "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922":
     errors.append("V5 manuscript evidence lock mismatch")
-if version_lock.get("release_package_id") != "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922":
-    errors.append("V8 release package lock mismatch")
+if version_lock.get("release_package_id") != "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922":
+    errors.append("V9 release package lock mismatch")
+if version_lock.get("active_english_manuscript_version") != "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922":
+    errors.append("V9.1 English manuscript lock mismatch")
+if version_lock.get("active_english_manuscript_archive_sha256") != "b832b9bbc83cb663f5aa84ce51e3d7bad359e1f18d59db6d79ec7f1f8b768656":
+    errors.append("V9.1 English manuscript archive hash mismatch")
+if version_lock.get("active_manuscript_citation_count") != 21:
+    errors.append("V9.1 manuscript citation-count lock mismatch")
 if version_lock.get("public_release_status") != "READY_FOR_PUBLIC_GITHUB_UPLOAD":
     errors.append("public release status lock mismatch")
 if version_lock.get("project_license") != "MIT":
     errors.append("project license lock mismatch")
+
+manuscript_link = json.loads((ROOT / "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json").read_text(encoding="utf-8"))
+if manuscript_link.get("manuscript_version") != version_lock.get("active_english_manuscript_version"):
+    errors.append("manuscript-link version mismatch")
+if manuscript_link.get("archive_sha256") != version_lock.get("active_english_manuscript_archive_sha256"):
+    errors.append("manuscript-link archive hash mismatch")
+if manuscript_link.get("compatible_repository_release") != version_lock.get("release_package_id"):
+    errors.append("manuscript-link repository compatibility mismatch")
+if manuscript_link.get("manuscript_source_included") is not False:
+    errors.append("manuscript-source inclusion boundary mismatch")
+
+source_truth_text = (ROOT / "MANUSCRIPT_SOURCE_OF_TRUTH.md").read_text(encoding="utf-8")
+if "whose positive-NMI decomposition is MI-dominant overall" in source_truth_text:
+    errors.append("stale MI-dominance assertion in MANUSCRIPT_SOURCE_OF_TRUTH.md")
+claims_md_text = (ROOT / "PAPER_CLAIMS_CONTRACT.md").read_text(encoding="utf-8")
+active_claim_sections = claims_md_text.split("## Forbidden", 1)[0]
+if "MI-dominant overall" in active_claim_sections:
+    errors.append("stale MI-dominance assertion in active claim sections")
+claims_csv_text = (ROOT / "PAPER_CLAIMS_CONTRACT.csv").read_text(encoding="utf-8")
+if "C-DECOMP-01,FORBIDDEN" not in claims_csv_text or "no MI-dominance claim" not in claims_csv_text:
+    errors.append("claim-contract MI-dominance boundary missing")
 
 freeze_path = ROOT / "configs/frozen/REVISED_CORE10_FORMAL_FREEZE.json"
 freeze = json.loads(freeze_path.read_text(encoding="utf-8"))
@@ -230,6 +273,14 @@ if source_map.is_file():
 release_manifest = ROOT / "RELEASE_MANIFEST.json"
 if release_manifest.is_file():
     release_obj = json.loads(release_manifest.read_text(encoding="utf-8"))
+    if release_obj.get("schema") != "psfce-release-manifest-v9":
+        errors.append("RELEASE_MANIFEST schema mismatch")
+    if release_obj.get("release_package_id") != version_lock.get("release_package_id"):
+        errors.append("RELEASE_MANIFEST release-package mismatch")
+    if release_obj.get("active_english_manuscript_version") != version_lock.get("active_english_manuscript_version"):
+        errors.append("RELEASE_MANIFEST manuscript-version mismatch")
+    if release_obj.get("public_release_ready") is not True:
+        errors.append("RELEASE_MANIFEST public-readiness mismatch")
     release_rows = release_obj.get("files", [])
     if release_obj.get("file_count_excluding_manifest_and_sums") != len(release_rows):
         errors.append("RELEASE_MANIFEST file count mismatch")
@@ -358,5 +409,5 @@ print(
     "PASS: portable LF text, POSIX manifests, root checksums, structure, source locks, 210-cell coverage, citation coverage, "
     "Candidate-52 plus replacement-panel provenance, native under-k preservation, "
     "machine-path/secret scan, narrative guard, package version, Path A rebuild, "
-    "Figure 1 rebuild, Table II evidence reconstruction, and V8 public-license/readiness guards"
+    "Figure 1 rebuild, Table II evidence reconstruction, and V9 public-license/readiness guards"
 )

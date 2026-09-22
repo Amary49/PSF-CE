@@ -1,5 +1,13 @@
 # Changelog
 
+## V9 manuscript-alignment and release-integrity pass — 2026-09-22
+
+- Declared English manuscript V9.1, scientific evidence V5, and public repository V9 as three separate version identities.
+- Removed the unsupported “MI-dominant overall” wording from every active manuscript and claim-contract entry; retained only the archived MI 5/6 and AMI 4/6 directional counts.
+- Added a machine-readable V9.1 manuscript lock and an evidence-alignment note without redistributing the manuscript source inside the code repository.
+- Strengthened the release validator with manuscript-lock, stale-claim, private-file, nested-archive, and GitHub-size guards.
+- Preserved every frozen algorithm, prediction, score, parameter, cohort member, figure value, and table value from V8.
+
 ## V8 direct public-release cleanup — 2026-09-22
 
 - Selected the MIT License for project-authored code, adapters, scripts, configurations, documentation, and generated paper-support artifacts.

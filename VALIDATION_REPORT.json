@@ -1,16 +1,25 @@
 {
-  "schema": "psfce-release-validation-v8",
-  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+  "schema": "psfce-release-validation-v9",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
   "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
   "scientific_results_changed": false,
   "public_release_status": "READY_FOR_PUBLIC_GITHUB_UPLOAD",
   "packaging_checks": {
     "status": "PASS",
-    "details": "Portable text is UTF-8 without BOM and LF-only; public manifests use POSIX paths; root and Figure 1 manifests/checksums are regenerated; no GitHub-size file issue is present."
+    "details": "Portable text is UTF-8 without BOM and LF-only; public manifests use POSIX paths; root and Figure 1 manifests/checksums are regenerated; no nested archive, symlink, sensitive filename, or GitHub-size file issue is present."
+  },
+  "security_scan": {
+    "status": "PASS",
+    "details": "The public tree contains no machine path, nested .git directory, environment/credential file, private-key marker, or recognized high-confidence token pattern. The scan reports filenames and statuses without reproducing secrets."
   },
   "release_validator": {
     "status": "PASS",
-    "details": "The validator passes source locks, machine-path and secret scans, 210-cell score coverage, citation coverage/corrections, cohort provenance, BP redistribution scope, Path A, Figure 1, table typography, Table II reconstruction, YACHT helper exclusion, and V8 public-license/readiness guards."
+    "details": "The validator passes source locks, machine-path and secret scans, 210-cell score coverage, citation coverage/corrections, cohort provenance, BP redistribution scope, Path A, Figure 1, table typography, Table II reconstruction, YACHT helper exclusion, manuscript-link alignment, and V9 public-license/readiness guards."
+  },
+  "manuscript_alignment": {
+    "status": "PASS",
+    "details": "The public claim contract is aligned with English manuscript V9.1. The unsupported MI-dominant-overall wording is forbidden; the active claim is limited to favorable MI and AMI directions for 5/6 and 4/6 comparators. The manuscript archive SHA-256 is recorded without redistributing the manuscript source."
   },
   "license_scope_checks": {
     "status": "PASS",
@@ -22,7 +31,7 @@
   },
   "git_normalization_check": {
     "status": "PASS",
-    "details": "A fresh Git staging test with core.autocrlf=false showed zero staged-vs-working blob hash differences."
+    "details": "A fresh Git staging test with core.autocrlf=false and core.eol=lf passed git diff --cached --check and showed zero staged-vs-working differences across 153 staged files."
   },
   "python_import": {
     "status": "PASS",
@@ -30,11 +39,11 @@
   },
   "python_tests": {
     "status": "PASS_WITH_SKIP",
-    "details": "16 passed and 1 skipped after the V8 public-release changes. The skip is not counted as a pass."
+    "details": "16 passed and 1 skipped after the V9 public-release changes. The skip is not counted as a pass and is the classic-baseline test requiring frozen pymetis==2025.2.2. The joblib physical-core warning falls back to logical cores and does not change the test verdict."
   },
   "python_wheel_build": {
     "status": "PASS",
-    "details": "A source wheel build completed with the already-installed build backend using --no-build-isolation; package metadata including the root LICENSE was accepted."
+    "details": "A source wheel build completed with the already-installed build backend using --no-build-isolation. The resulting psfce-1.0.0 wheel imported psfce and baseline_adapters successfully in the dependency-complete validation environment."
   },
   "citation_metadata_checks": {
     "status": "PASS",
@@ -84,5 +93,5 @@
     "public_source_release": "READY",
     "public_end_to_end_reproduction": "NOT_CLAIMED"
   },
-  "scope_note": "Public-release readiness here is a repository packaging and provenance determination for the material actually distributed, not a legal opinion about omitted upstream materials."
+  "scope_note": "Public-release readiness here is a repository packaging, licensing-boundary, manuscript-alignment, and provenance determination for the material actually distributed. It is not a legal opinion about omitted upstream materials and does not claim an end-to-end ten-dataset rerun."
 }

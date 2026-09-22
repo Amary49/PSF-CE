@@ -1,10 +1,13 @@
 {
-  "schema": "psfce-manuscript-source-of-truth-v5",
+  "schema": "psfce-public-release-lock-v9",
   "version_id": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
   "status": "ACTIVE_SINGLE_SOURCE_OF_TRUTH",
   "created_date": "2026-09-22",
-  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V8-PUBLIC-20260922",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
   "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
+  "active_english_manuscript_archive_sha256": "b832b9bbc83cb663f5aa84ce51e3d7bad359e1f18d59db6d79ec7f1f8b768656",
+  "active_manuscript_citation_count": 21,
   "release_cleanup_only": true,
   "release_artifact_update_only": false,
   "scientific_results_changed_from_v4": false,
@@ -108,7 +111,8 @@
     "Core-10 results containing USPS3568 and Handwritten",
     "parameter-sensitivity figures based on the old Core-10 cohort",
     "claims that completeness alone explains the revised-cohort NMI profile",
-    "claims of a proved upstream causal mechanism"
+    "claims of a proved upstream causal mechanism",
+    "claims that positive NMI differences are MI-dominant overall"
   ],
   "public_release_status": "READY_FOR_PUBLIC_GITHUB_UPLOAD",
   "project_license": "MIT",

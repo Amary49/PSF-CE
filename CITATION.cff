@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or its archived evidence, cite the associated paper after its bibliographic record is finalized."
 title: "PSF-CE research code and revised Core-10 evidence"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-22
 license: MIT
 authors:
