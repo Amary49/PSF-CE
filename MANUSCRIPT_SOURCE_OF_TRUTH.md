@@ -1,6 +1,6 @@
-# Manuscript Source of Truth (English V9.1 / public repository V9)
+# Manuscript Source of Truth (English V9.3 / GitHub v1.2.0)
 
-This directory is the public evidence source for the active English manuscript `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922`. The scientific evidence lock remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; repository V9 changes documentation, validation, and claim alignment only. New manuscript edits must use this file and `PAPER_CLAIMS_CONTRACT.md`, not older handoffs or chat history.
+This directory is the public evidence source for GitHub release `v1.2.0` and the active English manuscript `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924`. The scientific evidence lock remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; the internal repository audit package V10 changes manuscript linkage, citation closure, and release metadata only. New manuscript edits must use this file and `PAPER_CLAIMS_CONTRACT.md`, not older handoffs or chat history.
 
 ## Active formal scope
 
@@ -27,7 +27,7 @@ Safe manuscript sentence:
 
 - Revised Core-10 must not be called an independent holdout. It is a post-freeze revised formal cohort with disclosed development provenance.
 - Only the six exact Iris/Mushroom frozen-BP files are public under CC BY 4.0. The remaining 24 formal pools are authenticated by hash but not redistributed.
-- The public YACHT adapter requires a separately supplied audited compatibility helper; the helper is not included in V9.
+- The public YACHT adapter requires a separately supplied audited compatibility helper; the helper is not included in the current public release.
 - Chameleon/MCLA pool 0 and pool 2 return four clusters for a five-class task. These native outputs remain in all reported scores.
 - Exact-c was used only for performance-blind replacement-candidate admission with MCLA and CEHM; it is not a promise that every final method returns c clusters.
 - The cluster-geometry evidence is exploratory and does not establish causality.

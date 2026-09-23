@@ -1,8 +1,8 @@
 {
-  "schema": "psfce-release-manifest-v9",
-  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
+  "schema": "psfce-release-manifest-v10",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924",
   "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
-  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
+  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924",
   "portability_cleanup_only": false,
   "public_boundary_update": true,
   "public_release_ready": true,
@@ -427,15 +427,15 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "c071e001680ebf2c96562fd60efa08d070d40d27e25e14935b62df32106a2aac",
-      "bytes": 5901,
+      "sha256": "7be855681ff74a1c6f948a67ad15ea59ba64f97043c9423129da75c9864ca0f2",
+      "bytes": 6887,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
       "path": "CITATION.cff",
-      "sha256": "dd91a80479aeab1dc8c132f9b6715c3cbd04cb5705844d9d6e89652443c49df7",
-      "bytes": 702,
+      "sha256": "6e2d9b1b7b10a4376eec72174895bd9421cbcf391a37deb995a76ded8cfdf6b7",
+      "bytes": 796,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -608,16 +608,16 @@
       "public_scope": true
     },
     {
-      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md",
-      "sha256": "4e7311073ea3c9442c564857d14af19a04e52dc3e2fc828b1735809ff3311384",
-      "bytes": 2180,
+      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_ALIGNMENT.md",
+      "sha256": "ae53968aa2aef6ae64490ad5c800f7c32f5ab0cb4898d2618b84d7b1bf800d3c",
+      "bytes": 2097,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
-      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json",
-      "sha256": "78374f387e367ecf8f253372658c15c2a8159223475b66cc8cd3ac42d28af520",
-      "bytes": 889,
+      "path": "docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_LOCK.json",
+      "sha256": "6cbd51850ebd982d1d6427dae5a597d475213787c1c0cef019ada9ce5fc13813",
+      "bytes": 1323,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -756,8 +756,8 @@
     },
     {
       "path": "MANUSCRIPT_SOURCE_OF_TRUTH.md",
-      "sha256": "f4a199fe3cf6d8951cf853e7f6cbde2f02e1342204d6cf42cc27a495835560ab",
-      "bytes": 4050,
+      "sha256": "427104ded806fcf97eedc2be64678ca8c4492f5b7f8919ac75cac1991ecaf016",
+      "bytes": 4135,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -784,7 +784,7 @@
     },
     {
       "path": "psfce/__init__.py",
-      "sha256": "d7f1810664451fcbc055a1b3ee11f1b31c8667894567557cd70e3c638c9f9c6b",
+      "sha256": "232f7e529b39f2cf91c2a05107f7447f7e2b71619030343a949910b75cba5006",
       "bytes": 212,
       "category": "source",
       "public_scope": true
@@ -903,22 +903,22 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "61f0e5d847e6f82035142e565330f279b029424ea3e520fbaf4072b8aa52e547",
+      "sha256": "96d47f4ca1a9dece060a6d825404537d2604f196032b2feef64f25bf49842e9f",
       "bytes": 661,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
       "path": "README.md",
-      "sha256": "6b7bdf7d50be3b50a95dda3c495fec396af734adf0ac231e2e9dc80cde2e9d02",
-      "bytes": 5396,
+      "sha256": "42815af3f33dff49c1c03cdc1bcd6fadab41f9a32054d8945c975fd87204204e",
+      "bytes": 5642,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
       "path": "RELEASE_CHECKLIST_CN.md",
-      "sha256": "57376f393faef19c2450f819991b40d2d7c45ab30c0a60a9c84199189b83d2fe",
-      "bytes": 1943,
+      "sha256": "caa90c0e64b3a0db4e98a26aa9252585b14d76b4c3daa6c230037e13e1ce2133",
+      "bytes": 2032,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -973,8 +973,8 @@
     },
     {
       "path": "scripts/rebuild_portable_manifests.py",
-      "sha256": "79cb4e449ffea411f0f721e2b094caf30bdd285c0d2a57506ce919707c62f084",
-      "bytes": 8597,
+      "sha256": "72f8ff4ad23b649320eb543f397ec219b9ab90c595d15caee3f83c8b47290302",
+      "bytes": 8866,
       "category": "source",
       "public_scope": true
     },
@@ -987,15 +987,15 @@
     },
     {
       "path": "scripts/validate_release.py",
-      "sha256": "749fd70c03c0226cf62b480e8753ee5088c2e4b63d2d1682a90349571d176929",
-      "bytes": 24032,
+      "sha256": "9cd48724bdf94cc1370cb528390f028e105d4357cac396bf1dd9df1214644031",
+      "bytes": 25811,
       "category": "source",
       "public_scope": true
     },
     {
       "path": "SOURCE_MAP.csv",
-      "sha256": "69a50225cdb73f6ae38f59376addad46ed4b3b33f6e40cf75cc29239736e7106",
-      "bytes": 34236,
+      "sha256": "d904033644fcc3a1f6adb3a1c84b0ddd906457b9168a13b3584c1ae7172cc4dd",
+      "bytes": 34383,
       "category": "documentation_or_config",
       "public_scope": true
     },
@@ -1050,15 +1050,15 @@
     },
     {
       "path": "VALIDATION_REPORT.json",
-      "sha256": "dd29d4ca1da896dfc7ed131c724101734c0c1380b70c915ca2833ffcac99d79b",
-      "bytes": 6525,
+      "sha256": "a9527b6906fc793d8388dbc9d63be790484fe3257a02df25bfe69e8b7668663f",
+      "bytes": 4453,
       "category": "documentation_or_config",
       "public_scope": true
     },
     {
       "path": "VERSION_LOCK.json",
-      "sha256": "652400eded5bf7468e6cf12cc866c866ebb39092503cde6ab0e5715b61facac4",
-      "bytes": 4362,
+      "sha256": "ae1f01436401840176a36bf28ed415c814bac997f2dad24a6da362a4c57bf6ad",
+      "bytes": 4572,
       "category": "documentation_or_config",
       "public_scope": true
     }

@@ -1,97 +1,77 @@
 {
-  "schema": "psfce-release-validation-v9",
-  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
+  "schema": "psfce-release-validation-v10",
+  "validated_date": "2026-09-24",
+  "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924",
+  "public_release_tag": "v1.2.0",
+  "public_repository_url": "https://github.com/Amary49/PSF-CE",
   "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
-  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
+  "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924",
   "scientific_results_changed": false,
   "public_release_status": "READY_FOR_PUBLIC_GITHUB_UPLOAD",
+  "public_version_metadata": {
+    "status": "PASS",
+    "git_tag": "v1.2.0",
+    "python_project_version": "1.2.0",
+    "python_module_version": "1.2.0",
+    "citation_cff_version": "1.2.0",
+    "details": "The public semantic release version is distinct from the internal scientific, manuscript, and audit-package provenance identifiers."
+  },
+  "manuscript_link": {
+    "status": "PASS",
+    "overleaf_archive_sha256": "74c79a7be4f7ec7e5b73e41d4719097d10a7d81ccfa8ea903f751854831204ca",
+    "verification_pdf_sha256": "868eec4384b229bce446f9ad90570325a3899de85de5ac6547e31b029a9a3cb2",
+    "used_citation_keys": 26,
+    "details": "The current branch contains only the V9.3 active manuscript lock. V9.1 and earlier locks are historical Git records, not current release files."
+  },
+  "dataset_citation_closure": {
+    "status": "PASS",
+    "added_keys": [
+      "Caltech101Dataset2022",
+      "Rozemberczki2021MUSAE",
+      "ORLDatabase",
+      "HANDatasetRelease",
+      "Fisher1936Iris"
+    ],
+    "details": "All dataset keys required by DATASET_CITATION_MAP.csv are represented in the active manuscript's 26-key citation set."
+  },
   "packaging_checks": {
     "status": "PASS",
-    "details": "Portable text is UTF-8 without BOM and LF-only; public manifests use POSIX paths; root and Figure 1 manifests/checksums are regenerated; no nested archive, symlink, sensitive filename, or GitHub-size file issue is present."
+    "details": "Portable text is UTF-8 without BOM and LF-only; manifests use POSIX paths; root and Figure 1 manifests/checksums were regenerated; no nested archive, symlink, sensitive filename, cache directory, or GitHub-size file issue was found. Root .git metadata is ignored when the tools run in a normal checkout, while nested .git directories remain forbidden."
   },
   "security_scan": {
     "status": "PASS",
-    "details": "The public tree contains no machine path, nested .git directory, environment/credential file, private-key marker, or recognized high-confidence token pattern. The scan reports filenames and statuses without reproducing secrets."
-  },
-  "release_validator": {
-    "status": "PASS",
-    "details": "The validator passes source locks, machine-path and secret scans, 210-cell score coverage, citation coverage/corrections, cohort provenance, BP redistribution scope, Path A, Figure 1, table typography, Table II reconstruction, YACHT helper exclusion, manuscript-link alignment, and V9 public-license/readiness guards."
-  },
-  "manuscript_alignment": {
-    "status": "PASS",
-    "details": "The public claim contract is aligned with English manuscript V9.1. The unsupported MI-dominant-overall wording is forbidden; the active claim is limited to favorable MI and AMI directions for 5/6 and 4/6 comparators. The manuscript archive SHA-256 is recorded without redistributing the manuscript source."
-  },
-  "license_scope_checks": {
-    "status": "PASS",
-    "details": "A root MIT license covers project-authored source/docs/configs/artifacts; pyproject.toml and CITATION.cff declare MIT. Six UCI-derived Iris/Mushroom frozen-BP files remain separately attributed under CC BY 4.0 and are excluded from the MIT scope by NOTICE.md."
-  },
-  "third_party_license_checks": {
-    "status": "PASS_FOR_DISTRIBUTED_SCOPE",
-    "details": "No third-party author repository, MATLAB binary/P-code/MEX component, or dependency wheel/source is vendored. PyMetis 2025.2.2 is separately installed and its PyPI metadata reports MIT AND Apache-2.0. Upstream author-repository licenses left as NOASSERTION are not guessed because those repositories are not redistributed."
+    "details": "The public tree contains no machine path, nested .git directory, environment/credential file, private-key marker, or recognized high-confidence token pattern."
   },
   "git_normalization_check": {
     "status": "PASS",
-    "details": "A fresh Git staging test with core.autocrlf=false and core.eol=lf passed git diff --cached --check and showed zero staged-vs-working differences across 153 staged files."
+    "staged_files": 153,
+    "details": "A fresh temporary Git repository with core.autocrlf=false and core.eol=lf passed git diff --cached --check; the temporary repository was removed afterward."
   },
-  "python_import": {
+  "release_validator": {
     "status": "PASS",
-    "details": "psfce and baseline_adapters remain included in package discovery."
+    "details": "The validator passed v1.2.0 package metadata, source locks, 210-cell score coverage, citation maps, cohort provenance, frozen-BP redistribution boundaries, Path A rebuild, Figure 1 rebuild, Table II reconstruction, manuscript-link alignment, and public-license/readiness guards."
+  },
+  "claim_alignment": {
+    "status": "PASS",
+    "details": "The active claim contract remains bounded to descriptive ranks, Holm-corrected significance results, and exploratory partition-structure associations. No algorithm, score, parameter, figure value, table value, or scientific conclusion changed."
+  },
+  "license_scope_checks": {
+    "status": "PASS",
+    "details": "The root MIT license covers project-authored material; the six UCI-derived Iris/Mushroom frozen-BP files remain separately attributed under CC BY 4.0."
+  },
+  "third_party_license_checks": {
+    "status": "PASS_FOR_DISTRIBUTED_SCOPE",
+    "details": "No third-party author repository, MATLAB binary/P-code/MEX component, or dependency wheel/source is vendored."
   },
   "python_tests": {
     "status": "PASS_WITH_SKIP",
-    "details": "16 passed and 1 skipped after the V9 public-release changes. The skip is not counted as a pass and is the classic-baseline test requiring frozen pymetis==2025.2.2. The joblib physical-core warning falls back to logical cores and does not change the test verdict."
+    "command": "python -B -m pytest -q -p no:cacheprovider",
+    "result": "16 passed, 1 skipped in 13.30s",
+    "details": "The skipped classic-baseline regression requires the frozen optional pymetis dependency and is not counted as a pass. One non-fatal joblib warning reported unavailable physical-core detection and used logical cores instead."
   },
-  "python_wheel_build": {
-    "status": "PASS",
-    "details": "A source wheel build completed with the already-installed build backend using --no-build-isolation. The resulting psfce-1.0.0 wheel imported psfce and baseline_adapters successfully in the dependency-complete validation environment."
-  },
-  "citation_metadata_checks": {
-    "status": "PASS",
-    "details": "Repository bibliography corrections include Derek Greene attribution for the BBC dataset repository, cnab014 as an article number, Jhy1993/HAN repository attribution, UCI Iris year 1936 with 1988 donation note, and UCI Mushroom year 1981 with 1987 donation note."
-  },
-  "table_rebuild": {
-    "status": "PASS",
-    "details": "Path A and Table II rebuild deterministically. Table I and Table II retain explicit 9-pt body/note text; displayed values and counts are unchanged."
-  },
-  "figure_rebuild": {
-    "status": "PASS",
-    "details": "Figure 1 rebuilds from its full-precision CSV on a native 3.39 by 1.82 inch canvas with a configured minimum font size of 9 pt and no manuscript downscaling."
-  },
-  "frozen_config_checks": {
-    "status": "PASS",
-    "details": "Every source lock matches its public frozen file; the provenance copy is identical; the recent-baseline source path uses POSIX separators."
-  },
-  "frozen_bp_redistribution": {
-    "status": "PASS",
-    "details": "Exactly six Iris/Mushroom pools are present and byte-match the formal hashes; y and 20-by-n parts array contracts pass. The remaining 24 pools expose no public path and remain hash-only."
-  },
-  "data_provenance_checks": {
-    "status": "PASS_WITH_DOCUMENTED_GAPS",
-    "details": "All ten tasks have source mappings. Iris and Mushroom use official UCI CC BY 4.0 records; incomplete derived-byte lineage for other tasks remains explicitly disclosed and their exact local pools are not redistributed."
-  },
-  "matlab_execution_verified": {
-    "status": "NOT_VERIFIED",
-    "details": "No MATLAB algorithm rerun was performed during packaging. The installed packaging host was identified as R2026a Update 5, but the historical formal-run MATLAB version remains unrecorded."
-  },
-  "linux_execution": {
-    "status": "NOT_VERIFIED",
-    "details": "Native Linux algorithm execution is not claimed; POSIX path, LF, checksum, rebuild, Git staging, and Python tests are checked separately."
-  },
-  "path_b_public_end_to_end": {
-    "status": "NOT_CLAIMED",
-    "details": "Only Iris/Mushroom BP inputs are public. The other 24 pools, prediction archives, and the YACHT private helper are not redistributed, so a full public ten-dataset rerun is outside the release claim."
-  },
-  "skipped_checks": [
-    "native Linux execution",
-    "full Python/MATLAB algorithm rerun from raw features",
-    "raw-y metric recomputation",
-    "historical formal-run MATLAB version reconstruction"
-  ],
-  "blockers": [],
-  "readiness": {
-    "private_github": "READY",
-    "public_source_release": "READY",
-    "public_end_to_end_reproduction": "NOT_CLAIMED"
-  },
-  "scope_note": "Public-release readiness here is a repository packaging, licensing-boundary, manuscript-alignment, and provenance determination for the material actually distributed. It is not a legal opinion about omitted upstream materials and does not claim an end-to-end ten-dataset rerun."
+  "limitations": [
+    "The repository does not redistribute the manuscript ZIP or verification PDF; it records their SHA-256 identities only.",
+    "A full ten-dataset Path B rerun still requires locally supplied legal inputs and excluded third-party environments.",
+    "The public YACHT adapter still requires the separately supplied audited compatibility helper."
+  ]
 }

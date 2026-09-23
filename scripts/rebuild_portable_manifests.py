@@ -13,6 +13,14 @@ TEXT_SUFFIXES = {
 }
 TEXT_NAMES = {".gitattributes", ".gitignore", ".gitkeep"}
 ROOT_GENERATED = {"SOURCE_MAP.csv", "RELEASE_MANIFEST.json", "SHA256SUMS.txt"}
+EXCLUDED_DIR_NAMES = {".git", ".venv", "__pycache__", ".pytest_cache"}
+
+
+def root_public_files():
+    for path in ROOT.rglob("*"):
+        rel_parts = path.relative_to(ROOT).parts
+        if path.is_file() and not any(part in EXCLUDED_DIR_NAMES for part in rel_parts):
+            yield path
 
 
 def sha256_file(path: Path) -> str:
@@ -34,7 +42,7 @@ def write_json_lf(path: Path, obj: object) -> None:
 
 def normalize_text_files() -> int:
     changed = 0
-    for path in sorted(p for p in ROOT.rglob("*") if p.is_file()):
+    for path in sorted(root_public_files()):
         if path.parent == ROOT and path.name in ROOT_GENERATED:
             continue
         if path.suffix.lower() not in TEXT_SUFFIXES and path.name not in TEXT_NAMES:
@@ -144,7 +152,7 @@ def category(path: Path) -> str:
 def build_root_manifests() -> None:
     source_excluded = ROOT_GENERATED | {"VALIDATION_REPORT.json"}
     source_files = sorted(
-        p for p in ROOT.rglob("*")
+        p for p in root_public_files()
         if p.is_file() and p.name not in source_excluded
     )
     source_map_path = ROOT / "SOURCE_MAP.csv"
@@ -159,20 +167,20 @@ def build_root_manifests() -> None:
             writer.writerow({
                 "path": path.relative_to(ROOT).as_posix(),
                 "role": category(path),
-                "origin": "current V9 public-release material; scientific results unchanged from the frozen revised Core-10 archive",
+                "origin": "current V10 public-release material; scientific results unchanged from the frozen revised Core-10 archive",
                 "sha256": sha256_file(path),
             })
 
     manifest_path = ROOT / "RELEASE_MANIFEST.json"
     manifest_files = sorted(
-        p for p in ROOT.rglob("*")
+        p for p in root_public_files()
         if p.is_file() and p.name not in {"RELEASE_MANIFEST.json", "SHA256SUMS.txt"}
     )
     manifest = {
-        "schema": "psfce-release-manifest-v9",
-        "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922",
+        "schema": "psfce-release-manifest-v10",
+        "release_package_id": "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924",
         "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
-        "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922",
+        "active_english_manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924",
         "portability_cleanup_only": False,
         "public_boundary_update": True,
         "public_release_ready": True,
@@ -194,7 +202,7 @@ def build_root_manifests() -> None:
     }
     write_json_lf(manifest_path, manifest)
 
-    sum_files = sorted(p for p in ROOT.rglob("*") if p.is_file() and p.name != "SHA256SUMS.txt")
+    sum_files = sorted(p for p in root_public_files() if p.name != "SHA256SUMS.txt")
     lines = [f"{sha256_file(p)}  {p.relative_to(ROOT).as_posix()}" for p in sum_files]
     write_text_lf(ROOT / "SHA256SUMS.txt", "\n".join(lines) + "\n")
 

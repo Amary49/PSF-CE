@@ -33,8 +33,8 @@ def sha256_file(path: Path) -> str:
 required = [
     "VERSION_LOCK.json", "MANUSCRIPT_SOURCE_OF_TRUTH.md", "LICENSE", "LICENSE_STATUS.md", "NOTICE.md", "THIRD_PARTY.md",
     "PAPER_CLAIMS_CONTRACT.md", "PAPER_CLAIMS_CONTRACT.csv", "CITATION.cff", "ENVIRONMENT_LOCK.json",
-    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json",
-    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md",
+    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_LOCK.json",
+    "docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_ALIGNMENT.md",
     "psfce/__init__.py", "configs/frozen/REVISED_CORE10_FORMAL_FREEZE.json",
     "data/dataset_manifest.csv", "data/dataset_manifest_candidate52.csv",
     "data/bp_pool_hashes.csv", "data/cohorts/candidate52.txt",
@@ -68,6 +68,11 @@ forbidden_names = {".env", "id_rsa", "id_ed25519", "credentials.json", "secrets.
 archive_suffixes = {".zip", ".7z", ".rar", ".tar", ".tgz", ".gz"}
 for path in ROOT.rglob("*"):
     rel_parts = path.relative_to(ROOT).parts
+    # A normal Git checkout contains repository metadata at ROOT/.git.
+    # It is not part of the release payload and must be ignored here, while
+    # nested .git directories elsewhere remain forbidden.
+    if rel_parts and rel_parts[0] == ".git":
+        continue
     if any(part in {".git", ".venv", "__pycache__", ".pytest_cache"} for part in rel_parts):
         errors.append("forbidden path: " + path.relative_to(ROOT).as_posix())
     if path.is_symlink():
@@ -99,7 +104,7 @@ for path in ROOT.rglob("*"):
 
 pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
 init_text = (ROOT / "psfce/__init__.py").read_text(encoding="utf-8")
-if 'version = "1.0.0"' not in pyproject or "__version__='1.0.0'" not in init_text:
+if 'version = "1.2.0"' not in pyproject or "__version__='1.2.0'" not in init_text:
     errors.append("Python package version mismatch")
 if 'include = ["psfce*", "baseline_adapters*"]' not in pyproject:
     errors.append("baseline_adapters excluded from package discovery")
@@ -116,8 +121,13 @@ if "MIT AND Apache-2.0" not in third_party_text or "not vendored" not in third_p
     errors.append("third-party dependency notice incomplete")
 if 'license = {file = "LICENSE"}' not in pyproject:
     errors.append("Python project license metadata missing")
-if "version: 1.0.1" not in (ROOT / "CITATION.cff").read_text(encoding="utf-8"):
+citation_text = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+if "version: 1.2.0" not in citation_text or "date-released: 2026-09-24" not in citation_text:
     errors.append("CITATION.cff release version mismatch")
+if 'repository-code: "https://github.com/Amary49/PSF-CE"' not in citation_text:
+    errors.append("CITATION.cff repository URL mismatch")
+if "The current public GitHub release is `v1.2.0`." not in readme_text:
+    errors.append("README public release tag mismatch")
 
 current_text_files = [
     ROOT / "README.md", ROOT / "LICENSE_STATUS.md", ROOT / "RELEASE_CHECKLIST_CN.md", ROOT / "KNOWN_LIMITATIONS.md"
@@ -142,26 +152,41 @@ for required_bib in (
 version_lock = json.loads((ROOT / "VERSION_LOCK.json").read_text(encoding="utf-8"))
 if version_lock.get("version_id") != "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922":
     errors.append("V5 manuscript evidence lock mismatch")
-if version_lock.get("release_package_id") != "PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922":
-    errors.append("V9 release package lock mismatch")
-if version_lock.get("active_english_manuscript_version") != "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922":
-    errors.append("V9.1 English manuscript lock mismatch")
-if version_lock.get("active_english_manuscript_archive_sha256") != "b832b9bbc83cb663f5aa84ce51e3d7bad359e1f18d59db6d79ec7f1f8b768656":
-    errors.append("V9.1 English manuscript archive hash mismatch")
-if version_lock.get("active_manuscript_citation_count") != 21:
-    errors.append("V9.1 manuscript citation-count lock mismatch")
+if version_lock.get("release_package_id") != "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924":
+    errors.append("V10 release package lock mismatch")
+if version_lock.get("public_release_tag") != "v1.2.0":
+    errors.append("public GitHub release tag mismatch")
+if version_lock.get("public_repository_url") != "https://github.com/Amary49/PSF-CE":
+    errors.append("public repository URL mismatch")
+if version_lock.get("active_english_manuscript_version") != "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924":
+    errors.append("V9.3 English manuscript lock mismatch")
+if version_lock.get("active_english_manuscript_archive_sha256") != "74c79a7be4f7ec7e5b73e41d4719097d10a7d81ccfa8ea903f751854831204ca":
+    errors.append("V9.3 English manuscript archive hash mismatch")
+if version_lock.get("active_english_manuscript_pdf_sha256") != "868eec4384b229bce446f9ad90570325a3899de85de5ac6547e31b029a9a3cb2":
+    errors.append("V9.3 English manuscript PDF hash mismatch")
+if version_lock.get("active_manuscript_citation_count") != 26:
+    errors.append("V9.3 manuscript citation-count lock mismatch")
 if version_lock.get("public_release_status") != "READY_FOR_PUBLIC_GITHUB_UPLOAD":
     errors.append("public release status lock mismatch")
 if version_lock.get("project_license") != "MIT":
     errors.append("project license lock mismatch")
 
-manuscript_link = json.loads((ROOT / "docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json").read_text(encoding="utf-8"))
+manuscript_link = json.loads((ROOT / "docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_LOCK.json").read_text(encoding="utf-8"))
 if manuscript_link.get("manuscript_version") != version_lock.get("active_english_manuscript_version"):
     errors.append("manuscript-link version mismatch")
 if manuscript_link.get("archive_sha256") != version_lock.get("active_english_manuscript_archive_sha256"):
     errors.append("manuscript-link archive hash mismatch")
+if manuscript_link.get("verification_pdf_sha256") != version_lock.get("active_english_manuscript_pdf_sha256"):
+    errors.append("manuscript-link PDF hash mismatch")
 if manuscript_link.get("compatible_repository_release") != version_lock.get("release_package_id"):
     errors.append("manuscript-link repository compatibility mismatch")
+if manuscript_link.get("used_citation_keys") != version_lock.get("active_manuscript_citation_count"):
+    errors.append("manuscript-link citation-count mismatch")
+if manuscript_link.get("repository_required_dataset_keys_added_in_v9_3") != [
+    "Caltech101Dataset2022", "Rozemberczki2021MUSAE", "ORLDatabase",
+    "HANDatasetRelease", "Fisher1936Iris",
+]:
+    errors.append("V9.3 dataset citation-key closure mismatch")
 if manuscript_link.get("manuscript_source_included") is not False:
     errors.append("manuscript-source inclusion boundary mismatch")
 
@@ -273,7 +298,7 @@ if source_map.is_file():
 release_manifest = ROOT / "RELEASE_MANIFEST.json"
 if release_manifest.is_file():
     release_obj = json.loads(release_manifest.read_text(encoding="utf-8"))
-    if release_obj.get("schema") != "psfce-release-manifest-v9":
+    if release_obj.get("schema") != "psfce-release-manifest-v10":
         errors.append("RELEASE_MANIFEST schema mismatch")
     if release_obj.get("release_package_id") != version_lock.get("release_package_id"):
         errors.append("RELEASE_MANIFEST release-package mismatch")
@@ -317,7 +342,12 @@ if sums_path.is_file():
             errors.append("SHA256SUMS hash mismatch: " + rel)
     expected_sum_paths = {
         p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*")
-        if p.is_file() and p.name != "SHA256SUMS.txt"
+        if p.is_file()
+        and p.name != "SHA256SUMS.txt"
+        and not (
+            p.relative_to(ROOT).parts
+            and p.relative_to(ROOT).parts[0] == ".git"
+        )
     }
     if seen != expected_sum_paths:
         errors.append("SHA256SUMS coverage mismatch")
@@ -409,5 +439,5 @@ print(
     "PASS: portable LF text, POSIX manifests, root checksums, structure, source locks, 210-cell coverage, citation coverage, "
     "Candidate-52 plus replacement-panel provenance, native under-k preservation, "
     "machine-path/secret scan, narrative guard, package version, Path A rebuild, "
-    "Figure 1 rebuild, Table II evidence reconstruction, and V9 public-license/readiness guards"
+    "Figure 1 rebuild, Table II evidence reconstruction, and v1.2.0 public-license/readiness guards"
 )
