@@ -1,5 +1,15 @@
 # Changelog
 
+Public GitHub releases use semantic tags (`v1.0.0`, `v1.1.0`, and the current `v1.2.0`). The V4--V10 headings retained below are internal audit-package revisions, not additional public GitHub releases.
+
+## v1.2.0 repository and manuscript synchronization — 2026-09-24
+
+- Replaced the active V9.1 manuscript pointer with the final-audit English manuscript V9.3 lock.
+- Recorded the V9.3 Overleaf archive and verification-PDF SHA-256 values without redistributing either artifact in the code repository.
+- Closed the repository-to-paper citation boundary: all five additional dataset keys required by `DATASET_CITATION_MAP.csv` are now among the manuscript's 26 used keys.
+- Updated release manifests, checksums, validation guards, and current-facing documentation; frozen algorithms, parameters, predictions, scores, figures, tables, and scientific conclusions are unchanged.
+- Kept V9 and earlier entries below as historical changelog records; they are not current manuscript locks.
+
 ## V9 manuscript-alignment and release-integrity pass — 2026-09-22
 
 - Declared English manuscript V9.1, scientific evidence V5, and public repository V9 as three separate version identities.

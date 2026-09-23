@@ -1,0 +1,23 @@
+{
+  "schema": "psfce-english-manuscript-link-v2",
+  "manuscript_version": "PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924",
+  "paper_title": "Pairwise Spectral Filtering Before Fusion for Clustering Ensembles",
+  "archive_filename": "PSF_CE_ICASSP2027_V9_3_OVERLEAF.zip",
+  "archive_sha256": "74c79a7be4f7ec7e5b73e41d4719097d10a7d81ccfa8ea903f751854831204ca",
+  "verification_pdf_filename": "PSF_CE_ICASSP2027_V9_3.pdf",
+  "verification_pdf_sha256": "868eec4384b229bce446f9ad90570325a3899de85de5ac6547e31b029a9a3cb2",
+  "scientific_evidence_version": "PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922",
+  "compatible_repository_release": "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924",
+  "manuscript_recorded_repository_release": "PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924",
+  "compatibility_note": "Repository V10 synchronizes the active manuscript lock, citation closure, and final artifact hashes; frozen algorithms, parameters, scores, figures, tables, and formal protocol are unchanged from V9.",
+  "used_citation_keys": 26,
+  "repository_required_dataset_keys_added_in_v9_3": [
+    "Caltech101Dataset2022",
+    "Rozemberczki2021MUSAE",
+    "ORLDatabase",
+    "HANDatasetRelease",
+    "Fisher1936Iris"
+  ],
+  "manuscript_source_included": false,
+  "status": "ACTIVE_ENGLISH_SUBMISSION_SOURCE"
+}

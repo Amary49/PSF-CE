@@ -4,9 +4,9 @@ This repository contains the PSF-CE implementation, audited baseline adapters, f
 
 ## Current version
 
-Three identifiers are intentionally separated. The frozen scientific evidence remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; the active English submission source is `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.1-FINALFORMAT-20260922`; and this public repository package is `PSFCE-GITHUB-REVISED-CORE10-V9-PUBLIC-20260922`. V9 preserves the frozen algorithms, predictions, settings, scores, figures, and tables while aligning the public claim contract and manuscript handoff with V9.1. Read `VERSION_LOCK.json` and `docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_ALIGNMENT.md` before using any number or claim.
+The current public GitHub release is `v1.2.0`. Internal audit identities are intentionally separated from the public release tag: the frozen scientific evidence remains `PSFCE-MANUSCRIPT-REVISED-CORE10-V5-20260922`; the active English submission source is `PSFCE-MANUSCRIPT-ENGLISH-REVISED-CORE10-V9.3-FINAL-AUDIT-20260924`; and the repository audit package is `PSFCE-GITHUB-REVISED-CORE10-V10-PUBLIC-20260924`. These internal V5/V9.3/V10 identifiers are provenance locks, not counts of public GitHub releases. Public release `v1.2.0` preserves the frozen algorithms, predictions, settings, scores, figures, and tables while synchronizing the manuscript lock, 26-key citation boundary, and final archive/PDF hashes. Read `VERSION_LOCK.json` and `docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_ALIGNMENT.md` before using any number or claim.
 
-Authors: Haiyun Zhang (Zhejiang University; Shanxi University), Luoqi Wang (Shanxi University), and Liang Du (Shanxi University). The active manuscript title is *Pairwise Spectral Filtering Before Fusion for Clustering Ensembles*. The DOI and final public repository URL remain pending and are not fabricated here.
+Authors: Haiyun Zhang (Zhejiang University; Shanxi University), Luoqi Wang (Shanxi University), and Liang Du (Shanxi University). The active manuscript title is *Pairwise Spectral Filtering Before Fusion for Clustering Ensembles*. The DOI remains pending; the public repository is <https://github.com/Amary49/PSF-CE>.
 
 **Release status:** `READY_FOR_PUBLIC_GITHUB_UPLOAD`. Upload the contents of this directory at the repository root. Read `LICENSE_STATUS.md`, `NOTICE.md`, and `THIRD_PARTY.md` before adding any new data or third-party code.
 
@@ -16,7 +16,7 @@ PSF-CE has the highest descriptive mean NMI and third-highest descriptive mean A
 
 The paper-artifact directory now includes (i) a post-freeze one-factor sensitivity figure rebuilt on revised Core-10 and (ii) an exploratory Table II whose six profile counts are generated from the archived structural reports. The sensitivity sweep is diagnostic only and is not used for parameter reselection. See `artifacts/paper_revised_core10/figures/figure1_parameter_sensitivity/` and `artifacts/paper_revised_core10/tables/table2_partition_structure.tex`.
 
-The manuscript source itself is not duplicated in this code repository. Its archive identity and SHA-256 are recorded in `docs/manuscript/ENGLISH_MANUSCRIPT_V9_1_LOCK.json`; that lock is provenance metadata, not a claim that the manuscript ZIP is distributed here.
+The manuscript source itself is not duplicated in this code repository. Its archive and verification-PDF identities are recorded in `docs/manuscript/ENGLISH_MANUSCRIPT_V9_3_LOCK.json`; that lock is provenance metadata, not a claim that either manuscript artifact is distributed here.
 
 ## Cohort provenance
 
